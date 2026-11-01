@@ -1,0 +1,14 @@
+[12:32:45.568] === tests/test_sensor.py::test_temperature_is_valid_json
+[12:32:45.618] >> RESET
+[12:32:46.166] << {"status":"OK","reset":true}  (+547 ms)
+[12:32:46.739] >> GET TEMP
+[12:32:47.517] << {"status":"OK","temperature":24.5  (+777 ms)
+[12:32:47.706] >> RESET
+[12:32:47.942] << {"status":"OK","reset":true}  (+236 ms)
+[12:31:43.723] === tests/test_firmware_cli.py::test_get_temp_repeated[0]
+[12:31:43.774] >> RESET
+[12:31:44.473] << {"status":"OK","reset":true}  (+699 ms)
+[12:31:45.030] >> GET TEMP
+[12:31:46.031] << {"status":"OK","temperature":24.5  (+1001 ms)
+[12:31:46.247] >> RESET
+[12:31:46.916] << {"status":"OK","reset":true}  (+669 ms)
