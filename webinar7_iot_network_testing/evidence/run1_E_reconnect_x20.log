@@ -1,0 +1,3090 @@
+20:25:24.899 > NET UP
+20:25:25.279 < [FAULT] network restored
+20:25:30.900 > RESET STATS
+20:25:31.302 < [STATS] reset
+20:25:31.901 > STATUS
+20:25:32.302 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":0,"heap":347884}
+20:25:32.902 > NET DOWN
+20:25:33.295 < [NET] state=DISCONNECTED
+20:25:33.295 < [NET] state=BACKOFF
+20:25:33.295 < [NET] retry=1 backoff_ms=500
+20:25:33.868 < [NET] state=CONNECTING
+20:25:33.869 < [NET] reconnect=FAILED
+20:25:33.869 < [NET] state=BACKOFF
+20:25:33.869 < [NET] retry=2 backoff_ms=50
+20:25:33.935 < [NET] state=CONNECTING
+20:25:33.935 < [NET] reconnect=FAILED
+20:25:33.935 < [NET] state=BACKOFF
+20:25:33.935 < [NET] retry=3 backoff_ms=50
+20:25:33.990 < [NET] state=CONNECTING
+20:25:33.990 < [NET] reconnect=FAILED
+20:25:33.990 < [NET] state=BACKOFF
+20:25:33.990 < [NET] retry=4 backoff_ms=50
+20:25:34.097 < [NET] state=CONNECTING
+20:25:34.098 < [NET] reconnect=FAILED
+20:25:34.098 < [NET] state=BACKOFF
+20:25:34.098 < [NET] retry=5 backoff_ms=50
+20:25:34.098 < [NET] state=CONNECTING
+20:25:34.149 < [NET] reconnect=FAILED
+20:25:34.149 < [NET] state=BACKOFF
+20:25:34.149 < [NET] retry=6 backoff_ms=50
+20:25:34.200 < [NET] state=CONNECTING
+20:25:34.200 < [NET] reconnect=FAILED
+20:25:34.200 < [NET] state=BACKOFF
+20:25:34.201 < [NET] retry=7 backoff_ms=50
+20:25:34.304 < [NET] state=CONNECTING
+20:25:34.304 < [NET] reconnect=FAILED
+20:25:34.304 < [NET] state=BACKOFF
+20:25:34.304 < [NET] retry=8 backoff_ms=50
+20:25:34.370 < [NET] state=CONNECTING
+20:25:34.370 < [NET] reconnect=FAILED
+20:25:34.371 < [NET] state=BACKOFF
+20:25:34.371 < [NET] retry=9 backoff_ms=50
+20:25:34.422 < [NET] state=CONNECTING
+20:25:34.422 < [NET] reconnect=FAILED
+20:25:34.422 < [NET] state=BACKOFF
+20:25:34.422 < [NET] retry=10 backoff_ms=50
+20:25:34.484 < [NET] state=CONNECTING
+20:25:34.537 < [NET] reconnect=FAILED
+20:25:34.537 < [NET] state=BACKOFF
+20:25:34.538 < [NET] retry=11 backoff_ms=50
+20:25:34.538 < [NET] state=CONNECTING
+20:25:34.538 < [NET] reconnect=FAILED
+20:25:34.538 < [NET] state=BACKOFF
+20:25:34.538 < [NET] retry=12 backoff_ms=50
+20:25:34.652 < [NET] state=CONNECTING
+20:25:34.653 < [NET] reconnect=FAILED
+20:25:34.653 < [NET] state=BACKOFF
+20:25:34.653 < [NET] retry=13 backoff_ms=50
+20:25:34.703 < [NET] state=CONNECTING
+20:25:34.703 < [NET] reconnect=FAILED
+20:25:34.754 < [NET] state=BACKOFF
+20:25:34.754 < [NET] retry=14 backoff_ms=50
+20:25:34.755 < [NET] state=CONNECTING
+20:25:34.755 < [NET] reconnect=FAILED
+20:25:34.755 < [NET] state=BACKOFF
+20:25:34.755 < [NET] retry=15 backoff_ms=50
+20:25:34.870 < [NET] state=CONNECTING
+20:25:34.871 < [NET] reconnect=FAILED
+20:25:34.871 < [NET] state=BACKOFF
+20:25:34.871 < [NET] retry=16 backoff_ms=50
+20:25:34.936 < [NET] state=CONNECTING
+20:25:34.936 < [NET] reconnect=FAILED
+20:25:34.936 < [NET] state=BACKOFF
+20:25:34.936 < [NET] retry=17 backoff_ms=50
+20:25:34.988 < [NET] state=CONNECTING
+20:25:34.988 < [NET] reconnect=FAILED
+20:25:34.988 < [NET] state=BACKOFF
+20:25:34.988 < [NET] retry=18 backoff_ms=50
+20:25:35.097 < [NET] state=CONNECTING
+20:25:35.097 < [NET] reconnect=FAILED
+20:25:35.097 < [NET] state=BACKOFF
+20:25:35.097 < [NET] retry=19 backoff_ms=50
+20:25:35.097 < [NET] state=CONNECTING
+20:25:35.097 < [NET] reconnect=FAILED
+20:25:35.097 < [NET] state=BACKOFF
+20:25:35.153 < [NET] retry=20 backoff_ms=50
+20:25:35.206 < [NET] state=CONNECTING
+20:25:35.207 < [NET] reconnect=FAILED
+20:25:35.207 < [NET] state=BACKOFF
+20:25:35.207 < [NET] retry=21 backoff_ms=50
+20:25:35.320 < [NET] state=CONNECTING
+20:25:35.320 < [NET] reconnect=FAILED
+20:25:35.320 < [NET] state=BACKOFF
+20:25:35.321 < [NET] retry=22 backoff_ms=50
+20:25:35.321 < [NET] state=CONNECTING
+20:25:35.321 < [NET] reconnect=FAILED
+20:25:35.321 < [NET] state=BACKOFF
+20:25:35.321 < [NET] retry=23 backoff_ms=50
+20:25:35.438 < [NET] state=CONNECTING
+20:25:35.438 < [NET] reconnect=FAILED
+20:25:35.438 < [NET] state=BACKOFF
+20:25:35.438 < [NET] retry=24 backoff_ms=50
+20:25:35.490 < [NET] state=CONNECTING
+20:25:35.491 < [NET] reconnect=FAILED
+20:25:35.491 < [NET] state=BACKOFF
+20:25:35.491 < [NET] retry=25 backoff_ms=50
+20:25:35.554 < [NET] state=CONNECTING
+20:25:35.555 < [NET] reconnect=FAILED
+20:25:35.555 < [NET] state=BACKOFF
+20:25:35.555 < [NET] retry=26 backoff_ms=50
+20:25:35.669 < [NET] state=CONNECTING
+20:25:35.669 < [NET] reconnect=FAILED
+20:25:35.670 < [NET] state=BACKOFF
+20:25:35.670 < [NET] retry=27 backoff_ms=50
+20:25:35.721 < [NET] state=CONNECTING
+20:25:35.722 < [NET] reconnect=FAILED
+20:25:35.722 < [NET] state=BACKOFF
+20:25:35.722 < [NET] retry=28 backoff_ms=50
+20:25:35.788 < [NET] state=CONNECTING
+20:25:35.788 < [NET] reconnect=FAILED
+20:25:35.788 < [NET] state=BACKOFF
+20:25:35.788 < [NET] retry=29 backoff_ms=50
+20:25:35.840 < [NET] state=CONNECTING
+20:25:35.840 < [NET] reconnect=FAILED
+20:25:35.840 < [NET] state=BACKOFF
+20:25:35.840 < [NET] retry=30 backoff_ms=50
+20:25:35.901 < [NET] state=CONNECTING
+20:25:35.903 > NET UP
+20:25:35.953 < [NET] reconnect=FAILED
+20:25:35.953 < [NET] state=BACKOFF
+20:25:35.954 < [NET] retry=31 backoff_ms=50
+20:25:35.954 < [NET] state=CONNECTING
+20:25:35.954 < [NET] reconnect=FAILED
+20:25:35.954 < [NET] state=BACKOFF
+20:25:35.954 < [NET] retry=32 backoff_ms=50
+20:25:36.337 < [FAULT] network restored
+20:25:36.337 < [NET] state=CONNECTING
+20:25:36.337 < [NET] state=CONNECTED
+20:25:36.337 < [NET] reconnect=SUCCESS
+20:25:36.337 < [BUFFER] flush_start count=0
+20:25:36.337 < [BUFFER] flush_end count=0
+20:25:39.905 > STATUS
+20:25:40.358 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":32,"heap":347884}
+20:25:40.906 > NET DOWN
+20:25:41.341 < [NET] state=DISCONNECTED
+20:25:41.342 < [NET] state=BACKOFF
+20:25:41.342 < [NET] retry=33 backoff_ms=500
+20:25:41.925 < [NET] state=CONNECTING
+20:25:41.926 < [NET] reconnect=FAILED
+20:25:41.926 < [NET] state=BACKOFF
+20:25:41.926 < [NET] retry=34 backoff_ms=50
+20:25:41.977 < [NET] state=CONNECTING
+20:25:41.977 < [NET] reconnect=FAILED
+20:25:41.977 < [NET] state=BACKOFF
+20:25:41.977 < [NET] retry=35 backoff_ms=50
+20:25:42.041 < [NET] state=CONNECTING
+20:25:42.041 < [NET] reconnect=FAILED
+20:25:42.041 < [NET] state=BACKOFF
+20:25:42.041 < [NET] retry=36 backoff_ms=50
+20:25:42.148 < [NET] state=CONNECTING
+20:25:42.148 < [NET] reconnect=FAILED
+20:25:42.148 < [NET] state=BACKOFF
+20:25:42.148 < [NET] retry=37 backoff_ms=50
+20:25:42.209 < [NET] state=CONNECTING
+20:25:42.209 < [NET] reconnect=FAILED
+20:25:42.210 < [NET] state=BACKOFF
+20:25:42.210 < [NET] retry=38 backoff_ms=50
+20:25:42.263 < [NET] state=CONNECTING
+20:25:42.263 < [NET] reconnect=FAILED
+20:25:42.263 < [NET] state=BACKOFF
+20:25:42.263 < [NET] retry=39 backoff_ms=50
+20:25:42.363 < [NET] state=CONNECTING
+20:25:42.364 < [NET] reconnect=FAILED
+20:25:42.364 < [NET] state=BACKOFF
+20:25:42.364 < [NET] retry=40 backoff_ms=50
+20:25:42.364 < [NET] state=CONNECTING
+20:25:42.364 < [NET] reconnect=FAILED
+20:25:42.429 < [NET] state=BACKOFF
+20:25:42.429 < [NET] retry=41 backoff_ms=50
+20:25:42.485 < [NET] state=CONNECTING
+20:25:42.486 < [NET] reconnect=FAILED
+20:25:42.486 < [NET] state=BACKOFF
+20:25:42.486 < [NET] retry=42 backoff_ms=50
+20:25:42.541 < [NET] state=CONNECTING
+20:25:42.542 < [NET] reconnect=FAILED
+20:25:42.542 < [NET] state=BACKOFF
+20:25:42.542 < [NET] retry=43 backoff_ms=50
+20:25:42.594 < [NET] state=CONNECTING
+20:25:42.594 < [NET] reconnect=FAILED
+20:25:42.594 < [NET] state=BACKOFF
+20:25:42.594 < [NET] retry=44 backoff_ms=50
+20:25:42.710 < [NET] state=CONNECTING
+20:25:42.710 < [NET] reconnect=FAILED
+20:25:42.710 < [NET] state=BACKOFF
+20:25:42.711 < [NET] retry=45 backoff_ms=50
+20:25:42.763 < [NET] state=CONNECTING
+20:25:42.763 < [NET] reconnect=FAILED
+20:25:42.763 < [NET] state=BACKOFF
+20:25:42.763 < [NET] retry=46 backoff_ms=50
+20:25:42.822 < [NET] state=CONNECTING
+20:25:42.822 < [NET] reconnect=FAILED
+20:25:42.822 < [NET] state=BACKOFF
+20:25:42.822 < [NET] retry=47 backoff_ms=50
+20:25:42.876 < [NET] state=CONNECTING
+20:25:42.876 < [NET] reconnect=FAILED
+20:25:42.876 < [NET] state=BACKOFF
+20:25:42.876 < [NET] retry=48 backoff_ms=50
+20:25:42.992 < [NET] state=CONNECTING
+20:25:42.992 < [NET] reconnect=FAILED
+20:25:42.992 < [NET] state=BACKOFF
+20:25:42.992 < [NET] retry=49 backoff_ms=50
+20:25:43.044 < [NET] state=CONNECTING
+20:25:43.044 < [NET] reconnect=FAILED
+20:25:43.044 < [NET] state=BACKOFF
+20:25:43.045 < [NET] retry=50 backoff_ms=50
+20:25:43.110 < [NET] state=CONNECTING
+20:25:43.110 < [NET] reconnect=FAILED
+20:25:43.110 < [NET] state=BACKOFF
+20:25:43.110 < [NET] retry=51 backoff_ms=50
+20:25:43.160 < [NET] state=CONNECTING
+20:25:43.227 < [NET] reconnect=FAILED
+20:25:43.227 < [NET] state=BACKOFF
+20:25:43.227 < [NET] retry=52 backoff_ms=50
+20:25:43.227 < [NET] state=CONNECTING
+20:25:43.228 < [NET] reconnect=FAILED
+20:25:43.228 < [NET] state=BACKOFF
+20:25:43.228 < [NET] retry=53 backoff_ms=50
+20:25:43.343 < [NET] state=CONNECTING
+20:25:43.343 < [NET] reconnect=FAILED
+20:25:43.343 < [NET] state=BACKOFF
+20:25:43.343 < [NET] retry=54 backoff_ms=50
+20:25:43.343 < [NET] state=CONNECTING
+20:25:43.343 < [NET] reconnect=FAILED
+20:25:43.394 < [NET] state=BACKOFF
+20:25:43.394 < [NET] retry=55 backoff_ms=50
+20:25:43.445 < [NET] state=CONNECTING
+20:25:43.445 < [NET] reconnect=FAILED
+20:25:43.445 < [NET] state=BACKOFF
+20:25:43.445 < [NET] retry=56 backoff_ms=50
+20:25:43.560 < [NET] state=CONNECTING
+20:25:43.560 < [NET] reconnect=FAILED
+20:25:43.561 < [NET] state=BACKOFF
+20:25:43.561 < [NET] retry=57 backoff_ms=50
+20:25:43.612 < [NET] state=CONNECTING
+20:25:43.612 < [NET] reconnect=FAILED
+20:25:43.612 < [NET] state=BACKOFF
+20:25:43.612 < [NET] retry=58 backoff_ms=50
+20:25:43.663 < [NET] state=CONNECTING
+20:25:43.663 < [NET] reconnect=FAILED
+20:25:43.663 < [NET] state=BACKOFF
+20:25:43.663 < [NET] retry=59 backoff_ms=50
+20:25:43.714 < [NET] state=CONNECTING
+20:25:43.714 < [NET] reconnect=FAILED
+20:25:43.771 < [NET] state=BACKOFF
+20:25:43.771 < [NET] retry=60 backoff_ms=50
+20:25:43.771 < [NET] state=CONNECTING
+20:25:43.771 < [NET] reconnect=FAILED
+20:25:43.771 < [NET] state=BACKOFF
+20:25:43.828 < [NET] retry=61 backoff_ms=50
+20:25:43.894 < [NET] state=CONNECTING
+20:25:43.894 < [NET] reconnect=FAILED
+20:25:43.894 < [NET] state=BACKOFF
+20:25:43.894 < [NET] retry=62 backoff_ms=50
+20:25:43.907 > NET UP
+20:25:43.959 < [NET] state=CONNECTING
+20:25:43.959 < [NET] reconnect=FAILED
+20:25:43.959 < [NET] state=BACKOFF
+20:25:43.959 < [NET] retry=63 backoff_ms=50
+20:25:44.276 < [FAULT] network restored
+20:25:44.276 < [NET] state=CONNECTING
+20:25:44.276 < [NET] state=CONNECTED
+20:25:44.276 < [NET] reconnect=SUCCESS
+20:25:44.276 < [BUFFER] flush_start count=0
+20:25:44.276 < [BUFFER] flush_end count=0
+20:25:47.908 > STATUS
+20:25:48.313 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":63,"heap":347884}
+20:25:48.909 > NET DOWN
+20:25:49.299 < [NET] state=DISCONNECTED
+20:25:49.299 < [NET] state=BACKOFF
+20:25:49.299 < [NET] retry=64 backoff_ms=500
+20:25:49.870 < [NET] state=CONNECTING
+20:25:49.870 < [NET] reconnect=FAILED
+20:25:49.870 < [NET] state=BACKOFF
+20:25:49.870 < [NET] retry=65 backoff_ms=50
+20:25:49.933 < [NET] state=CONNECTING
+20:25:49.933 < [NET] reconnect=FAILED
+20:25:49.933 < [NET] state=BACKOFF
+20:25:49.933 < [NET] retry=66 backoff_ms=50
+20:25:49.998 < [NET] state=CONNECTING
+20:25:49.998 < [NET] reconnect=FAILED
+20:25:49.998 < [NET] state=BACKOFF
+20:25:49.998 < [NET] retry=67 backoff_ms=50
+20:25:50.100 < [NET] state=CONNECTING
+20:25:50.100 < [NET] reconnect=FAILED
+20:25:50.100 < [NET] state=BACKOFF
+20:25:50.100 < [NET] retry=68 backoff_ms=50
+20:25:50.166 < [NET] state=CONNECTING
+20:25:50.166 < [NET] reconnect=FAILED
+20:25:50.166 < [NET] state=BACKOFF
+20:25:50.167 < [NET] retry=69 backoff_ms=50
+20:25:50.217 < [NET] state=CONNECTING
+20:25:50.218 < [NET] reconnect=FAILED
+20:25:50.218 < [NET] state=BACKOFF
+20:25:50.218 < [NET] retry=70 backoff_ms=50
+20:25:50.319 < [NET] state=CONNECTING
+20:25:50.319 < [NET] reconnect=FAILED
+20:25:50.319 < [NET] state=BACKOFF
+20:25:50.320 < [NET] retry=71 backoff_ms=50
+20:25:50.320 < [NET] state=CONNECTING
+20:25:50.320 < [NET] reconnect=FAILED
+20:25:50.320 < [NET] state=BACKOFF
+20:25:50.383 < [NET] retry=72 backoff_ms=50
+20:25:50.433 < [NET] state=CONNECTING
+20:25:50.433 < [NET] reconnect=FAILED
+20:25:50.434 < [NET] state=BACKOFF
+20:25:50.434 < [NET] retry=73 backoff_ms=50
+20:25:50.485 < [NET] state=CONNECTING
+20:25:50.535 < [NET] reconnect=FAILED
+20:25:50.536 < [NET] state=BACKOFF
+20:25:50.536 < [NET] retry=74 backoff_ms=50
+20:25:50.536 < [NET] state=CONNECTING
+20:25:50.536 < [NET] reconnect=FAILED
+20:25:50.536 < [NET] state=BACKOFF
+20:25:50.600 < [NET] retry=75 backoff_ms=50
+20:25:50.658 < [NET] state=CONNECTING
+20:25:50.659 < [NET] reconnect=FAILED
+20:25:50.659 < [NET] state=BACKOFF
+20:25:50.659 < [NET] retry=76 backoff_ms=50
+20:25:50.715 < [NET] state=CONNECTING
+20:25:50.715 < [NET] reconnect=FAILED
+20:25:50.715 < [NET] state=BACKOFF
+20:25:50.716 < [NET] retry=77 backoff_ms=50
+20:25:50.767 < [NET] state=CONNECTING
+20:25:50.767 < [NET] reconnect=FAILED
+20:25:50.767 < [NET] state=BACKOFF
+20:25:50.767 < [NET] retry=78 backoff_ms=50
+20:25:50.882 < [NET] state=CONNECTING
+20:25:50.882 < [NET] reconnect=FAILED
+20:25:50.882 < [NET] state=BACKOFF
+20:25:50.883 < [NET] retry=79 backoff_ms=50
+20:25:50.883 < [NET] state=CONNECTING
+20:25:50.883 < [NET] reconnect=FAILED
+20:25:50.948 < [NET] state=BACKOFF
+20:25:50.948 < [NET] retry=80 backoff_ms=50
+20:25:51.000 < [NET] state=CONNECTING
+20:25:51.000 < [NET] reconnect=FAILED
+20:25:51.000 < [NET] state=BACKOFF
+20:25:51.000 < [NET] retry=81 backoff_ms=50
+20:25:51.116 < [NET] state=CONNECTING
+20:25:51.116 < [NET] reconnect=FAILED
+20:25:51.116 < [NET] state=BACKOFF
+20:25:51.116 < [NET] retry=82 backoff_ms=50
+20:25:51.117 < [NET] state=CONNECTING
+20:25:51.117 < [NET] reconnect=FAILED
+20:25:51.117 < [NET] state=BACKOFF
+20:25:51.181 < [NET] retry=83 backoff_ms=50
+20:25:51.234 < [NET] state=CONNECTING
+20:25:51.234 < [NET] reconnect=FAILED
+20:25:51.234 < [NET] state=BACKOFF
+20:25:51.234 < [NET] retry=84 backoff_ms=50
+20:25:51.285 < [NET] state=CONNECTING
+20:25:51.285 < [NET] reconnect=FAILED
+20:25:51.285 < [NET] state=BACKOFF
+20:25:51.285 < [NET] retry=85 backoff_ms=50
+20:25:51.336 < [NET] state=CONNECTING
+20:25:51.336 < [NET] reconnect=FAILED
+20:25:51.336 < [NET] state=BACKOFF
+20:25:51.336 < [NET] retry=86 backoff_ms=50
+20:25:51.450 < [NET] state=CONNECTING
+20:25:51.450 < [NET] reconnect=FAILED
+20:25:51.450 < [NET] state=BACKOFF
+20:25:51.450 < [NET] retry=87 backoff_ms=50
+20:25:51.501 < [NET] state=CONNECTING
+20:25:51.501 < [NET] reconnect=FAILED
+20:25:51.501 < [NET] state=BACKOFF
+20:25:51.501 < [NET] retry=88 backoff_ms=50
+20:25:51.552 < [NET] state=CONNECTING
+20:25:51.553 < [NET] reconnect=FAILED
+20:25:51.553 < [NET] state=BACKOFF
+20:25:51.553 < [NET] retry=89 backoff_ms=50
+20:25:51.666 < [NET] state=CONNECTING
+20:25:51.667 < [NET] reconnect=FAILED
+20:25:51.667 < [NET] state=BACKOFF
+20:25:51.667 < [NET] retry=90 backoff_ms=50
+20:25:51.719 < [NET] state=CONNECTING
+20:25:51.719 < [NET] reconnect=FAILED
+20:25:51.719 < [NET] state=BACKOFF
+20:25:51.719 < [NET] retry=91 backoff_ms=50
+20:25:51.784 < [NET] state=CONNECTING
+20:25:51.784 < [NET] reconnect=FAILED
+20:25:51.784 < [NET] state=BACKOFF
+20:25:51.784 < [NET] retry=92 backoff_ms=50
+20:25:51.848 < [NET] state=CONNECTING
+20:25:51.849 < [NET] reconnect=FAILED
+20:25:51.849 < [NET] state=BACKOFF
+20:25:51.849 < [NET] retry=93 backoff_ms=50
+20:25:51.911 > NET UP
+20:25:51.955 < [NET] state=CONNECTING
+20:25:51.955 < [NET] reconnect=FAILED
+20:25:51.955 < [NET] state=BACKOFF
+20:25:51.956 < [NET] retry=94 backoff_ms=50
+20:25:52.017 < [NET] state=CONNECTING
+20:25:52.017 < [NET] reconnect=FAILED
+20:25:52.017 < [NET] state=BACKOFF
+20:25:52.017 < [NET] retry=95 backoff_ms=50
+20:25:52.321 < [FAULT] network restored
+20:25:52.321 < [NET] state=CONNECTING
+20:25:52.321 < [NET] state=CONNECTED
+20:25:52.384 < [NET] reconnect=SUCCESS
+20:25:52.384 < [BUFFER] flush_start count=0
+20:25:52.385 < [BUFFER] flush_end count=0
+20:25:55.911 > STATUS
+20:25:56.621 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":95,"heap":347884}
+20:25:56.913 > NET DOWN
+20:25:57.323 < [NET] state=DISCONNECTED
+20:25:57.323 < [NET] state=BACKOFF
+20:25:57.323 < [NET] retry=96 backoff_ms=500
+20:25:57.940 < [NET] state=CONNECTING
+20:25:57.940 < [NET] reconnect=FAILED
+20:25:57.940 < [NET] state=BACKOFF
+20:25:57.940 < [NET] retry=97 backoff_ms=50
+20:25:57.940 < [NET] state=CONNECTING
+20:25:57.992 < [NET] reconnect=FAILED
+20:25:58.055 < [NET] state=BACKOFF
+20:25:58.055 < [NET] retry=98 backoff_ms=50
+20:25:58.056 < [NET] state=CONNECTING
+20:25:58.056 < [NET] reconnect=FAILED
+20:25:58.056 < [NET] state=BACKOFF
+20:25:58.056 < [NET] retry=99 backoff_ms=50
+20:25:58.157 < [NET] state=CONNECTING
+20:25:58.157 < [NET] reconnect=FAILED
+20:25:58.157 < [NET] state=BACKOFF
+20:25:58.158 < [NET] retry=100 backoff_ms=50
+20:25:58.158 < [NET] state=CONNECTING
+20:25:58.158 < [NET] reconnect=FAILED
+20:25:58.158 < [NET] state=BACKOFF
+20:25:58.220 < [NET] retry=101 backoff_ms=50
+20:25:58.276 < [NET] state=CONNECTING
+20:25:58.276 < [NET] reconnect=FAILED
+20:25:58.276 < [NET] state=BACKOFF
+20:25:58.276 < [NET] retry=102 backoff_ms=50
+20:25:58.378 < [NET] state=CONNECTING
+20:25:58.378 < [NET] reconnect=FAILED
+20:25:58.378 < [NET] state=BACKOFF
+20:25:58.378 < [NET] retry=103 backoff_ms=50
+20:25:58.379 < [NET] state=CONNECTING
+20:25:58.379 < [NET] reconnect=FAILED
+20:25:58.379 < [NET] state=BACKOFF
+20:25:58.439 < [NET] retry=104 backoff_ms=50
+20:25:58.490 < [NET] state=CONNECTING
+20:25:58.490 < [NET] reconnect=FAILED
+20:25:58.491 < [NET] state=BACKOFF
+20:25:58.491 < [NET] retry=105 backoff_ms=50
+20:25:58.605 < [NET] state=CONNECTING
+20:25:58.606 < [NET] reconnect=FAILED
+20:25:58.606 < [NET] state=BACKOFF
+20:25:58.606 < [NET] retry=106 backoff_ms=50
+20:25:58.606 < [NET] state=CONNECTING
+20:25:58.606 < [NET] reconnect=FAILED
+20:25:58.606 < [NET] state=BACKOFF
+20:25:58.606 < [NET] retry=107 backoff_ms=50
+20:25:58.721 < [NET] state=CONNECTING
+20:25:58.721 < [NET] reconnect=FAILED
+20:25:58.721 < [NET] state=BACKOFF
+20:25:58.721 < [NET] retry=108 backoff_ms=50
+20:25:58.773 < [NET] state=CONNECTING
+20:25:58.773 < [NET] reconnect=FAILED
+20:25:58.773 < [NET] state=BACKOFF
+20:25:58.774 < [NET] retry=109 backoff_ms=50
+20:25:58.825 < [NET] state=CONNECTING
+20:25:58.826 < [NET] reconnect=FAILED
+20:25:58.826 < [NET] state=BACKOFF
+20:25:58.826 < [NET] retry=110 backoff_ms=50
+20:25:58.939 < [NET] state=CONNECTING
+20:25:58.939 < [NET] reconnect=FAILED
+20:25:58.939 < [NET] state=BACKOFF
+20:25:58.939 < [NET] retry=111 backoff_ms=50
+20:25:58.991 < [NET] state=CONNECTING
+20:25:58.991 < [NET] reconnect=FAILED
+20:25:58.991 < [NET] state=BACKOFF
+20:25:58.991 < [NET] retry=112 backoff_ms=50
+20:25:59.050 < [NET] state=CONNECTING
+20:25:59.050 < [NET] reconnect=FAILED
+20:25:59.050 < [NET] state=BACKOFF
+20:25:59.050 < [NET] retry=113 backoff_ms=50
+20:25:59.106 < [NET] state=CONNECTING
+20:25:59.106 < [NET] reconnect=FAILED
+20:25:59.106 < [NET] state=BACKOFF
+20:25:59.106 < [NET] retry=114 backoff_ms=50
+20:25:59.157 < [NET] state=CONNECTING
+20:25:59.272 < [NET] reconnect=FAILED
+20:25:59.272 < [NET] state=BACKOFF
+20:25:59.272 < [NET] retry=115 backoff_ms=50
+20:25:59.324 < [NET] state=CONNECTING
+20:25:59.324 < [NET] reconnect=FAILED
+20:25:59.324 < [NET] state=BACKOFF
+20:25:59.324 < [NET] retry=116 backoff_ms=50
+20:25:59.439 < [NET] state=CONNECTING
+20:25:59.439 < [NET] reconnect=FAILED
+20:25:59.439 < [NET] state=BACKOFF
+20:25:59.439 < [NET] retry=117 backoff_ms=50
+20:25:59.439 < [NET] state=CONNECTING
+20:25:59.440 < [NET] reconnect=FAILED
+20:25:59.491 < [NET] state=BACKOFF
+20:25:59.491 < [NET] retry=118 backoff_ms=50
+20:25:59.557 < [NET] state=CONNECTING
+20:25:59.557 < [NET] reconnect=FAILED
+20:25:59.557 < [NET] state=BACKOFF
+20:25:59.557 < [NET] retry=119 backoff_ms=50
+20:25:59.660 < [NET] state=CONNECTING
+20:25:59.660 < [NET] reconnect=FAILED
+20:25:59.660 < [NET] state=BACKOFF
+20:25:59.661 < [NET] retry=120 backoff_ms=50
+20:25:59.661 < [NET] state=CONNECTING
+20:25:59.661 < [NET] reconnect=FAILED
+20:25:59.724 < [NET] state=BACKOFF
+20:25:59.724 < [NET] retry=121 backoff_ms=50
+20:25:59.775 < [NET] state=CONNECTING
+20:25:59.775 < [NET] reconnect=FAILED
+20:25:59.776 < [NET] state=BACKOFF
+20:25:59.776 < [NET] retry=122 backoff_ms=50
+20:25:59.877 < [NET] state=CONNECTING
+20:25:59.877 < [NET] reconnect=FAILED
+20:25:59.877 < [NET] state=BACKOFF
+20:25:59.877 < [NET] retry=123 backoff_ms=50
+20:25:59.877 < [NET] state=CONNECTING
+20:25:59.878 < [NET] reconnect=FAILED
+20:25:59.914 > NET UP
+20:25:59.941 < [NET] state=BACKOFF
+20:25:59.941 < [NET] retry=124 backoff_ms=50
+20:25:59.992 < [NET] state=CONNECTING
+20:25:59.992 < [NET] reconnect=FAILED
+20:25:59.992 < [NET] state=BACKOFF
+20:25:59.992 < [NET] retry=125 backoff_ms=50
+20:26:00.358 < [FAULT] network restored
+20:26:00.359 < [NET] state=CONNECTING
+20:26:00.359 < [NET] state=CONNECTED
+20:26:00.359 < [NET] reconnect=SUCCESS
+20:26:00.359 < [BUFFER] flush_start count=0
+20:26:00.359 < [BUFFER] flush_end count=0
+20:26:03.916 > STATUS
+20:26:04.293 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":125,"heap":347884}
+20:26:04.916 > NET DOWN
+20:26:05.331 < [NET] state=DISCONNECTED
+20:26:05.331 < [NET] state=BACKOFF
+20:26:05.331 < [NET] retry=126 backoff_ms=500
+20:26:05.897 < [NET] state=CONNECTING
+20:26:05.897 < [NET] reconnect=FAILED
+20:26:05.897 < [NET] state=BACKOFF
+20:26:05.897 < [NET] retry=127 backoff_ms=50
+20:26:05.961 < [NET] state=CONNECTING
+20:26:05.962 < [NET] reconnect=FAILED
+20:26:05.962 < [NET] state=BACKOFF
+20:26:05.962 < [NET] retry=128 backoff_ms=50
+20:26:06.024 < [NET] state=CONNECTING
+20:26:06.025 < [NET] reconnect=FAILED
+20:26:06.025 < [NET] state=BACKOFF
+20:26:06.026 < [NET] retry=129 backoff_ms=50
+20:26:06.078 < [NET] state=CONNECTING
+20:26:06.078 < [NET] reconnect=FAILED
+20:26:06.078 < [NET] state=BACKOFF
+20:26:06.078 < [NET] retry=130 backoff_ms=50
+20:26:06.128 < [NET] state=CONNECTING
+20:26:06.129 < [NET] reconnect=FAILED
+20:26:06.129 < [NET] state=BACKOFF
+20:26:06.129 < [NET] retry=131 backoff_ms=50
+20:26:06.247 < [NET] state=CONNECTING
+20:26:06.247 < [NET] reconnect=FAILED
+20:26:06.247 < [NET] state=BACKOFF
+20:26:06.247 < [NET] retry=132 backoff_ms=50
+20:26:06.298 < [NET] state=CONNECTING
+20:26:06.298 < [NET] reconnect=FAILED
+20:26:06.299 < [NET] state=BACKOFF
+20:26:06.299 < [NET] retry=133 backoff_ms=50
+20:26:06.349 < [NET] state=CONNECTING
+20:26:06.349 < [NET] reconnect=FAILED
+20:26:06.349 < [NET] state=BACKOFF
+20:26:06.349 < [NET] retry=134 backoff_ms=50
+20:26:06.462 < [NET] state=CONNECTING
+20:26:06.462 < [NET] reconnect=FAILED
+20:26:06.462 < [NET] state=BACKOFF
+20:26:06.462 < [NET] retry=135 backoff_ms=50
+20:26:06.514 < [NET] state=CONNECTING
+20:26:06.514 < [NET] reconnect=FAILED
+20:26:06.514 < [NET] state=BACKOFF
+20:26:06.514 < [NET] retry=136 backoff_ms=50
+20:26:06.565 < [NET] state=CONNECTING
+20:26:06.566 < [NET] reconnect=FAILED
+20:26:06.566 < [NET] state=BACKOFF
+20:26:06.566 < [NET] retry=137 backoff_ms=50
+20:26:06.679 < [NET] state=CONNECTING
+20:26:06.679 < [NET] reconnect=FAILED
+20:26:06.679 < [NET] state=BACKOFF
+20:26:06.680 < [NET] retry=138 backoff_ms=50
+20:26:06.680 < [NET] state=CONNECTING
+20:26:06.731 < [NET] reconnect=FAILED
+20:26:06.731 < [NET] state=BACKOFF
+20:26:06.731 < [NET] retry=139 backoff_ms=50
+20:26:06.782 < [NET] state=CONNECTING
+20:26:06.782 < [NET] reconnect=FAILED
+20:26:06.782 < [NET] state=BACKOFF
+20:26:06.782 < [NET] retry=140 backoff_ms=50
+20:26:06.833 < [NET] state=CONNECTING
+20:26:06.884 < [NET] reconnect=FAILED
+20:26:06.884 < [NET] state=BACKOFF
+20:26:06.884 < [NET] retry=141 backoff_ms=50
+20:26:06.884 < [NET] state=CONNECTING
+20:26:06.884 < [NET] reconnect=FAILED
+20:26:06.945 < [NET] state=BACKOFF
+20:26:06.946 < [NET] retry=142 backoff_ms=50
+20:26:06.997 < [NET] state=CONNECTING
+20:26:06.997 < [NET] reconnect=FAILED
+20:26:06.997 < [NET] state=BACKOFF
+20:26:06.997 < [NET] retry=143 backoff_ms=50
+20:26:07.063 < [NET] state=CONNECTING
+20:26:07.063 < [NET] reconnect=FAILED
+20:26:07.064 < [NET] state=BACKOFF
+20:26:07.064 < [NET] retry=144 backoff_ms=50
+20:26:07.114 < [NET] state=CONNECTING
+20:26:07.115 < [NET] reconnect=FAILED
+20:26:07.115 < [NET] state=BACKOFF
+20:26:07.115 < [NET] retry=145 backoff_ms=50
+20:26:07.179 < [NET] state=CONNECTING
+20:26:07.179 < [NET] reconnect=FAILED
+20:26:07.179 < [NET] state=BACKOFF
+20:26:07.179 < [NET] retry=146 backoff_ms=50
+20:26:07.286 < [NET] state=CONNECTING
+20:26:07.287 < [NET] reconnect=FAILED
+20:26:07.287 < [NET] state=BACKOFF
+20:26:07.287 < [NET] retry=147 backoff_ms=50
+20:26:07.287 < [NET] state=CONNECTING
+20:26:07.287 < [NET] reconnect=FAILED
+20:26:07.287 < [NET] state=BACKOFF
+20:26:07.346 < [NET] retry=148 backoff_ms=50
+20:26:07.397 < [NET] state=CONNECTING
+20:26:07.397 < [NET] reconnect=FAILED
+20:26:07.398 < [NET] state=BACKOFF
+20:26:07.398 < [NET] retry=149 backoff_ms=50
+20:26:07.448 < [NET] state=CONNECTING
+20:26:07.513 < [NET] reconnect=FAILED
+20:26:07.513 < [NET] state=BACKOFF
+20:26:07.513 < [NET] retry=150 backoff_ms=50
+20:26:07.513 < [NET] state=CONNECTING
+20:26:07.513 < [NET] reconnect=FAILED
+20:26:07.513 < [NET] state=BACKOFF
+20:26:07.513 < [NET] retry=151 backoff_ms=50
+20:26:07.615 < [NET] state=CONNECTING
+20:26:07.615 < [NET] reconnect=FAILED
+20:26:07.615 < [NET] state=BACKOFF
+20:26:07.615 < [NET] retry=152 backoff_ms=50
+20:26:07.666 < [NET] state=CONNECTING
+20:26:07.666 < [NET] reconnect=FAILED
+20:26:07.666 < [NET] state=BACKOFF
+20:26:07.666 < [NET] retry=153 backoff_ms=50
+20:26:07.780 < [NET] state=CONNECTING
+20:26:07.780 < [NET] reconnect=FAILED
+20:26:07.780 < [NET] state=BACKOFF
+20:26:07.781 < [NET] retry=154 backoff_ms=50
+20:26:07.847 < [NET] state=CONNECTING
+20:26:07.847 < [NET] reconnect=FAILED
+20:26:07.847 < [NET] state=BACKOFF
+20:26:07.847 < [NET] retry=155 backoff_ms=50
+20:26:07.900 < [NET] state=CONNECTING
+20:26:07.900 < [NET] reconnect=FAILED
+20:26:07.900 < [NET] state=BACKOFF
+20:26:07.900 < [NET] retry=156 backoff_ms=50
+20:26:07.918 > NET UP
+20:26:07.963 < [NET] state=CONNECTING
+20:26:07.963 < [NET] reconnect=FAILED
+20:26:07.963 < [NET] state=BACKOFF
+20:26:07.963 < [NET] retry=157 backoff_ms=50
+20:26:08.331 < [FAULT] network restored
+20:26:08.332 < [NET] state=CONNECTING
+20:26:08.332 < [NET] state=CONNECTED
+20:26:08.332 < [NET] reconnect=SUCCESS
+20:26:08.332 < [BUFFER] flush_start count=0
+20:26:08.332 < [BUFFER] flush_end count=0
+20:26:11.919 > STATUS
+20:26:12.319 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":157,"heap":347884}
+20:26:12.920 > NET DOWN
+20:26:13.334 < [NET] state=DISCONNECTED
+20:26:13.335 < [NET] state=BACKOFF
+20:26:13.335 < [NET] retry=158 backoff_ms=500
+20:26:13.889 < [NET] state=CONNECTING
+20:26:13.889 < [NET] reconnect=FAILED
+20:26:13.889 < [NET] state=BACKOFF
+20:26:13.889 < [NET] retry=159 backoff_ms=50
+20:26:13.941 < [NET] state=CONNECTING
+20:26:13.941 < [NET] reconnect=FAILED
+20:26:13.941 < [NET] state=BACKOFF
+20:26:13.941 < [NET] retry=160 backoff_ms=50
+20:26:14.051 < [NET] state=CONNECTING
+20:26:14.051 < [NET] reconnect=FAILED
+20:26:14.052 < [NET] state=BACKOFF
+20:26:14.052 < [NET] retry=161 backoff_ms=50
+20:26:14.103 < [NET] state=CONNECTING
+20:26:14.103 < [NET] reconnect=FAILED
+20:26:14.103 < [NET] state=BACKOFF
+20:26:14.103 < [NET] retry=162 backoff_ms=50
+20:26:14.164 < [NET] state=CONNECTING
+20:26:14.164 < [NET] reconnect=FAILED
+20:26:14.164 < [NET] state=BACKOFF
+20:26:14.164 < [NET] retry=163 backoff_ms=50
+20:26:14.218 < [NET] state=CONNECTING
+20:26:14.218 < [NET] reconnect=FAILED
+20:26:14.218 < [NET] state=BACKOFF
+20:26:14.218 < [NET] retry=164 backoff_ms=50
+20:26:14.319 < [NET] state=CONNECTING
+20:26:14.320 < [NET] reconnect=FAILED
+20:26:14.320 < [NET] state=BACKOFF
+20:26:14.320 < [NET] retry=165 backoff_ms=50
+20:26:14.374 < [NET] state=CONNECTING
+20:26:14.375 < [NET] reconnect=FAILED
+20:26:14.375 < [NET] state=BACKOFF
+20:26:14.375 < [NET] retry=166 backoff_ms=50
+20:26:14.433 < [NET] state=CONNECTING
+20:26:14.434 < [NET] reconnect=FAILED
+20:26:14.434 < [NET] state=BACKOFF
+20:26:14.434 < [NET] retry=167 backoff_ms=50
+20:26:14.487 < [NET] state=CONNECTING
+20:26:14.543 < [NET] reconnect=FAILED
+20:26:14.543 < [NET] state=BACKOFF
+20:26:14.543 < [NET] retry=168 backoff_ms=50
+20:26:14.602 < [NET] state=CONNECTING
+20:26:14.602 < [NET] reconnect=FAILED
+20:26:14.602 < [NET] state=BACKOFF
+20:26:14.602 < [NET] retry=169 backoff_ms=50
+20:26:14.653 < [NET] state=CONNECTING
+20:26:14.654 < [NET] reconnect=FAILED
+20:26:14.654 < [NET] state=BACKOFF
+20:26:14.654 < [NET] retry=170 backoff_ms=50
+20:26:14.708 < [NET] state=CONNECTING
+20:26:14.769 < [NET] reconnect=FAILED
+20:26:14.769 < [NET] state=BACKOFF
+20:26:14.769 < [NET] retry=171 backoff_ms=50
+20:26:14.770 < [NET] state=CONNECTING
+20:26:14.770 < [NET] reconnect=FAILED
+20:26:14.770 < [NET] state=BACKOFF
+20:26:14.770 < [NET] retry=172 backoff_ms=50
+20:26:14.886 < [NET] state=CONNECTING
+20:26:14.886 < [NET] reconnect=FAILED
+20:26:14.886 < [NET] state=BACKOFF
+20:26:14.887 < [NET] retry=173 backoff_ms=50
+20:26:14.887 < [NET] state=CONNECTING
+20:26:14.887 < [NET] reconnect=FAILED
+20:26:14.989 < [NET] state=BACKOFF
+20:26:14.989 < [NET] retry=174 backoff_ms=50
+20:26:14.989 < [NET] state=CONNECTING
+20:26:14.989 < [NET] reconnect=FAILED
+20:26:14.989 < [NET] state=BACKOFF
+20:26:14.989 < [NET] retry=175 backoff_ms=50
+20:26:15.102 < [NET] state=CONNECTING
+20:26:15.102 < [NET] reconnect=FAILED
+20:26:15.102 < [NET] state=BACKOFF
+20:26:15.102 < [NET] retry=176 backoff_ms=50
+20:26:15.164 < [NET] state=CONNECTING
+20:26:15.164 < [NET] reconnect=FAILED
+20:26:15.164 < [NET] state=BACKOFF
+20:26:15.164 < [NET] retry=177 backoff_ms=50
+20:26:15.218 < [NET] state=CONNECTING
+20:26:15.218 < [NET] reconnect=FAILED
+20:26:15.218 < [NET] state=BACKOFF
+20:26:15.218 < [NET] retry=178 backoff_ms=50
+20:26:15.322 < [NET] state=CONNECTING
+20:26:15.323 < [NET] reconnect=FAILED
+20:26:15.323 < [NET] state=BACKOFF
+20:26:15.323 < [NET] retry=179 backoff_ms=50
+20:26:15.386 < [NET] state=CONNECTING
+20:26:15.386 < [NET] reconnect=FAILED
+20:26:15.386 < [NET] state=BACKOFF
+20:26:15.386 < [NET] retry=180 backoff_ms=50
+20:26:15.438 < [NET] state=CONNECTING
+20:26:15.438 < [NET] reconnect=FAILED
+20:26:15.438 < [NET] state=BACKOFF
+20:26:15.438 < [NET] retry=181 backoff_ms=50
+20:26:15.552 < [NET] state=CONNECTING
+20:26:15.552 < [NET] reconnect=FAILED
+20:26:15.552 < [NET] state=BACKOFF
+20:26:15.553 < [NET] retry=182 backoff_ms=50
+20:26:15.553 < [NET] state=CONNECTING
+20:26:15.554 < [NET] reconnect=FAILED
+20:26:15.618 < [NET] state=BACKOFF
+20:26:15.619 < [NET] retry=183 backoff_ms=50
+20:26:15.671 < [NET] state=CONNECTING
+20:26:15.671 < [NET] reconnect=FAILED
+20:26:15.671 < [NET] state=BACKOFF
+20:26:15.671 < [NET] retry=184 backoff_ms=50
+20:26:15.722 < [NET] state=CONNECTING
+20:26:15.786 < [NET] reconnect=FAILED
+20:26:15.786 < [NET] state=BACKOFF
+20:26:15.787 < [NET] retry=185 backoff_ms=50
+20:26:15.787 < [NET] state=CONNECTING
+20:26:15.787 < [NET] reconnect=FAILED
+20:26:15.787 < [NET] state=BACKOFF
+20:26:15.787 < [NET] retry=186 backoff_ms=50
+20:26:15.902 < [NET] state=CONNECTING
+20:26:15.903 < [NET] reconnect=FAILED
+20:26:15.903 < [NET] state=BACKOFF
+20:26:15.903 < [NET] retry=187 backoff_ms=50
+20:26:15.903 < [NET] state=CONNECTING
+20:26:15.921 > NET UP
+20:26:15.954 < [NET] reconnect=FAILED
+20:26:15.954 < [NET] state=BACKOFF
+20:26:15.954 < [NET] retry=188 backoff_ms=50
+20:26:16.322 < [FAULT] network restored
+20:26:16.322 < [NET] state=CONNECTING
+20:26:16.323 < [NET] state=CONNECTED
+20:26:16.323 < [NET] reconnect=SUCCESS
+20:26:16.323 < [BUFFER] flush_start count=0
+20:26:16.323 < [BUFFER] flush_end count=0
+20:26:19.922 > STATUS
+20:26:20.341 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":188,"heap":347884}
+20:26:20.923 > NET DOWN
+20:26:21.326 < [NET] state=DISCONNECTED
+20:26:21.326 < [NET] state=BACKOFF
+20:26:21.326 < [NET] retry=189 backoff_ms=500
+20:26:21.898 < [NET] state=CONNECTING
+20:26:21.898 < [NET] reconnect=FAILED
+20:26:21.898 < [NET] state=BACKOFF
+20:26:21.898 < [NET] retry=190 backoff_ms=50
+20:26:21.959 < [NET] state=CONNECTING
+20:26:21.959 < [NET] reconnect=FAILED
+20:26:21.959 < [NET] state=BACKOFF
+20:26:21.959 < [NET] retry=191 backoff_ms=50
+20:26:22.013 < [NET] state=CONNECTING
+20:26:22.013 < [NET] reconnect=FAILED
+20:26:22.013 < [NET] state=BACKOFF
+20:26:22.013 < [NET] retry=192 backoff_ms=50
+20:26:22.124 < [NET] state=CONNECTING
+20:26:22.125 < [NET] reconnect=FAILED
+20:26:22.125 < [NET] state=BACKOFF
+20:26:22.125 < [NET] retry=193 backoff_ms=50
+20:26:22.176 < [NET] state=CONNECTING
+20:26:22.176 < [NET] reconnect=FAILED
+20:26:22.177 < [NET] state=BACKOFF
+20:26:22.177 < [NET] retry=194 backoff_ms=50
+20:26:22.229 < [NET] state=CONNECTING
+20:26:22.229 < [NET] reconnect=FAILED
+20:26:22.229 < [NET] state=BACKOFF
+20:26:22.229 < [NET] retry=195 backoff_ms=50
+20:26:22.288 < [NET] state=CONNECTING
+20:26:22.289 < [NET] reconnect=FAILED
+20:26:22.289 < [NET] state=BACKOFF
+20:26:22.289 < [NET] retry=196 backoff_ms=50
+20:26:22.340 < [NET] state=CONNECTING
+20:26:22.340 < [NET] reconnect=FAILED
+20:26:22.340 < [NET] state=BACKOFF
+20:26:22.340 < [NET] retry=197 backoff_ms=50
+20:26:22.459 < [NET] state=CONNECTING
+20:26:22.459 < [NET] reconnect=FAILED
+20:26:22.459 < [NET] state=BACKOFF
+20:26:22.459 < [NET] retry=198 backoff_ms=50
+20:26:22.459 < [NET] state=CONNECTING
+20:26:22.511 < [NET] reconnect=FAILED
+20:26:22.511 < [NET] state=BACKOFF
+20:26:22.511 < [NET] retry=199 backoff_ms=50
+20:26:22.574 < [NET] state=CONNECTING
+20:26:22.574 < [NET] reconnect=FAILED
+20:26:22.574 < [NET] state=BACKOFF
+20:26:22.574 < [NET] retry=200 backoff_ms=50
+20:26:22.626 < [NET] state=CONNECTING
+20:26:22.626 < [NET] reconnect=FAILED
+20:26:22.626 < [NET] state=BACKOFF
+20:26:22.626 < [NET] retry=201 backoff_ms=50
+20:26:22.677 < [NET] state=CONNECTING
+20:26:22.677 < [NET] reconnect=FAILED
+20:26:22.743 < [NET] state=BACKOFF
+20:26:22.743 < [NET] retry=202 backoff_ms=50
+20:26:22.794 < [NET] state=CONNECTING
+20:26:22.794 < [NET] reconnect=FAILED
+20:26:22.794 < [NET] state=BACKOFF
+20:26:22.794 < [NET] retry=203 backoff_ms=50
+20:26:22.845 < [NET] state=CONNECTING
+20:26:22.845 < [NET] reconnect=FAILED
+20:26:22.845 < [NET] state=BACKOFF
+20:26:22.845 < [NET] retry=204 backoff_ms=50
+20:26:22.897 < [NET] state=CONNECTING
+20:26:22.897 < [NET] reconnect=FAILED
+20:26:22.897 < [NET] state=BACKOFF
+20:26:22.954 < [NET] retry=205 backoff_ms=50
+20:26:23.007 < [NET] state=CONNECTING
+20:26:23.007 < [NET] reconnect=FAILED
+20:26:23.007 < [NET] state=BACKOFF
+20:26:23.007 < [NET] retry=206 backoff_ms=50
+20:26:23.073 < [NET] state=CONNECTING
+20:26:23.073 < [NET] reconnect=FAILED
+20:26:23.073 < [NET] state=BACKOFF
+20:26:23.073 < [NET] retry=207 backoff_ms=50
+20:26:23.128 < [NET] state=CONNECTING
+20:26:23.128 < [NET] reconnect=FAILED
+20:26:23.128 < [NET] state=BACKOFF
+20:26:23.128 < [NET] retry=208 backoff_ms=50
+20:26:23.178 < [NET] state=CONNECTING
+20:26:23.178 < [NET] reconnect=FAILED
+20:26:23.178 < [NET] state=BACKOFF
+20:26:23.179 < [NET] retry=209 backoff_ms=50
+20:26:23.293 < [NET] state=CONNECTING
+20:26:23.293 < [NET] reconnect=FAILED
+20:26:23.293 < [NET] state=BACKOFF
+20:26:23.293 < [NET] retry=210 backoff_ms=50
+20:26:23.293 < [NET] state=CONNECTING
+20:26:23.293 < [NET] reconnect=FAILED
+20:26:23.293 < [NET] state=BACKOFF
+20:26:23.359 < [NET] retry=211 backoff_ms=50
+20:26:23.426 < [NET] state=CONNECTING
+20:26:23.426 < [NET] reconnect=FAILED
+20:26:23.426 < [NET] state=BACKOFF
+20:26:23.426 < [NET] retry=212 backoff_ms=50
+20:26:23.492 < [NET] state=CONNECTING
+20:26:23.492 < [NET] reconnect=FAILED
+20:26:23.492 < [NET] state=BACKOFF
+20:26:23.492 < [NET] retry=213 backoff_ms=50
+20:26:23.544 < [NET] state=CONNECTING
+20:26:23.544 < [NET] reconnect=FAILED
+20:26:23.545 < [NET] state=BACKOFF
+20:26:23.545 < [NET] retry=214 backoff_ms=50
+20:26:23.596 < [NET] state=CONNECTING
+20:26:23.596 < [NET] reconnect=FAILED
+20:26:23.596 < [NET] state=BACKOFF
+20:26:23.596 < [NET] retry=215 backoff_ms=50
+20:26:23.710 < [NET] state=CONNECTING
+20:26:23.710 < [NET] reconnect=FAILED
+20:26:23.710 < [NET] state=BACKOFF
+20:26:23.711 < [NET] retry=216 backoff_ms=50
+20:26:23.711 < [NET] state=CONNECTING
+20:26:23.776 < [NET] reconnect=FAILED
+20:26:23.777 < [NET] state=BACKOFF
+20:26:23.777 < [NET] retry=217 backoff_ms=50
+20:26:23.827 < [NET] state=CONNECTING
+20:26:23.828 < [NET] reconnect=FAILED
+20:26:23.828 < [NET] state=BACKOFF
+20:26:23.828 < [NET] retry=218 backoff_ms=50
+20:26:23.893 < [NET] state=CONNECTING
+20:26:23.894 < [NET] reconnect=FAILED
+20:26:23.894 < [NET] state=BACKOFF
+20:26:23.894 < [NET] retry=219 backoff_ms=50
+20:26:23.925 > NET UP
+20:26:23.958 < [NET] state=CONNECTING
+20:26:23.959 < [NET] reconnect=FAILED
+20:26:23.959 < [NET] state=BACKOFF
+20:26:23.959 < [NET] retry=220 backoff_ms=50
+20:26:24.313 < [FAULT] network restored
+20:26:24.313 < [NET] state=CONNECTING
+20:26:24.313 < [NET] state=CONNECTED
+20:26:24.313 < [NET] reconnect=SUCCESS
+20:26:24.313 < [BUFFER] flush_start count=0
+20:26:24.313 < [BUFFER] flush_end count=0
+20:26:27.926 > STATUS
+20:26:28.332 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":220,"heap":347884}
+20:26:28.927 > NET DOWN
+20:26:29.330 < [NET] state=DISCONNECTED
+20:26:29.331 < [NET] state=BACKOFF
+20:26:29.331 < [NET] retry=221 backoff_ms=500
+20:26:29.882 < [NET] state=CONNECTING
+20:26:29.882 < [NET] reconnect=FAILED
+20:26:29.882 < [NET] state=BACKOFF
+20:26:29.882 < [NET] retry=222 backoff_ms=50
+20:26:29.943 < [NET] state=CONNECTING
+20:26:29.944 < [NET] reconnect=FAILED
+20:26:29.994 < [NET] state=BACKOFF
+20:26:29.994 < [NET] retry=223 backoff_ms=50
+20:26:29.994 < [NET] state=CONNECTING
+20:26:29.994 < [NET] reconnect=FAILED
+20:26:29.994 < [NET] state=BACKOFF
+20:26:30.059 < [NET] retry=224 backoff_ms=50
+20:26:30.110 < [NET] state=CONNECTING
+20:26:30.165 < [NET] reconnect=FAILED
+20:26:30.165 < [NET] state=BACKOFF
+20:26:30.165 < [NET] retry=225 backoff_ms=50
+20:26:30.165 < [NET] state=CONNECTING
+20:26:30.165 < [NET] reconnect=FAILED
+20:26:30.165 < [NET] state=BACKOFF
+20:26:30.216 < [NET] retry=226 backoff_ms=50
+20:26:30.216 < [NET] state=CONNECTING
+20:26:30.216 < [NET] reconnect=FAILED
+20:26:30.216 < [NET] state=BACKOFF
+20:26:30.216 < [NET] retry=227 backoff_ms=50
+20:26:30.331 < [NET] state=CONNECTING
+20:26:30.332 < [NET] reconnect=FAILED
+20:26:30.332 < [NET] state=BACKOFF
+20:26:30.332 < [NET] retry=228 backoff_ms=50
+20:26:30.332 < [NET] state=CONNECTING
+20:26:30.332 < [NET] reconnect=FAILED
+20:26:30.332 < [NET] state=BACKOFF
+20:26:30.383 < [NET] retry=229 backoff_ms=50
+20:26:30.433 < [NET] state=CONNECTING
+20:26:30.433 < [NET] reconnect=FAILED
+20:26:30.433 < [NET] state=BACKOFF
+20:26:30.433 < [NET] retry=230 backoff_ms=50
+20:26:30.543 < [NET] state=CONNECTING
+20:26:30.544 < [NET] reconnect=FAILED
+20:26:30.544 < [NET] state=BACKOFF
+20:26:30.544 < [NET] retry=231 backoff_ms=50
+20:26:30.544 < [NET] state=CONNECTING
+20:26:30.544 < [NET] reconnect=FAILED
+20:26:30.544 < [NET] state=BACKOFF
+20:26:30.599 < [NET] retry=232 backoff_ms=50
+20:26:30.652 < [NET] state=CONNECTING
+20:26:30.652 < [NET] reconnect=FAILED
+20:26:30.652 < [NET] state=BACKOFF
+20:26:30.652 < [NET] retry=233 backoff_ms=50
+20:26:30.758 < [NET] state=CONNECTING
+20:26:30.759 < [NET] reconnect=FAILED
+20:26:30.759 < [NET] state=BACKOFF
+20:26:30.759 < [NET] retry=234 backoff_ms=50
+20:26:30.759 < [NET] state=CONNECTING
+20:26:30.816 < [NET] reconnect=FAILED
+20:26:30.816 < [NET] state=BACKOFF
+20:26:30.816 < [NET] retry=235 backoff_ms=50
+20:26:30.867 < [NET] state=CONNECTING
+20:26:30.867 < [NET] reconnect=FAILED
+20:26:30.867 < [NET] state=BACKOFF
+20:26:30.867 < [NET] retry=236 backoff_ms=50
+20:26:30.982 < [NET] state=CONNECTING
+20:26:30.983 < [NET] reconnect=FAILED
+20:26:30.983 < [NET] state=BACKOFF
+20:26:30.983 < [NET] retry=237 backoff_ms=50
+20:26:30.983 < [NET] state=CONNECTING
+20:26:30.983 < [NET] reconnect=FAILED
+20:26:30.983 < [NET] state=BACKOFF
+20:26:30.983 < [NET] retry=238 backoff_ms=50
+20:26:31.099 < [NET] state=CONNECTING
+20:26:31.099 < [NET] reconnect=FAILED
+20:26:31.099 < [NET] state=BACKOFF
+20:26:31.100 < [NET] retry=239 backoff_ms=50
+20:26:31.100 < [NET] state=CONNECTING
+20:26:31.151 < [NET] reconnect=FAILED
+20:26:31.151 < [NET] state=BACKOFF
+20:26:31.151 < [NET] retry=240 backoff_ms=50
+20:26:31.202 < [NET] state=CONNECTING
+20:26:31.202 < [NET] reconnect=FAILED
+20:26:31.203 < [NET] state=BACKOFF
+20:26:31.203 < [NET] retry=241 backoff_ms=50
+20:26:31.316 < [NET] state=CONNECTING
+20:26:31.316 < [NET] reconnect=FAILED
+20:26:31.316 < [NET] state=BACKOFF
+20:26:31.316 < [NET] retry=242 backoff_ms=50
+20:26:31.316 < [NET] state=CONNECTING
+20:26:31.368 < [NET] reconnect=FAILED
+20:26:31.368 < [NET] state=BACKOFF
+20:26:31.368 < [NET] retry=243 backoff_ms=50
+20:26:31.426 < [NET] state=CONNECTING
+20:26:31.426 < [NET] reconnect=FAILED
+20:26:31.426 < [NET] state=BACKOFF
+20:26:31.426 < [NET] retry=244 backoff_ms=50
+20:26:31.482 < [NET] state=CONNECTING
+20:26:31.482 < [NET] reconnect=FAILED
+20:26:31.482 < [NET] state=BACKOFF
+20:26:31.482 < [NET] retry=245 backoff_ms=50
+20:26:31.535 < [NET] state=CONNECTING
+20:26:31.535 < [NET] reconnect=FAILED
+20:26:31.600 < [NET] state=BACKOFF
+20:26:31.600 < [NET] retry=246 backoff_ms=50
+20:26:31.666 < [NET] state=CONNECTING
+20:26:31.666 < [NET] reconnect=FAILED
+20:26:31.666 < [NET] state=BACKOFF
+20:26:31.666 < [NET] retry=247 backoff_ms=50
+20:26:31.717 < [NET] state=CONNECTING
+20:26:31.717 < [NET] reconnect=FAILED
+20:26:31.718 < [NET] state=BACKOFF
+20:26:31.718 < [NET] retry=248 backoff_ms=50
+20:26:31.783 < [NET] state=CONNECTING
+20:26:31.783 < [NET] reconnect=FAILED
+20:26:31.783 < [NET] state=BACKOFF
+20:26:31.834 < [NET] retry=249 backoff_ms=50
+20:26:31.834 < [NET] state=CONNECTING
+20:26:31.834 < [NET] reconnect=FAILED
+20:26:31.834 < [NET] state=BACKOFF
+20:26:31.834 < [NET] retry=250 backoff_ms=50
+20:26:31.928 > NET UP
+20:26:31.943 < [NET] state=CONNECTING
+20:26:31.943 < [NET] reconnect=FAILED
+20:26:31.944 < [NET] state=BACKOFF
+20:26:31.944 < [NET] retry=251 backoff_ms=50
+20:26:31.944 < [NET] state=CONNECTING
+20:26:31.944 < [NET] reconnect=FAILED
+20:26:32.000 < [NET] state=BACKOFF
+20:26:32.000 < [NET] retry=252 backoff_ms=50
+20:26:32.316 < [FAULT] network restored
+20:26:32.316 < [NET] state=CONNECTING
+20:26:32.316 < [NET] state=CONNECTED
+20:26:32.316 < [NET] reconnect=SUCCESS
+20:26:32.316 < [BUFFER] flush_start count=0
+20:26:32.316 < [BUFFER] flush_end count=0
+20:26:35.929 > STATUS
+20:26:36.321 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":252,"heap":347884}
+20:26:36.930 > NET DOWN
+20:26:37.306 < [NET] state=DISCONNECTED
+20:26:37.306 < [NET] state=BACKOFF
+20:26:37.306 < [NET] retry=253 backoff_ms=500
+20:26:37.874 < [NET] state=CONNECTING
+20:26:37.875 < [NET] reconnect=FAILED
+20:26:37.875 < [NET] state=BACKOFF
+20:26:37.875 < [NET] retry=254 backoff_ms=50
+20:26:37.939 < [NET] state=CONNECTING
+20:26:37.939 < [NET] reconnect=FAILED
+20:26:37.993 < [NET] state=BACKOFF
+20:26:37.993 < [NET] retry=255 backoff_ms=50
+20:26:38.055 < [NET] state=CONNECTING
+20:26:38.055 < [NET] reconnect=FAILED
+20:26:38.055 < [NET] state=BACKOFF
+20:26:38.055 < [NET] retry=256 backoff_ms=50
+20:26:38.106 < [NET] state=CONNECTING
+20:26:38.106 < [NET] reconnect=FAILED
+20:26:38.106 < [NET] state=BACKOFF
+20:26:38.106 < [NET] retry=257 backoff_ms=50
+20:26:38.159 < [NET] state=CONNECTING
+20:26:38.159 < [NET] reconnect=FAILED
+20:26:38.159 < [NET] state=BACKOFF
+20:26:38.209 < [NET] retry=258 backoff_ms=50
+20:26:38.210 < [NET] state=CONNECTING
+20:26:38.210 < [NET] reconnect=FAILED
+20:26:38.210 < [NET] state=BACKOFF
+20:26:38.272 < [NET] retry=259 backoff_ms=50
+20:26:38.323 < [NET] state=CONNECTING
+20:26:38.323 < [NET] reconnect=FAILED
+20:26:38.323 < [NET] state=BACKOFF
+20:26:38.323 < [NET] retry=260 backoff_ms=50
+20:26:38.388 < [NET] state=CONNECTING
+20:26:38.388 < [NET] reconnect=FAILED
+20:26:38.388 < [NET] state=BACKOFF
+20:26:38.388 < [NET] retry=261 backoff_ms=50
+20:26:38.439 < [NET] state=CONNECTING
+20:26:38.439 < [NET] reconnect=FAILED
+20:26:38.439 < [NET] state=BACKOFF
+20:26:38.439 < [NET] retry=262 backoff_ms=50
+20:26:38.546 < [NET] state=CONNECTING
+20:26:38.546 < [NET] reconnect=FAILED
+20:26:38.546 < [NET] state=BACKOFF
+20:26:38.546 < [NET] retry=263 backoff_ms=50
+20:26:38.606 < [NET] state=CONNECTING
+20:26:38.606 < [NET] reconnect=FAILED
+20:26:38.606 < [NET] state=BACKOFF
+20:26:38.606 < [NET] retry=264 backoff_ms=50
+20:26:38.658 < [NET] state=CONNECTING
+20:26:38.658 < [NET] reconnect=FAILED
+20:26:38.658 < [NET] state=BACKOFF
+20:26:38.658 < [NET] retry=265 backoff_ms=50
+20:26:38.771 < [NET] state=CONNECTING
+20:26:38.772 < [NET] reconnect=FAILED
+20:26:38.772 < [NET] state=BACKOFF
+20:26:38.772 < [NET] retry=266 backoff_ms=50
+20:26:38.823 < [NET] state=CONNECTING
+20:26:38.823 < [NET] reconnect=FAILED
+20:26:38.823 < [NET] state=BACKOFF
+20:26:38.823 < [NET] retry=267 backoff_ms=50
+20:26:38.875 < [NET] state=CONNECTING
+20:26:38.875 < [NET] reconnect=FAILED
+20:26:38.875 < [NET] state=BACKOFF
+20:26:38.875 < [NET] retry=268 backoff_ms=50
+20:26:38.988 < [NET] state=CONNECTING
+20:26:38.988 < [NET] reconnect=FAILED
+20:26:38.988 < [NET] state=BACKOFF
+20:26:38.988 < [NET] retry=269 backoff_ms=50
+20:26:39.040 < [NET] state=CONNECTING
+20:26:39.040 < [NET] reconnect=FAILED
+20:26:39.040 < [NET] state=BACKOFF
+20:26:39.040 < [NET] retry=270 backoff_ms=50
+20:26:39.105 < [NET] state=CONNECTING
+20:26:39.105 < [NET] reconnect=FAILED
+20:26:39.105 < [NET] state=BACKOFF
+20:26:39.105 < [NET] retry=271 backoff_ms=50
+20:26:39.156 < [NET] state=CONNECTING
+20:26:39.156 < [NET] reconnect=FAILED
+20:26:39.156 < [NET] state=BACKOFF
+20:26:39.221 < [NET] retry=272 backoff_ms=50
+20:26:39.221 < [NET] state=CONNECTING
+20:26:39.221 < [NET] reconnect=FAILED
+20:26:39.221 < [NET] state=BACKOFF
+20:26:39.221 < [NET] retry=273 backoff_ms=50
+20:26:39.322 < [NET] state=CONNECTING
+20:26:39.323 < [NET] reconnect=FAILED
+20:26:39.323 < [NET] state=BACKOFF
+20:26:39.323 < [NET] retry=274 backoff_ms=50
+20:26:39.377 < [NET] state=CONNECTING
+20:26:39.377 < [NET] reconnect=FAILED
+20:26:39.377 < [NET] state=BACKOFF
+20:26:39.377 < [NET] retry=275 backoff_ms=50
+20:26:39.440 < [NET] state=CONNECTING
+20:26:39.440 < [NET] reconnect=FAILED
+20:26:39.440 < [NET] state=BACKOFF
+20:26:39.441 < [NET] retry=276 backoff_ms=50
+20:26:39.542 < [NET] state=CONNECTING
+20:26:39.543 < [NET] reconnect=FAILED
+20:26:39.543 < [NET] state=BACKOFF
+20:26:39.543 < [NET] retry=277 backoff_ms=50
+20:26:39.543 < [NET] state=CONNECTING
+20:26:39.543 < [NET] reconnect=FAILED
+20:26:39.594 < [NET] state=BACKOFF
+20:26:39.594 < [NET] retry=278 backoff_ms=50
+20:26:39.657 < [NET] state=CONNECTING
+20:26:39.657 < [NET] reconnect=FAILED
+20:26:39.658 < [NET] state=BACKOFF
+20:26:39.658 < [NET] retry=279 backoff_ms=50
+20:26:39.708 < [NET] state=CONNECTING
+20:26:39.708 < [NET] reconnect=FAILED
+20:26:39.773 < [NET] state=BACKOFF
+20:26:39.773 < [NET] retry=280 backoff_ms=50
+20:26:39.774 < [NET] state=CONNECTING
+20:26:39.774 < [NET] reconnect=FAILED
+20:26:39.774 < [NET] state=BACKOFF
+20:26:39.832 < [NET] retry=281 backoff_ms=50
+20:26:39.891 < [NET] state=CONNECTING
+20:26:39.891 < [NET] reconnect=FAILED
+20:26:39.891 < [NET] state=BACKOFF
+20:26:39.891 < [NET] retry=282 backoff_ms=50
+20:26:39.931 > NET UP
+20:26:39.944 < [NET] state=CONNECTING
+20:26:39.945 < [NET] reconnect=FAILED
+20:26:39.945 < [NET] state=BACKOFF
+20:26:39.945 < [NET] retry=283 backoff_ms=50
+20:26:40.008 < [NET] state=CONNECTING
+20:26:40.008 < [NET] reconnect=FAILED
+20:26:40.008 < [NET] state=BACKOFF
+20:26:40.008 < [NET] retry=284 backoff_ms=50
+20:26:40.367 < [FAULT] network restored
+20:26:40.368 < [NET] state=CONNECTING
+20:26:40.368 < [NET] state=CONNECTED
+20:26:40.368 < [NET] reconnect=SUCCESS
+20:26:40.368 < [BUFFER] flush_start count=0
+20:26:40.368 < [BUFFER] flush_end count=0
+20:26:43.932 > STATUS
+20:26:44.360 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":284,"heap":347884}
+20:26:44.933 > NET DOWN
+20:26:45.308 < [NET] state=DISCONNECTED
+20:26:45.308 < [NET] state=BACKOFF
+20:26:45.308 < [NET] retry=285 backoff_ms=500
+20:26:45.903 < [NET] state=CONNECTING
+20:26:45.903 < [NET] reconnect=FAILED
+20:26:45.904 < [NET] state=BACKOFF
+20:26:45.904 < [NET] retry=286 backoff_ms=50
+20:26:45.962 < [NET] state=CONNECTING
+20:26:45.962 < [NET] reconnect=FAILED
+20:26:45.962 < [NET] state=BACKOFF
+20:26:45.963 < [NET] retry=287 backoff_ms=50
+20:26:46.026 < [NET] state=CONNECTING
+20:26:46.027 < [NET] reconnect=FAILED
+20:26:46.027 < [NET] state=BACKOFF
+20:26:46.027 < [NET] retry=288 backoff_ms=50
+20:26:46.077 < [NET] state=CONNECTING
+20:26:46.078 < [NET] reconnect=FAILED
+20:26:46.078 < [NET] state=BACKOFF
+20:26:46.078 < [NET] retry=289 backoff_ms=50
+20:26:46.129 < [NET] state=CONNECTING
+20:26:46.129 < [NET] reconnect=FAILED
+20:26:46.129 < [NET] state=BACKOFF
+20:26:46.129 < [NET] retry=290 backoff_ms=50
+20:26:46.246 < [NET] state=CONNECTING
+20:26:46.246 < [NET] reconnect=FAILED
+20:26:46.246 < [NET] state=BACKOFF
+20:26:46.246 < [NET] retry=291 backoff_ms=50
+20:26:46.301 < [NET] state=CONNECTING
+20:26:46.301 < [NET] reconnect=FAILED
+20:26:46.301 < [NET] state=BACKOFF
+20:26:46.301 < [NET] retry=292 backoff_ms=50
+20:26:46.360 < [NET] state=CONNECTING
+20:26:46.361 < [NET] reconnect=FAILED
+20:26:46.361 < [NET] state=BACKOFF
+20:26:46.361 < [NET] retry=293 backoff_ms=50
+20:26:46.426 < [NET] state=CONNECTING
+20:26:46.426 < [NET] reconnect=FAILED
+20:26:46.426 < [NET] state=BACKOFF
+20:26:46.490 < [NET] retry=294 backoff_ms=50
+20:26:46.490 < [NET] state=CONNECTING
+20:26:46.490 < [NET] reconnect=FAILED
+20:26:46.490 < [NET] state=BACKOFF
+20:26:46.490 < [NET] retry=295 backoff_ms=50
+20:26:46.490 < [NET] state=CONNECTING
+20:26:46.490 < [NET] reconnect=FAILED
+20:26:46.490 < [NET] state=BACKOFF
+20:26:46.491 < [NET] retry=296 backoff_ms=50
+20:26:46.545 < [NET] state=CONNECTING
+20:26:46.545 < [NET] reconnect=FAILED
+20:26:46.546 < [NET] state=BACKOFF
+20:26:46.546 < [NET] retry=297 backoff_ms=50
+20:26:46.612 < [NET] state=CONNECTING
+20:26:46.612 < [NET] reconnect=FAILED
+20:26:46.613 < [NET] state=BACKOFF
+20:26:46.613 < [NET] retry=298 backoff_ms=50
+20:26:46.672 < [NET] state=CONNECTING
+20:26:46.672 < [NET] reconnect=FAILED
+20:26:46.672 < [NET] state=BACKOFF
+20:26:46.672 < [NET] retry=299 backoff_ms=50
+20:26:46.730 < [NET] state=CONNECTING
+20:26:46.730 < [NET] reconnect=FAILED
+20:26:46.730 < [NET] state=BACKOFF
+20:26:46.730 < [NET] retry=300 backoff_ms=50
+20:26:46.785 < [NET] state=CONNECTING
+20:26:46.785 < [NET] reconnect=FAILED
+20:26:46.785 < [NET] state=BACKOFF
+20:26:46.785 < [NET] retry=301 backoff_ms=50
+20:26:46.844 < [NET] state=CONNECTING
+20:26:46.845 < [NET] reconnect=FAILED
+20:26:46.845 < [NET] state=BACKOFF
+20:26:46.845 < [NET] retry=302 backoff_ms=50
+20:26:46.897 < [NET] state=CONNECTING
+20:26:46.897 < [NET] reconnect=FAILED
+20:26:46.897 < [NET] state=BACKOFF
+20:26:46.897 < [NET] retry=303 backoff_ms=50
+20:26:46.897 < [NET] state=CONNECTING
+20:26:46.897 < [NET] reconnect=FAILED
+20:26:46.897 < [NET] state=BACKOFF
+20:26:46.949 < [NET] retry=304 backoff_ms=50
+20:26:46.950 < [NET] state=CONNECTING
+20:26:47.000 < [NET] reconnect=FAILED
+20:26:47.000 < [NET] state=BACKOFF
+20:26:47.001 < [NET] retry=305 backoff_ms=50
+20:26:47.001 < [NET] state=CONNECTING
+20:26:47.052 < [NET] reconnect=FAILED
+20:26:47.052 < [NET] state=BACKOFF
+20:26:47.052 < [NET] retry=306 backoff_ms=50
+20:26:47.053 < [NET] state=CONNECTING
+20:26:47.053 < [NET] reconnect=FAILED
+20:26:47.053 < [NET] state=BACKOFF
+20:26:47.053 < [NET] retry=307 backoff_ms=50
+20:26:47.110 < [NET] state=CONNECTING
+20:26:47.111 < [NET] reconnect=FAILED
+20:26:47.162 < [NET] state=BACKOFF
+20:26:47.162 < [NET] retry=308 backoff_ms=50
+20:26:47.213 < [NET] state=CONNECTING
+20:26:47.213 < [NET] reconnect=FAILED
+20:26:47.213 < [NET] state=BACKOFF
+20:26:47.213 < [NET] retry=309 backoff_ms=50
+20:26:47.272 < [NET] state=CONNECTING
+20:26:47.273 < [NET] reconnect=FAILED
+20:26:47.273 < [NET] state=BACKOFF
+20:26:47.274 < [NET] retry=310 backoff_ms=50
+20:26:47.327 < [NET] state=CONNECTING
+20:26:47.327 < [NET] reconnect=FAILED
+20:26:47.327 < [NET] state=BACKOFF
+20:26:47.327 < [NET] retry=311 backoff_ms=50
+20:26:47.390 < [NET] state=CONNECTING
+20:26:47.390 < [NET] reconnect=FAILED
+20:26:47.391 < [NET] state=BACKOFF
+20:26:47.391 < [NET] retry=312 backoff_ms=50
+20:26:47.447 < [NET] state=CONNECTING
+20:26:47.447 < [NET] reconnect=FAILED
+20:26:47.447 < [NET] state=BACKOFF
+20:26:47.447 < [NET] retry=313 backoff_ms=50
+20:26:47.508 < [NET] state=CONNECTING
+20:26:47.508 < [NET] reconnect=FAILED
+20:26:47.508 < [NET] state=BACKOFF
+20:26:47.509 < [NET] retry=314 backoff_ms=50
+20:26:47.509 < [NET] state=CONNECTING
+20:26:47.559 < [NET] reconnect=FAILED
+20:26:47.559 < [NET] state=BACKOFF
+20:26:47.560 < [NET] retry=315 backoff_ms=50
+20:26:47.560 < [NET] state=CONNECTING
+20:26:47.560 < [NET] reconnect=FAILED
+20:26:47.560 < [NET] state=BACKOFF
+20:26:47.624 < [NET] retry=316 backoff_ms=50
+20:26:47.624 < [NET] state=CONNECTING
+20:26:47.624 < [NET] reconnect=FAILED
+20:26:47.625 < [NET] state=BACKOFF
+20:26:47.625 < [NET] retry=317 backoff_ms=50
+20:26:47.678 < [NET] state=CONNECTING
+20:26:47.678 < [NET] reconnect=FAILED
+20:26:47.679 < [NET] state=BACKOFF
+20:26:47.679 < [NET] retry=318 backoff_ms=50
+20:26:47.736 < [NET] state=CONNECTING
+20:26:47.737 < [NET] reconnect=FAILED
+20:26:47.737 < [NET] state=BACKOFF
+20:26:47.737 < [NET] retry=319 backoff_ms=50
+20:26:47.797 < [NET] state=CONNECTING
+20:26:47.797 < [NET] reconnect=FAILED
+20:26:47.797 < [NET] state=BACKOFF
+20:26:47.797 < [NET] retry=320 backoff_ms=50
+20:26:47.857 < [NET] state=CONNECTING
+20:26:47.857 < [NET] reconnect=FAILED
+20:26:47.857 < [NET] state=BACKOFF
+20:26:47.857 < [NET] retry=321 backoff_ms=50
+20:26:47.914 < [NET] state=CONNECTING
+20:26:47.914 < [NET] reconnect=FAILED
+20:26:47.914 < [NET] state=BACKOFF
+20:26:47.914 < [NET] retry=322 backoff_ms=50
+20:26:47.935 > NET UP
+20:26:47.978 < [NET] state=CONNECTING
+20:26:47.978 < [NET] reconnect=FAILED
+20:26:47.978 < [NET] state=BACKOFF
+20:26:47.978 < [NET] retry=323 backoff_ms=50
+20:26:48.096 < [FAULT] network restored
+20:26:48.096 < [NET] state=CONNECTING
+20:26:48.096 < [NET] state=CONNECTED
+20:26:48.096 < [NET] reconnect=SUCCESS
+20:26:48.096 < [BUFFER] flush_start count=0
+20:26:48.096 < [BUFFER] flush_end count=0
+20:26:51.937 > STATUS
+20:26:51.999 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":323,"heap":347884}
+20:26:52.938 > NET DOWN
+20:26:53.001 < [NET] state=DISCONNECTED
+20:26:53.001 < [NET] state=BACKOFF
+20:26:53.001 < [NET] retry=324 backoff_ms=500
+20:26:53.517 < [NET] state=CONNECTING
+20:26:53.517 < [NET] reconnect=FAILED
+20:26:53.517 < [NET] state=BACKOFF
+20:26:53.517 < [NET] retry=325 backoff_ms=50
+20:26:53.567 < [NET] state=CONNECTING
+20:26:53.568 < [NET] reconnect=FAILED
+20:26:53.568 < [NET] state=BACKOFF
+20:26:53.568 < [NET] retry=326 backoff_ms=50
+20:26:53.620 < [NET] state=CONNECTING
+20:26:53.631 < [NET] reconnect=FAILED
+20:26:53.631 < [NET] state=BACKOFF
+20:26:53.631 < [NET] retry=327 backoff_ms=50
+20:26:53.684 < [NET] state=CONNECTING
+20:26:53.685 < [NET] reconnect=FAILED
+20:26:53.686 < [NET] state=BACKOFF
+20:26:53.686 < [NET] retry=328 backoff_ms=50
+20:26:53.736 < [NET] state=CONNECTING
+20:26:53.736 < [NET] reconnect=FAILED
+20:26:53.736 < [NET] state=BACKOFF
+20:26:53.736 < [NET] retry=329 backoff_ms=50
+20:26:53.736 < [NET] state=CONNECTING
+20:26:53.799 < [NET] reconnect=FAILED
+20:26:53.799 < [NET] state=BACKOFF
+20:26:53.799 < [NET] retry=330 backoff_ms=50
+20:26:53.852 < [NET] state=CONNECTING
+20:26:53.852 < [NET] reconnect=FAILED
+20:26:53.852 < [NET] state=BACKOFF
+20:26:53.852 < [NET] retry=331 backoff_ms=50
+20:26:53.903 < [NET] state=CONNECTING
+20:26:53.903 < [NET] reconnect=FAILED
+20:26:53.903 < [NET] state=BACKOFF
+20:26:53.903 < [NET] retry=332 backoff_ms=50
+20:26:53.904 < [NET] state=CONNECTING
+20:26:53.904 < [NET] reconnect=FAILED
+20:26:53.966 < [NET] state=BACKOFF
+20:26:53.966 < [NET] retry=333 backoff_ms=50
+20:26:53.966 < [NET] state=CONNECTING
+20:26:54.018 < [NET] reconnect=FAILED
+20:26:54.018 < [NET] state=BACKOFF
+20:26:54.019 < [NET] retry=334 backoff_ms=50
+20:26:54.069 < [NET] state=CONNECTING
+20:26:54.070 < [NET] reconnect=FAILED
+20:26:54.070 < [NET] state=BACKOFF
+20:26:54.070 < [NET] retry=335 backoff_ms=50
+20:26:54.070 < [NET] state=CONNECTING
+20:26:54.070 < [NET] reconnect=FAILED
+20:26:54.120 < [NET] state=BACKOFF
+20:26:54.121 < [NET] retry=336 backoff_ms=50
+20:26:54.185 < [NET] state=CONNECTING
+20:26:54.185 < [NET] reconnect=FAILED
+20:26:54.185 < [NET] state=BACKOFF
+20:26:54.186 < [NET] retry=337 backoff_ms=50
+20:26:54.237 < [NET] state=CONNECTING
+20:26:54.237 < [NET] reconnect=FAILED
+20:26:54.237 < [NET] state=BACKOFF
+20:26:54.238 < [NET] retry=338 backoff_ms=50
+20:26:54.288 < [NET] state=CONNECTING
+20:26:54.288 < [NET] reconnect=FAILED
+20:26:54.289 < [NET] state=BACKOFF
+20:26:54.289 < [NET] retry=339 backoff_ms=50
+20:26:54.349 < [NET] state=CONNECTING
+20:26:54.349 < [NET] reconnect=FAILED
+20:26:54.349 < [NET] state=BACKOFF
+20:26:54.349 < [NET] retry=340 backoff_ms=50
+20:26:54.402 < [NET] state=CONNECTING
+20:26:54.402 < [NET] reconnect=FAILED
+20:26:54.402 < [NET] state=BACKOFF
+20:26:54.402 < [NET] retry=341 backoff_ms=50
+20:26:54.453 < [NET] state=CONNECTING
+20:26:54.453 < [NET] reconnect=FAILED
+20:26:54.453 < [NET] state=BACKOFF
+20:26:54.453 < [NET] retry=342 backoff_ms=50
+20:26:54.516 < [NET] state=CONNECTING
+20:26:54.516 < [NET] reconnect=FAILED
+20:26:54.516 < [NET] state=BACKOFF
+20:26:54.517 < [NET] retry=343 backoff_ms=50
+20:26:54.517 < [NET] state=CONNECTING
+20:26:54.568 < [NET] reconnect=FAILED
+20:26:54.569 < [NET] state=BACKOFF
+20:26:54.569 < [NET] retry=344 backoff_ms=50
+20:26:54.619 < [NET] state=CONNECTING
+20:26:54.620 < [NET] reconnect=FAILED
+20:26:54.620 < [NET] state=BACKOFF
+20:26:54.620 < [NET] retry=345 backoff_ms=50
+20:26:54.620 < [NET] state=CONNECTING
+20:26:54.685 < [NET] reconnect=FAILED
+20:26:54.685 < [NET] state=BACKOFF
+20:26:54.685 < [NET] retry=346 backoff_ms=50
+20:26:54.751 < [NET] state=CONNECTING
+20:26:54.751 < [NET] reconnect=FAILED
+20:26:54.808 < [NET] state=BACKOFF
+20:26:54.808 < [NET] retry=347 backoff_ms=50
+20:26:54.808 < [NET] state=CONNECTING
+20:26:54.808 < [NET] reconnect=FAILED
+20:26:54.808 < [NET] state=BACKOFF
+20:26:54.808 < [NET] retry=348 backoff_ms=50
+20:26:54.868 < [NET] state=CONNECTING
+20:26:54.868 < [NET] reconnect=FAILED
+20:26:54.868 < [NET] state=BACKOFF
+20:26:54.868 < [NET] retry=349 backoff_ms=50
+20:26:54.920 < [NET] state=CONNECTING
+20:26:54.921 < [NET] reconnect=FAILED
+20:26:54.921 < [NET] state=BACKOFF
+20:26:54.921 < [NET] retry=350 backoff_ms=50
+20:26:54.985 < [NET] state=CONNECTING
+20:26:54.985 < [NET] reconnect=FAILED
+20:26:54.986 < [NET] state=BACKOFF
+20:26:54.986 < [NET] retry=351 backoff_ms=50
+20:26:55.037 < [NET] state=CONNECTING
+20:26:55.038 < [NET] reconnect=FAILED
+20:26:55.038 < [NET] state=BACKOFF
+20:26:55.038 < [NET] retry=352 backoff_ms=50
+20:26:55.099 < [NET] state=CONNECTING
+20:26:55.099 < [NET] reconnect=FAILED
+20:26:55.100 < [NET] state=BACKOFF
+20:26:55.100 < [NET] retry=353 backoff_ms=50
+20:26:55.100 < [NET] state=CONNECTING
+20:26:55.153 < [NET] reconnect=FAILED
+20:26:55.153 < [NET] state=BACKOFF
+20:26:55.153 < [NET] retry=354 backoff_ms=50
+20:26:55.204 < [NET] state=CONNECTING
+20:26:55.204 < [NET] reconnect=FAILED
+20:26:55.204 < [NET] state=BACKOFF
+20:26:55.205 < [NET] retry=355 backoff_ms=50
+20:26:55.255 < [NET] state=CONNECTING
+20:26:55.255 < [NET] reconnect=FAILED
+20:26:55.255 < [NET] state=BACKOFF
+20:26:55.256 < [NET] retry=356 backoff_ms=50
+20:26:55.256 < [NET] state=CONNECTING
+20:26:55.317 < [NET] reconnect=FAILED
+20:26:55.318 < [NET] state=BACKOFF
+20:26:55.318 < [NET] retry=357 backoff_ms=50
+20:26:55.368 < [NET] state=CONNECTING
+20:26:55.368 < [NET] reconnect=FAILED
+20:26:55.368 < [NET] state=BACKOFF
+20:26:55.369 < [NET] retry=358 backoff_ms=50
+20:26:55.419 < [NET] state=CONNECTING
+20:26:55.419 < [NET] reconnect=FAILED
+20:26:55.420 < [NET] state=BACKOFF
+20:26:55.420 < [NET] retry=359 backoff_ms=50
+20:26:55.471 < [NET] state=CONNECTING
+20:26:55.472 < [NET] reconnect=FAILED
+20:26:55.472 < [NET] state=BACKOFF
+20:26:55.472 < [NET] retry=360 backoff_ms=50
+20:26:55.535 < [NET] state=CONNECTING
+20:26:55.535 < [NET] reconnect=FAILED
+20:26:55.535 < [NET] state=BACKOFF
+20:26:55.535 < [NET] retry=361 backoff_ms=50
+20:26:55.587 < [NET] state=CONNECTING
+20:26:55.587 < [NET] reconnect=FAILED
+20:26:55.588 < [NET] state=BACKOFF
+20:26:55.588 < [NET] retry=362 backoff_ms=50
+20:26:55.648 < [NET] state=CONNECTING
+20:26:55.648 < [NET] reconnect=FAILED
+20:26:55.648 < [NET] state=BACKOFF
+20:26:55.649 < [NET] retry=363 backoff_ms=50
+20:26:55.834 < [NET] state=CONNECTING
+20:26:55.834 < [NET] reconnect=FAILED
+20:26:55.835 < [NET] state=BACKOFF
+20:26:55.835 < [NET] retry=364 backoff_ms=50
+20:26:55.835 < [NET] state=CONNECTING
+20:26:55.835 < [NET] reconnect=FAILED
+20:26:55.835 < [NET] state=BACKOFF
+20:26:55.898 < [NET] retry=365 backoff_ms=50
+20:26:55.898 < [NET] state=CONNECTING
+20:26:55.899 < [NET] reconnect=FAILED
+20:26:55.899 < [NET] state=BACKOFF
+20:26:55.899 < [NET] retry=366 backoff_ms=50
+20:26:55.939 > NET UP
+20:26:56.023 < [NET] state=CONNECTING
+20:26:56.023 < [NET] reconnect=FAILED
+20:26:56.024 < [NET] state=BACKOFF
+20:26:56.024 < [NET] retry=367 backoff_ms=50
+20:26:56.717 < [FAULT] network restored
+20:26:56.717 < [NET] state=CONNECTING
+20:26:56.717 < [NET] state=CONNECTED
+20:26:56.717 < [NET] reconnect=SUCCESS
+20:26:56.717 < [BUFFER] flush_start count=0
+20:26:56.717 < [BUFFER] flush_end count=0
+20:26:59.940 > STATUS
+20:27:00.033 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":367,"heap":347884}
+20:27:00.942 > NET DOWN
+20:27:01.235 < [NET] state=DISCONNECTED
+20:27:01.235 < [NET] state=BACKOFF
+20:27:01.235 < [NET] retry=368 backoff_ms=500
+20:27:01.729 < [NET] state=CONNECTING
+20:27:01.730 < [NET] reconnect=FAILED
+20:27:01.730 < [NET] state=BACKOFF
+20:27:01.730 < [NET] retry=369 backoff_ms=50
+20:27:01.780 < [NET] state=CONNECTING
+20:27:01.780 < [NET] reconnect=FAILED
+20:27:01.780 < [NET] state=BACKOFF
+20:27:01.780 < [NET] retry=370 backoff_ms=50
+20:27:01.780 < [NET] state=CONNECTING
+20:27:01.837 < [NET] reconnect=FAILED
+20:27:01.837 < [NET] state=BACKOFF
+20:27:01.837 < [NET] retry=371 backoff_ms=50
+20:27:01.894 < [NET] state=CONNECTING
+20:27:01.895 < [NET] reconnect=FAILED
+20:27:01.895 < [NET] state=BACKOFF
+20:27:01.895 < [NET] retry=372 backoff_ms=50
+20:27:01.946 < [NET] state=CONNECTING
+20:27:01.946 < [NET] reconnect=FAILED
+20:27:01.946 < [NET] state=BACKOFF
+20:27:01.946 < [NET] retry=373 backoff_ms=50
+20:27:01.946 < [NET] state=CONNECTING
+20:27:01.946 < [NET] reconnect=FAILED
+20:27:01.946 < [NET] state=BACKOFF
+20:27:02.008 < [NET] retry=374 backoff_ms=50
+20:27:02.069 < [NET] state=CONNECTING
+20:27:02.069 < [NET] reconnect=FAILED
+20:27:02.070 < [NET] state=BACKOFF
+20:27:02.070 < [NET] retry=375 backoff_ms=50
+20:27:02.135 < [NET] state=CONNECTING
+20:27:02.135 < [NET] reconnect=FAILED
+20:27:02.135 < [NET] state=BACKOFF
+20:27:02.135 < [NET] retry=376 backoff_ms=50
+20:27:02.199 < [NET] state=CONNECTING
+20:27:02.199 < [NET] reconnect=FAILED
+20:27:02.200 < [NET] state=BACKOFF
+20:27:02.200 < [NET] retry=377 backoff_ms=50
+20:27:02.200 < [NET] state=CONNECTING
+20:27:02.262 < [NET] reconnect=FAILED
+20:27:02.262 < [NET] state=BACKOFF
+20:27:02.262 < [NET] retry=378 backoff_ms=50
+20:27:02.262 < [NET] state=CONNECTING
+20:27:02.262 < [NET] reconnect=FAILED
+20:27:02.262 < [NET] state=BACKOFF
+20:27:02.262 < [NET] retry=379 backoff_ms=50
+20:27:02.325 < [NET] state=CONNECTING
+20:27:02.325 < [NET] reconnect=FAILED
+20:27:02.325 < [NET] state=BACKOFF
+20:27:02.325 < [NET] retry=380 backoff_ms=50
+20:27:02.388 < [NET] state=CONNECTING
+20:27:02.388 < [NET] reconnect=FAILED
+20:27:02.388 < [NET] state=BACKOFF
+20:27:02.388 < [NET] retry=381 backoff_ms=50
+20:27:02.513 < [NET] state=CONNECTING
+20:27:02.513 < [NET] reconnect=FAILED
+20:27:02.513 < [NET] state=BACKOFF
+20:27:02.513 < [NET] retry=382 backoff_ms=50
+20:27:02.564 < [NET] state=CONNECTING
+20:27:02.564 < [NET] reconnect=FAILED
+20:27:02.564 < [NET] state=BACKOFF
+20:27:02.564 < [NET] retry=383 backoff_ms=50
+20:27:02.564 < [NET] state=CONNECTING
+20:27:02.623 < [NET] reconnect=FAILED
+20:27:02.623 < [NET] state=BACKOFF
+20:27:02.623 < [NET] retry=384 backoff_ms=50
+20:27:02.688 < [NET] state=CONNECTING
+20:27:02.688 < [NET] reconnect=FAILED
+20:27:02.688 < [NET] state=BACKOFF
+20:27:02.688 < [NET] retry=385 backoff_ms=50
+20:27:02.751 < [NET] state=CONNECTING
+20:27:02.751 < [NET] reconnect=FAILED
+20:27:02.751 < [NET] state=BACKOFF
+20:27:02.751 < [NET] retry=386 backoff_ms=50
+20:27:02.751 < [NET] state=CONNECTING
+20:27:02.752 < [NET] reconnect=FAILED
+20:27:02.752 < [NET] state=BACKOFF
+20:27:02.752 < [NET] retry=387 backoff_ms=50
+20:27:02.814 < [NET] state=CONNECTING
+20:27:02.815 < [NET] reconnect=FAILED
+20:27:02.815 < [NET] state=BACKOFF
+20:27:02.815 < [NET] retry=388 backoff_ms=50
+20:27:02.875 < [NET] state=CONNECTING
+20:27:02.876 < [NET] reconnect=FAILED
+20:27:02.876 < [NET] state=BACKOFF
+20:27:02.876 < [NET] retry=389 backoff_ms=50
+20:27:02.939 < [NET] state=CONNECTING
+20:27:02.940 < [NET] reconnect=FAILED
+20:27:02.940 < [NET] state=BACKOFF
+20:27:02.940 < [NET] retry=390 backoff_ms=50
+20:27:03.003 < [NET] state=CONNECTING
+20:27:03.003 < [NET] reconnect=FAILED
+20:27:03.003 < [NET] state=BACKOFF
+20:27:03.003 < [NET] retry=391 backoff_ms=50
+20:27:03.066 < [NET] state=CONNECTING
+20:27:03.066 < [NET] reconnect=FAILED
+20:27:03.066 < [NET] state=BACKOFF
+20:27:03.066 < [NET] retry=392 backoff_ms=50
+20:27:03.174 < [NET] state=CONNECTING
+20:27:03.174 < [NET] reconnect=FAILED
+20:27:03.174 < [NET] state=BACKOFF
+20:27:03.174 < [NET] retry=393 backoff_ms=50
+20:27:03.174 < [NET] state=CONNECTING
+20:27:03.174 < [NET] reconnect=FAILED
+20:27:03.227 < [NET] state=BACKOFF
+20:27:03.227 < [NET] retry=394 backoff_ms=50
+20:27:03.284 < [NET] state=CONNECTING
+20:27:03.284 < [NET] reconnect=FAILED
+20:27:03.284 < [NET] state=BACKOFF
+20:27:03.284 < [NET] retry=395 backoff_ms=50
+20:27:03.284 < [NET] state=CONNECTING
+20:27:03.284 < [NET] reconnect=FAILED
+20:27:03.284 < [NET] state=BACKOFF
+20:27:03.284 < [NET] retry=396 backoff_ms=50
+20:27:03.341 < [NET] state=CONNECTING
+20:27:03.342 < [NET] reconnect=FAILED
+20:27:03.342 < [NET] state=BACKOFF
+20:27:03.394 < [NET] retry=397 backoff_ms=50
+20:27:03.455 < [NET] state=CONNECTING
+20:27:03.456 < [NET] reconnect=FAILED
+20:27:03.456 < [NET] state=BACKOFF
+20:27:03.456 < [NET] retry=398 backoff_ms=50
+20:27:03.521 < [NET] state=CONNECTING
+20:27:03.521 < [NET] reconnect=FAILED
+20:27:03.521 < [NET] state=BACKOFF
+20:27:03.521 < [NET] retry=399 backoff_ms=50
+20:27:03.584 < [NET] state=CONNECTING
+20:27:03.584 < [NET] reconnect=FAILED
+20:27:03.584 < [NET] state=BACKOFF
+20:27:03.585 < [NET] retry=400 backoff_ms=50
+20:27:03.647 < [NET] state=CONNECTING
+20:27:03.647 < [NET] reconnect=FAILED
+20:27:03.647 < [NET] state=BACKOFF
+20:27:03.647 < [NET] retry=401 backoff_ms=50
+20:27:03.711 < [NET] state=CONNECTING
+20:27:03.711 < [NET] reconnect=FAILED
+20:27:03.711 < [NET] state=BACKOFF
+20:27:03.711 < [NET] retry=402 backoff_ms=50
+20:27:03.774 < [NET] state=CONNECTING
+20:27:03.774 < [NET] reconnect=FAILED
+20:27:03.774 < [NET] state=BACKOFF
+20:27:03.774 < [NET] retry=403 backoff_ms=50
+20:27:03.828 < [NET] state=CONNECTING
+20:27:03.828 < [NET] reconnect=FAILED
+20:27:03.828 < [NET] state=BACKOFF
+20:27:03.828 < [NET] retry=404 backoff_ms=50
+20:27:03.878 < [NET] state=CONNECTING
+20:27:03.879 < [NET] reconnect=FAILED
+20:27:03.879 < [NET] state=BACKOFF
+20:27:03.879 < [NET] retry=405 backoff_ms=50
+20:27:03.879 < [NET] state=CONNECTING
+20:27:03.879 < [NET] reconnect=FAILED
+20:27:03.879 < [NET] state=BACKOFF
+20:27:03.932 < [NET] retry=406 backoff_ms=50
+20:27:03.943 > NET UP
+20:27:03.994 < [NET] state=CONNECTING
+20:27:03.995 < [NET] reconnect=FAILED
+20:27:03.995 < [NET] state=BACKOFF
+20:27:03.995 < [NET] retry=407 backoff_ms=50
+20:27:04.169 < [FAULT] network restored
+20:27:04.169 < [NET] state=CONNECTING
+20:27:04.169 < [NET] state=CONNECTED
+20:27:04.169 < [NET] reconnect=SUCCESS
+20:27:04.169 < [BUFFER] flush_start count=0
+20:27:04.169 < [BUFFER] flush_end count=0
+20:27:07.944 > STATUS
+20:27:08.257 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":407,"heap":347884}
+20:27:08.944 > NET DOWN
+20:27:09.138 < [NET] state=DISCONNECTED
+20:27:09.138 < [NET] state=BACKOFF
+20:27:09.139 < [NET] retry=408 backoff_ms=500
+20:27:09.627 < [NET] state=CONNECTING
+20:27:09.627 < [NET] reconnect=FAILED
+20:27:09.627 < [NET] state=BACKOFF
+20:27:09.627 < [NET] retry=409 backoff_ms=50
+20:27:09.689 < [NET] state=CONNECTING
+20:27:09.689 < [NET] reconnect=FAILED
+20:27:09.690 < [NET] state=BACKOFF
+20:27:09.690 < [NET] retry=410 backoff_ms=50
+20:27:09.751 < [NET] state=CONNECTING
+20:27:09.752 < [NET] reconnect=FAILED
+20:27:09.752 < [NET] state=BACKOFF
+20:27:09.752 < [NET] retry=411 backoff_ms=50
+20:27:09.812 < [NET] state=CONNECTING
+20:27:09.813 < [NET] reconnect=FAILED
+20:27:09.813 < [NET] state=BACKOFF
+20:27:09.813 < [NET] retry=412 backoff_ms=50
+20:27:09.877 < [NET] state=CONNECTING
+20:27:09.877 < [NET] reconnect=FAILED
+20:27:09.877 < [NET] state=BACKOFF
+20:27:09.877 < [NET] retry=413 backoff_ms=50
+20:27:10.000 < [NET] state=CONNECTING
+20:27:10.001 < [NET] reconnect=FAILED
+20:27:10.001 < [NET] state=BACKOFF
+20:27:10.001 < [NET] retry=414 backoff_ms=50
+20:27:10.064 < [NET] state=CONNECTING
+20:27:10.065 < [NET] reconnect=FAILED
+20:27:10.065 < [NET] state=BACKOFF
+20:27:10.065 < [NET] retry=415 backoff_ms=50
+20:27:10.127 < [NET] state=CONNECTING
+20:27:10.127 < [NET] reconnect=FAILED
+20:27:10.127 < [NET] state=BACKOFF
+20:27:10.127 < [NET] retry=416 backoff_ms=50
+20:27:10.178 < [NET] state=CONNECTING
+20:27:10.178 < [NET] reconnect=FAILED
+20:27:10.178 < [NET] state=BACKOFF
+20:27:10.237 < [NET] retry=417 backoff_ms=50
+20:27:10.238 < [NET] state=CONNECTING
+20:27:10.238 < [NET] reconnect=FAILED
+20:27:10.238 < [NET] state=BACKOFF
+20:27:10.238 < [NET] retry=418 backoff_ms=50
+20:27:10.360 < [NET] state=CONNECTING
+20:27:10.360 < [NET] reconnect=FAILED
+20:27:10.360 < [NET] state=BACKOFF
+20:27:10.361 < [NET] retry=419 backoff_ms=50
+20:27:10.361 < [NET] state=CONNECTING
+20:27:10.361 < [NET] reconnect=FAILED
+20:27:10.361 < [NET] state=BACKOFF
+20:27:10.361 < [NET] retry=420 backoff_ms=50
+20:27:10.422 < [NET] state=CONNECTING
+20:27:10.422 < [NET] reconnect=FAILED
+20:27:10.422 < [NET] state=BACKOFF
+20:27:10.422 < [NET] retry=421 backoff_ms=50
+20:27:10.486 < [NET] state=CONNECTING
+20:27:10.486 < [NET] reconnect=FAILED
+20:27:10.486 < [NET] state=BACKOFF
+20:27:10.486 < [NET] retry=422 backoff_ms=50
+20:27:10.548 < [NET] state=CONNECTING
+20:27:10.548 < [NET] reconnect=FAILED
+20:27:10.548 < [NET] state=BACKOFF
+20:27:10.548 < [NET] retry=423 backoff_ms=50
+20:27:10.603 < [NET] state=CONNECTING
+20:27:10.604 < [NET] reconnect=FAILED
+20:27:10.604 < [NET] state=BACKOFF
+20:27:10.604 < [NET] retry=424 backoff_ms=50
+20:27:10.658 < [NET] state=CONNECTING
+20:27:10.658 < [NET] reconnect=FAILED
+20:27:10.658 < [NET] state=BACKOFF
+20:27:10.658 < [NET] retry=425 backoff_ms=50
+20:27:10.721 < [NET] state=CONNECTING
+20:27:10.722 < [NET] reconnect=FAILED
+20:27:10.722 < [NET] state=BACKOFF
+20:27:10.722 < [NET] retry=426 backoff_ms=50
+20:27:10.784 < [NET] state=CONNECTING
+20:27:10.784 < [NET] reconnect=FAILED
+20:27:10.784 < [NET] state=BACKOFF
+20:27:10.784 < [NET] retry=427 backoff_ms=50
+20:27:10.848 < [NET] state=CONNECTING
+20:27:10.848 < [NET] reconnect=FAILED
+20:27:10.848 < [NET] state=BACKOFF
+20:27:10.848 < [NET] retry=428 backoff_ms=50
+20:27:10.911 < [NET] state=CONNECTING
+20:27:10.911 < [NET] reconnect=FAILED
+20:27:10.911 < [NET] state=BACKOFF
+20:27:10.911 < [NET] retry=429 backoff_ms=50
+20:27:10.911 < [NET] state=CONNECTING
+20:27:10.911 < [NET] reconnect=FAILED
+20:27:10.911 < [NET] state=BACKOFF
+20:27:10.911 < [NET] retry=430 backoff_ms=50
+20:27:10.962 < [NET] state=CONNECTING
+20:27:10.962 < [NET] reconnect=FAILED
+20:27:10.962 < [NET] state=BACKOFF
+20:27:11.014 < [NET] retry=431 backoff_ms=50
+20:27:11.069 < [NET] state=CONNECTING
+20:27:11.069 < [NET] reconnect=FAILED
+20:27:11.069 < [NET] state=BACKOFF
+20:27:11.069 < [NET] retry=432 backoff_ms=50
+20:27:11.126 < [NET] state=CONNECTING
+20:27:11.127 < [NET] reconnect=FAILED
+20:27:11.127 < [NET] state=BACKOFF
+20:27:11.127 < [NET] retry=433 backoff_ms=50
+20:27:11.179 < [NET] state=CONNECTING
+20:27:11.180 < [NET] reconnect=FAILED
+20:27:11.180 < [NET] state=BACKOFF
+20:27:11.180 < [NET] retry=434 backoff_ms=50
+20:27:11.243 < [NET] state=CONNECTING
+20:27:11.243 < [NET] reconnect=FAILED
+20:27:11.243 < [NET] state=BACKOFF
+20:27:11.244 < [NET] retry=435 backoff_ms=50
+20:27:11.294 < [NET] state=CONNECTING
+20:27:11.295 < [NET] reconnect=FAILED
+20:27:11.348 < [NET] state=BACKOFF
+20:27:11.348 < [NET] retry=436 backoff_ms=50
+20:27:11.349 < [NET] state=CONNECTING
+20:27:11.349 < [NET] reconnect=FAILED
+20:27:11.349 < [NET] state=BACKOFF
+20:27:11.402 < [NET] retry=437 backoff_ms=50
+20:27:11.403 < [NET] state=CONNECTING
+20:27:11.466 < [NET] reconnect=FAILED
+20:27:11.466 < [NET] state=BACKOFF
+20:27:11.466 < [NET] retry=438 backoff_ms=50
+20:27:11.466 < [NET] state=CONNECTING
+20:27:11.466 < [NET] reconnect=FAILED
+20:27:11.466 < [NET] state=BACKOFF
+20:27:11.466 < [NET] retry=439 backoff_ms=50
+20:27:11.528 < [NET] state=CONNECTING
+20:27:11.528 < [NET] reconnect=FAILED
+20:27:11.528 < [NET] state=BACKOFF
+20:27:11.528 < [NET] retry=440 backoff_ms=50
+20:27:11.592 < [NET] state=CONNECTING
+20:27:11.592 < [NET] reconnect=FAILED
+20:27:11.592 < [NET] state=BACKOFF
+20:27:11.592 < [NET] retry=441 backoff_ms=50
+20:27:11.656 < [NET] state=CONNECTING
+20:27:11.656 < [NET] reconnect=FAILED
+20:27:11.656 < [NET] state=BACKOFF
+20:27:11.656 < [NET] retry=442 backoff_ms=50
+20:27:11.720 < [NET] state=CONNECTING
+20:27:11.720 < [NET] reconnect=FAILED
+20:27:11.721 < [NET] state=BACKOFF
+20:27:11.721 < [NET] retry=443 backoff_ms=50
+20:27:11.771 < [NET] state=CONNECTING
+20:27:11.771 < [NET] reconnect=FAILED
+20:27:11.771 < [NET] state=BACKOFF
+20:27:11.830 < [NET] retry=444 backoff_ms=50
+20:27:11.830 < [NET] state=CONNECTING
+20:27:11.830 < [NET] reconnect=FAILED
+20:27:11.831 < [NET] state=BACKOFF
+20:27:11.831 < [NET] retry=445 backoff_ms=50
+20:27:11.894 < [NET] state=CONNECTING
+20:27:11.894 < [NET] reconnect=FAILED
+20:27:11.894 < [NET] state=BACKOFF
+20:27:11.894 < [NET] retry=446 backoff_ms=50
+20:27:11.945 > NET UP
+20:27:11.953 < [NET] state=CONNECTING
+20:27:11.953 < [NET] reconnect=FAILED
+20:27:11.953 < [NET] state=BACKOFF
+20:27:11.953 < [NET] retry=447 backoff_ms=50
+20:27:12.005 < [NET] state=CONNECTING
+20:27:12.178 < [NET] reconnect=FAILED
+20:27:12.178 < [NET] state=BACKOFF
+20:27:12.238 < [NET] retry=448 backoff_ms=50
+20:27:12.493 < [FAULT] network restored
+20:27:12.493 < [NET] state=CONNECTING
+20:27:12.493 < [NET] state=CONNECTED
+20:27:12.494 < [NET] reconnect=SUCCESS
+20:27:12.494 < [BUFFER] flush_start count=0
+20:27:12.494 < [BUFFER] flush_end count=0
+20:27:15.946 > STATUS
+20:27:16.396 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":448,"heap":347884}
+20:27:16.947 > NET DOWN
+20:27:17.284 < [NET] state=DISCONNECTED
+20:27:17.284 < [NET] state=BACKOFF
+20:27:17.284 < [NET] retry=449 backoff_ms=500
+20:27:17.835 < [NET] state=CONNECTING
+20:27:17.890 < [NET] reconnect=FAILED
+20:27:17.891 < [NET] state=BACKOFF
+20:27:17.891 < [NET] retry=450 backoff_ms=50
+20:27:17.957 < [NET] state=CONNECTING
+20:27:17.957 < [NET] reconnect=FAILED
+20:27:17.957 < [NET] state=BACKOFF
+20:27:17.957 < [NET] retry=451 backoff_ms=50
+20:27:18.020 < [NET] state=CONNECTING
+20:27:18.020 < [NET] reconnect=FAILED
+20:27:18.020 < [NET] state=BACKOFF
+20:27:18.020 < [NET] retry=452 backoff_ms=50
+20:27:18.074 < [NET] state=CONNECTING
+20:27:18.074 < [NET] reconnect=FAILED
+20:27:18.074 < [NET] state=BACKOFF
+20:27:18.074 < [NET] retry=453 backoff_ms=50
+20:27:18.128 < [NET] state=CONNECTING
+20:27:18.129 < [NET] reconnect=FAILED
+20:27:18.129 < [NET] state=BACKOFF
+20:27:18.129 < [NET] retry=454 backoff_ms=50
+20:27:18.189 < [NET] state=CONNECTING
+20:27:18.189 < [NET] reconnect=FAILED
+20:27:18.189 < [NET] state=BACKOFF
+20:27:18.189 < [NET] retry=455 backoff_ms=50
+20:27:18.240 < [NET] state=CONNECTING
+20:27:18.240 < [NET] reconnect=FAILED
+20:27:18.240 < [NET] state=BACKOFF
+20:27:18.240 < [NET] retry=456 backoff_ms=50
+20:27:18.301 < [NET] state=CONNECTING
+20:27:18.302 < [NET] reconnect=FAILED
+20:27:18.302 < [NET] state=BACKOFF
+20:27:18.302 < [NET] retry=457 backoff_ms=50
+20:27:18.363 < [NET] state=CONNECTING
+20:27:18.363 < [NET] reconnect=FAILED
+20:27:18.363 < [NET] state=BACKOFF
+20:27:18.363 < [NET] retry=458 backoff_ms=50
+20:27:18.363 < [NET] state=CONNECTING
+20:27:18.427 < [NET] reconnect=FAILED
+20:27:18.427 < [NET] state=BACKOFF
+20:27:18.427 < [NET] retry=459 backoff_ms=50
+20:27:18.480 < [NET] state=CONNECTING
+20:27:18.480 < [NET] reconnect=FAILED
+20:27:18.480 < [NET] state=BACKOFF
+20:27:18.480 < [NET] retry=460 backoff_ms=50
+20:27:18.535 < [NET] state=CONNECTING
+20:27:18.535 < [NET] reconnect=FAILED
+20:27:18.535 < [NET] state=BACKOFF
+20:27:18.535 < [NET] retry=461 backoff_ms=50
+20:27:18.598 < [NET] state=CONNECTING
+20:27:18.599 < [NET] reconnect=FAILED
+20:27:18.599 < [NET] state=BACKOFF
+20:27:18.599 < [NET] retry=462 backoff_ms=50
+20:27:18.657 < [NET] state=CONNECTING
+20:27:18.657 < [NET] reconnect=FAILED
+20:27:18.657 < [NET] state=BACKOFF
+20:27:18.657 < [NET] retry=463 backoff_ms=50
+20:27:18.718 < [NET] state=CONNECTING
+20:27:18.719 < [NET] reconnect=FAILED
+20:27:18.719 < [NET] state=BACKOFF
+20:27:18.719 < [NET] retry=464 backoff_ms=50
+20:27:18.720 < [NET] state=CONNECTING
+20:27:18.720 < [NET] reconnect=FAILED
+20:27:18.720 < [NET] state=BACKOFF
+20:27:18.770 < [NET] retry=465 backoff_ms=50
+20:27:18.770 < [NET] state=CONNECTING
+20:27:18.821 < [NET] reconnect=FAILED
+20:27:18.821 < [NET] state=BACKOFF
+20:27:18.821 < [NET] retry=466 backoff_ms=50
+20:27:18.872 < [NET] state=CONNECTING
+20:27:18.872 < [NET] reconnect=FAILED
+20:27:18.872 < [NET] state=BACKOFF
+20:27:18.872 < [NET] retry=467 backoff_ms=50
+20:27:18.923 < [NET] state=CONNECTING
+20:27:18.923 < [NET] reconnect=FAILED
+20:27:18.923 < [NET] state=BACKOFF
+20:27:18.923 < [NET] retry=468 backoff_ms=50
+20:27:18.973 < [NET] state=CONNECTING
+20:27:18.974 < [NET] reconnect=FAILED
+20:27:18.974 < [NET] state=BACKOFF
+20:27:18.974 < [NET] retry=469 backoff_ms=50
+20:27:19.037 < [NET] state=CONNECTING
+20:27:19.037 < [NET] reconnect=FAILED
+20:27:19.037 < [NET] state=BACKOFF
+20:27:19.037 < [NET] retry=470 backoff_ms=50
+20:27:19.101 < [NET] state=CONNECTING
+20:27:19.101 < [NET] reconnect=FAILED
+20:27:19.101 < [NET] state=BACKOFF
+20:27:19.101 < [NET] retry=471 backoff_ms=50
+20:27:19.164 < [NET] state=CONNECTING
+20:27:19.164 < [NET] reconnect=FAILED
+20:27:19.164 < [NET] state=BACKOFF
+20:27:19.164 < [NET] retry=472 backoff_ms=50
+20:27:19.227 < [NET] state=CONNECTING
+20:27:19.227 < [NET] reconnect=FAILED
+20:27:19.227 < [NET] state=BACKOFF
+20:27:19.227 < [NET] retry=473 backoff_ms=50
+20:27:19.288 < [NET] state=CONNECTING
+20:27:19.289 < [NET] reconnect=FAILED
+20:27:19.289 < [NET] state=BACKOFF
+20:27:19.289 < [NET] retry=474 backoff_ms=50
+20:27:19.342 < [NET] state=CONNECTING
+20:27:19.342 < [NET] reconnect=FAILED
+20:27:19.342 < [NET] state=BACKOFF
+20:27:19.342 < [NET] retry=475 backoff_ms=50
+20:27:19.399 < [NET] state=CONNECTING
+20:27:19.399 < [NET] reconnect=FAILED
+20:27:19.399 < [NET] state=BACKOFF
+20:27:19.399 < [NET] retry=476 backoff_ms=50
+20:27:19.463 < [NET] state=CONNECTING
+20:27:19.463 < [NET] reconnect=FAILED
+20:27:19.463 < [NET] state=BACKOFF
+20:27:19.463 < [NET] retry=477 backoff_ms=50
+20:27:19.513 < [NET] state=CONNECTING
+20:27:19.514 < [NET] reconnect=FAILED
+20:27:19.514 < [NET] state=BACKOFF
+20:27:19.514 < [NET] retry=478 backoff_ms=50
+20:27:19.573 < [NET] state=CONNECTING
+20:27:19.573 < [NET] reconnect=FAILED
+20:27:19.574 < [NET] state=BACKOFF
+20:27:19.574 < [NET] retry=479 backoff_ms=50
+20:27:19.624 < [NET] state=CONNECTING
+20:27:19.624 < [NET] reconnect=FAILED
+20:27:19.624 < [NET] state=BACKOFF
+20:27:19.624 < [NET] retry=480 backoff_ms=50
+20:27:19.624 < [NET] state=CONNECTING
+20:27:19.684 < [NET] reconnect=FAILED
+20:27:19.685 < [NET] state=BACKOFF
+20:27:19.685 < [NET] retry=481 backoff_ms=50
+20:27:19.748 < [NET] state=CONNECTING
+20:27:19.748 < [NET] reconnect=FAILED
+20:27:19.748 < [NET] state=BACKOFF
+20:27:19.749 < [NET] retry=482 backoff_ms=50
+20:27:19.874 < [NET] state=CONNECTING
+20:27:19.874 < [NET] reconnect=FAILED
+20:27:19.874 < [NET] state=BACKOFF
+20:27:19.874 < [NET] retry=483 backoff_ms=50
+20:27:19.874 < [NET] state=CONNECTING
+20:27:19.874 < [NET] reconnect=FAILED
+20:27:19.874 < [NET] state=BACKOFF
+20:27:19.875 < [NET] retry=484 backoff_ms=50
+20:27:19.936 < [NET] state=CONNECTING
+20:27:19.936 < [NET] reconnect=FAILED
+20:27:19.936 < [NET] state=BACKOFF
+20:27:19.936 < [NET] retry=485 backoff_ms=50
+20:27:19.948 > NET UP
+20:27:20.232 < [NET] state=CONNECTING
+20:27:20.232 < [NET] reconnect=FAILED
+20:27:20.232 < [NET] state=BACKOFF
+20:27:20.232 < [NET] retry=486 backoff_ms=50
+20:27:20.294 < [FAULT] network restored
+20:27:20.294 < [NET] state=CONNECTING
+20:27:20.294 < [NET] state=CONNECTED
+20:27:20.294 < [NET] reconnect=SUCCESS
+20:27:20.294 < [BUFFER] flush_start count=0
+20:27:20.294 < [BUFFER] flush_end count=0
+20:27:23.949 > STATUS
+20:27:24.145 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":486,"heap":347884}
+20:27:24.950 > NET DOWN
+20:27:25.085 < [NET] state=DISCONNECTED
+20:27:25.088 < [NET] state=BACKOFF
+20:27:25.088 < [NET] retry=487 backoff_ms=500
+20:27:25.587 < [NET] state=CONNECTING
+20:27:25.587 < [NET] reconnect=FAILED
+20:27:25.587 < [NET] state=BACKOFF
+20:27:25.587 < [NET] retry=488 backoff_ms=50
+20:27:25.650 < [NET] state=CONNECTING
+20:27:25.650 < [NET] reconnect=FAILED
+20:27:25.650 < [NET] state=BACKOFF
+20:27:25.650 < [NET] retry=489 backoff_ms=50
+20:27:25.700 < [NET] state=CONNECTING
+20:27:25.700 < [NET] reconnect=FAILED
+20:27:25.701 < [NET] state=BACKOFF
+20:27:25.701 < [NET] retry=490 backoff_ms=50
+20:27:25.751 < [NET] state=CONNECTING
+20:27:25.751 < [NET] reconnect=FAILED
+20:27:25.752 < [NET] state=BACKOFF
+20:27:25.752 < [NET] retry=491 backoff_ms=50
+20:27:25.752 < [NET] state=CONNECTING
+20:27:25.807 < [NET] reconnect=FAILED
+20:27:25.808 < [NET] state=BACKOFF
+20:27:25.808 < [NET] retry=492 backoff_ms=50
+20:27:25.871 < [NET] state=CONNECTING
+20:27:25.871 < [NET] reconnect=FAILED
+20:27:25.871 < [NET] state=BACKOFF
+20:27:25.871 < [NET] retry=493 backoff_ms=50
+20:27:25.932 < [NET] state=CONNECTING
+20:27:25.933 < [NET] reconnect=FAILED
+20:27:25.933 < [NET] state=BACKOFF
+20:27:25.933 < [NET] retry=494 backoff_ms=50
+20:27:25.998 < [NET] state=CONNECTING
+20:27:25.998 < [NET] reconnect=FAILED
+20:27:25.998 < [NET] state=BACKOFF
+20:27:25.998 < [NET] retry=495 backoff_ms=50
+20:27:25.998 < [NET] state=CONNECTING
+20:27:26.048 < [NET] reconnect=FAILED
+20:27:26.049 < [NET] state=BACKOFF
+20:27:26.049 < [NET] retry=496 backoff_ms=50
+20:27:26.049 < [NET] state=CONNECTING
+20:27:26.099 < [NET] reconnect=FAILED
+20:27:26.100 < [NET] state=BACKOFF
+20:27:26.100 < [NET] retry=497 backoff_ms=50
+20:27:26.100 < [NET] state=CONNECTING
+20:27:26.156 < [NET] reconnect=FAILED
+20:27:26.157 < [NET] state=BACKOFF
+20:27:26.157 < [NET] retry=498 backoff_ms=50
+20:27:26.219 < [NET] state=CONNECTING
+20:27:26.219 < [NET] reconnect=FAILED
+20:27:26.219 < [NET] state=BACKOFF
+20:27:26.219 < [NET] retry=499 backoff_ms=50
+20:27:26.282 < [NET] state=CONNECTING
+20:27:26.283 < [NET] reconnect=FAILED
+20:27:26.283 < [NET] state=BACKOFF
+20:27:26.283 < [NET] retry=500 backoff_ms=50
+20:27:26.345 < [NET] state=CONNECTING
+20:27:26.346 < [NET] reconnect=FAILED
+20:27:26.346 < [NET] state=BACKOFF
+20:27:26.347 < [NET] retry=501 backoff_ms=50
+20:27:26.408 < [NET] state=CONNECTING
+20:27:26.409 < [NET] reconnect=FAILED
+20:27:26.409 < [NET] state=BACKOFF
+20:27:26.409 < [NET] retry=502 backoff_ms=50
+20:27:26.473 < [NET] state=CONNECTING
+20:27:26.474 < [NET] reconnect=FAILED
+20:27:26.474 < [NET] state=BACKOFF
+20:27:26.474 < [NET] retry=503 backoff_ms=50
+20:27:26.536 < [NET] state=CONNECTING
+20:27:26.536 < [NET] reconnect=FAILED
+20:27:26.536 < [NET] state=BACKOFF
+20:27:26.537 < [NET] retry=504 backoff_ms=50
+20:27:26.589 < [NET] state=CONNECTING
+20:27:26.590 < [NET] reconnect=FAILED
+20:27:26.590 < [NET] state=BACKOFF
+20:27:26.590 < [NET] retry=505 backoff_ms=50
+20:27:26.648 < [NET] state=CONNECTING
+20:27:26.649 < [NET] reconnect=FAILED
+20:27:26.649 < [NET] state=BACKOFF
+20:27:26.649 < [NET] retry=506 backoff_ms=50
+20:27:26.712 < [NET] state=CONNECTING
+20:27:26.713 < [NET] reconnect=FAILED
+20:27:26.713 < [NET] state=BACKOFF
+20:27:26.713 < [NET] retry=507 backoff_ms=50
+20:27:26.774 < [NET] state=CONNECTING
+20:27:26.775 < [NET] reconnect=FAILED
+20:27:26.775 < [NET] state=BACKOFF
+20:27:26.775 < [NET] retry=508 backoff_ms=50
+20:27:26.833 < [NET] state=CONNECTING
+20:27:26.833 < [NET] reconnect=FAILED
+20:27:26.833 < [NET] state=BACKOFF
+20:27:26.834 < [NET] retry=509 backoff_ms=50
+20:27:26.891 < [NET] state=CONNECTING
+20:27:26.891 < [NET] reconnect=FAILED
+20:27:26.891 < [NET] state=BACKOFF
+20:27:26.891 < [NET] retry=510 backoff_ms=50
+20:27:26.946 < [NET] state=CONNECTING
+20:27:26.946 < [NET] reconnect=FAILED
+20:27:26.946 < [NET] state=BACKOFF
+20:27:26.946 < [NET] retry=511 backoff_ms=50
+20:27:26.946 < [NET] state=CONNECTING
+20:27:26.946 < [NET] reconnect=FAILED
+20:27:26.946 < [NET] state=BACKOFF
+20:27:26.996 < [NET] retry=512 backoff_ms=50
+20:27:26.997 < [NET] state=CONNECTING
+20:27:27.057 < [NET] reconnect=FAILED
+20:27:27.057 < [NET] state=BACKOFF
+20:27:27.057 < [NET] retry=513 backoff_ms=50
+20:27:27.120 < [NET] state=CONNECTING
+20:27:27.120 < [NET] reconnect=FAILED
+20:27:27.121 < [NET] state=BACKOFF
+20:27:27.121 < [NET] retry=514 backoff_ms=50
+20:27:27.181 < [NET] state=CONNECTING
+20:27:27.182 < [NET] reconnect=FAILED
+20:27:27.182 < [NET] state=BACKOFF
+20:27:27.182 < [NET] retry=515 backoff_ms=50
+20:27:27.245 < [NET] state=CONNECTING
+20:27:27.245 < [NET] reconnect=FAILED
+20:27:27.245 < [NET] state=BACKOFF
+20:27:27.245 < [NET] retry=516 backoff_ms=50
+20:27:27.306 < [NET] state=CONNECTING
+20:27:27.306 < [NET] reconnect=FAILED
+20:27:27.306 < [NET] state=BACKOFF
+20:27:27.306 < [NET] retry=517 backoff_ms=50
+20:27:27.369 < [NET] state=CONNECTING
+20:27:27.369 < [NET] reconnect=FAILED
+20:27:27.369 < [NET] state=BACKOFF
+20:27:27.369 < [NET] retry=518 backoff_ms=50
+20:27:27.431 < [NET] state=CONNECTING
+20:27:27.431 < [NET] reconnect=FAILED
+20:27:27.431 < [NET] state=BACKOFF
+20:27:27.431 < [NET] retry=519 backoff_ms=50
+20:27:27.494 < [NET] state=CONNECTING
+20:27:27.494 < [NET] reconnect=FAILED
+20:27:27.495 < [NET] state=BACKOFF
+20:27:27.495 < [NET] retry=520 backoff_ms=50
+20:27:27.545 < [NET] state=CONNECTING
+20:27:27.545 < [NET] reconnect=FAILED
+20:27:27.545 < [NET] state=BACKOFF
+20:27:27.606 < [NET] retry=521 backoff_ms=50
+20:27:27.606 < [NET] state=CONNECTING
+20:27:27.607 < [NET] reconnect=FAILED
+20:27:27.607 < [NET] state=BACKOFF
+20:27:27.670 < [NET] retry=522 backoff_ms=50
+20:27:27.733 < [NET] state=CONNECTING
+20:27:27.734 < [NET] reconnect=FAILED
+20:27:27.734 < [NET] state=BACKOFF
+20:27:27.734 < [NET] retry=523 backoff_ms=50
+20:27:27.795 < [NET] state=CONNECTING
+20:27:27.795 < [NET] reconnect=FAILED
+20:27:27.796 < [NET] state=BACKOFF
+20:27:27.796 < [NET] retry=524 backoff_ms=50
+20:27:27.858 < [NET] state=CONNECTING
+20:27:27.859 < [NET] reconnect=FAILED
+20:27:27.859 < [NET] state=BACKOFF
+20:27:27.859 < [NET] retry=525 backoff_ms=50
+20:27:27.921 < [NET] state=CONNECTING
+20:27:27.921 < [NET] reconnect=FAILED
+20:27:27.921 < [NET] state=BACKOFF
+20:27:27.921 < [NET] retry=526 backoff_ms=50
+20:27:27.951 > NET UP
+20:27:27.985 < [NET] state=CONNECTING
+20:27:27.985 < [NET] reconnect=FAILED
+20:27:27.986 < [NET] state=BACKOFF
+20:27:27.986 < [NET] retry=527 backoff_ms=50
+20:27:28.049 < [FAULT] network restored
+20:27:28.049 < [NET] state=CONNECTING
+20:27:28.049 < [NET] state=CONNECTED
+20:27:28.049 < [NET] reconnect=SUCCESS
+20:27:28.049 < [BUFFER] flush_start count=0
+20:27:28.049 < [BUFFER] flush_end count=0
+20:27:31.952 > STATUS
+20:27:32.500 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":527,"heap":347884}
+20:27:32.954 > NET DOWN
+20:27:33.179 < [NET] state=DISCONNECTED
+20:27:33.179 < [NET] state=BACKOFF
+20:27:33.179 < [NET] retry=528 backoff_ms=500
+20:27:33.609 < [NET] state=CONNECTING
+20:27:33.669 < [NET] reconnect=FAILED
+20:27:33.669 < [NET] state=BACKOFF
+20:27:33.670 < [NET] retry=529 backoff_ms=50
+20:27:33.732 < [NET] state=CONNECTING
+20:27:33.733 < [NET] reconnect=FAILED
+20:27:33.733 < [NET] state=BACKOFF
+20:27:33.733 < [NET] retry=530 backoff_ms=50
+20:27:33.793 < [NET] state=CONNECTING
+20:27:33.794 < [NET] reconnect=FAILED
+20:27:33.794 < [NET] state=BACKOFF
+20:27:33.794 < [NET] retry=531 backoff_ms=50
+20:27:33.844 < [NET] state=CONNECTING
+20:27:33.844 < [NET] reconnect=FAILED
+20:27:33.844 < [NET] state=BACKOFF
+20:27:33.845 < [NET] retry=532 backoff_ms=50
+20:27:33.845 < [NET] state=CONNECTING
+20:27:33.904 < [NET] reconnect=FAILED
+20:27:33.904 < [NET] state=BACKOFF
+20:27:33.904 < [NET] retry=533 backoff_ms=50
+20:27:33.905 < [NET] state=CONNECTING
+20:27:33.905 < [NET] reconnect=FAILED
+20:27:33.966 < [NET] state=BACKOFF
+20:27:33.966 < [NET] retry=534 backoff_ms=50
+20:27:34.016 < [NET] state=CONNECTING
+20:27:34.016 < [NET] reconnect=FAILED
+20:27:34.017 < [NET] state=BACKOFF
+20:27:34.017 < [NET] retry=535 backoff_ms=50
+20:27:34.018 < [NET] state=CONNECTING
+20:27:34.075 < [NET] reconnect=FAILED
+20:27:34.075 < [NET] state=BACKOFF
+20:27:34.076 < [NET] retry=536 backoff_ms=50
+20:27:34.141 < [NET] state=CONNECTING
+20:27:34.141 < [NET] reconnect=FAILED
+20:27:34.142 < [NET] state=BACKOFF
+20:27:34.142 < [NET] retry=537 backoff_ms=50
+20:27:34.142 < [NET] state=CONNECTING
+20:27:34.205 < [NET] reconnect=FAILED
+20:27:34.206 < [NET] state=BACKOFF
+20:27:34.206 < [NET] retry=538 backoff_ms=50
+20:27:34.268 < [NET] state=CONNECTING
+20:27:34.269 < [NET] reconnect=FAILED
+20:27:34.269 < [NET] state=BACKOFF
+20:27:34.269 < [NET] retry=539 backoff_ms=50
+20:27:34.388 < [NET] state=CONNECTING
+20:27:34.388 < [NET] reconnect=FAILED
+20:27:34.388 < [NET] state=BACKOFF
+20:27:34.388 < [NET] retry=540 backoff_ms=50
+20:27:34.388 < [NET] state=CONNECTING
+20:27:34.388 < [NET] reconnect=FAILED
+20:27:34.388 < [NET] state=BACKOFF
+20:27:34.388 < [NET] retry=541 backoff_ms=50
+20:27:34.441 < [NET] state=CONNECTING
+20:27:34.441 < [NET] reconnect=FAILED
+20:27:34.442 < [NET] state=BACKOFF
+20:27:34.442 < [NET] retry=542 backoff_ms=50
+20:27:34.504 < [NET] state=CONNECTING
+20:27:34.504 < [NET] reconnect=FAILED
+20:27:34.504 < [NET] state=BACKOFF
+20:27:34.504 < [NET] retry=543 backoff_ms=50
+20:27:34.554 < [NET] state=CONNECTING
+20:27:34.554 < [NET] reconnect=FAILED
+20:27:34.613 < [NET] state=BACKOFF
+20:27:34.613 < [NET] retry=544 backoff_ms=50
+20:27:34.613 < [NET] state=CONNECTING
+20:27:34.613 < [NET] reconnect=FAILED
+20:27:34.613 < [NET] state=BACKOFF
+20:27:34.613 < [NET] retry=545 backoff_ms=50
+20:27:34.678 < [NET] state=CONNECTING
+20:27:34.678 < [NET] reconnect=FAILED
+20:27:34.679 < [NET] state=BACKOFF
+20:27:34.679 < [NET] retry=546 backoff_ms=50
+20:27:34.739 < [NET] state=CONNECTING
+20:27:34.739 < [NET] reconnect=FAILED
+20:27:34.739 < [NET] state=BACKOFF
+20:27:34.740 < [NET] retry=547 backoff_ms=50
+20:27:34.802 < [NET] state=CONNECTING
+20:27:34.802 < [NET] reconnect=FAILED
+20:27:34.802 < [NET] state=BACKOFF
+20:27:34.802 < [NET] retry=548 backoff_ms=50
+20:27:34.865 < [NET] state=CONNECTING
+20:27:34.865 < [NET] reconnect=FAILED
+20:27:34.866 < [NET] state=BACKOFF
+20:27:34.866 < [NET] retry=549 backoff_ms=50
+20:27:34.929 < [NET] state=CONNECTING
+20:27:34.929 < [NET] reconnect=FAILED
+20:27:34.929 < [NET] state=BACKOFF
+20:27:34.929 < [NET] retry=550 backoff_ms=50
+20:27:34.929 < [NET] state=CONNECTING
+20:27:34.980 < [NET] reconnect=FAILED
+20:27:34.980 < [NET] state=BACKOFF
+20:27:34.980 < [NET] retry=551 backoff_ms=50
+20:27:34.980 < [NET] state=CONNECTING
+20:27:34.980 < [NET] reconnect=FAILED
+20:27:35.038 < [NET] state=BACKOFF
+20:27:35.039 < [NET] retry=552 backoff_ms=50
+20:27:35.091 < [NET] state=CONNECTING
+20:27:35.091 < [NET] reconnect=FAILED
+20:27:35.091 < [NET] state=BACKOFF
+20:27:35.092 < [NET] retry=553 backoff_ms=50
+20:27:35.149 < [NET] state=CONNECTING
+20:27:35.149 < [NET] reconnect=FAILED
+20:27:35.149 < [NET] state=BACKOFF
+20:27:35.150 < [NET] retry=554 backoff_ms=50
+20:27:35.206 < [NET] state=CONNECTING
+20:27:35.206 < [NET] reconnect=FAILED
+20:27:35.206 < [NET] state=BACKOFF
+20:27:35.206 < [NET] retry=555 backoff_ms=50
+20:27:35.260 < [NET] state=CONNECTING
+20:27:35.260 < [NET] reconnect=FAILED
+20:27:35.260 < [NET] state=BACKOFF
+20:27:35.260 < [NET] retry=556 backoff_ms=50
+20:27:35.314 < [NET] state=CONNECTING
+20:27:35.315 < [NET] reconnect=FAILED
+20:27:35.315 < [NET] state=BACKOFF
+20:27:35.315 < [NET] retry=557 backoff_ms=50
+20:27:35.368 < [NET] state=CONNECTING
+20:27:35.368 < [NET] reconnect=FAILED
+20:27:35.368 < [NET] state=BACKOFF
+20:27:35.369 < [NET] retry=558 backoff_ms=50
+20:27:35.429 < [NET] state=CONNECTING
+20:27:35.429 < [NET] reconnect=FAILED
+20:27:35.429 < [NET] state=BACKOFF
+20:27:35.429 < [NET] retry=559 backoff_ms=50
+20:27:35.494 < [NET] state=CONNECTING
+20:27:35.494 < [NET] reconnect=FAILED
+20:27:35.494 < [NET] state=BACKOFF
+20:27:35.494 < [NET] retry=560 backoff_ms=50
+20:27:35.556 < [NET] state=CONNECTING
+20:27:35.557 < [NET] reconnect=FAILED
+20:27:35.557 < [NET] state=BACKOFF
+20:27:35.558 < [NET] retry=561 backoff_ms=50
+20:27:35.620 < [NET] state=CONNECTING
+20:27:35.620 < [NET] reconnect=FAILED
+20:27:35.620 < [NET] state=BACKOFF
+20:27:35.620 < [NET] retry=562 backoff_ms=50
+20:27:35.620 < [NET] state=CONNECTING
+20:27:35.620 < [NET] reconnect=FAILED
+20:27:35.620 < [NET] state=BACKOFF
+20:27:35.620 < [NET] retry=563 backoff_ms=50
+20:27:35.682 < [NET] state=CONNECTING
+20:27:35.682 < [NET] reconnect=FAILED
+20:27:35.682 < [NET] state=BACKOFF
+20:27:35.682 < [NET] retry=564 backoff_ms=50
+20:27:35.793 < [NET] state=CONNECTING
+20:27:35.793 < [NET] reconnect=FAILED
+20:27:35.793 < [NET] state=BACKOFF
+20:27:35.793 < [NET] retry=565 backoff_ms=50
+20:27:35.793 < [NET] state=CONNECTING
+20:27:35.793 < [NET] reconnect=FAILED
+20:27:35.793 < [NET] state=BACKOFF
+20:27:35.793 < [NET] retry=566 backoff_ms=50
+20:27:35.850 < [NET] state=CONNECTING
+20:27:35.850 < [NET] reconnect=FAILED
+20:27:35.850 < [NET] state=BACKOFF
+20:27:35.904 < [NET] retry=567 backoff_ms=50
+20:27:35.954 > NET UP
+20:27:35.966 < [NET] state=CONNECTING
+20:27:35.967 < [NET] reconnect=FAILED
+20:27:35.967 < [NET] state=BACKOFF
+20:27:35.967 < [NET] retry=568 backoff_ms=50
+20:27:35.967 < [NET] state=CONNECTING
+20:27:35.967 < [NET] reconnect=FAILED
+20:27:35.967 < [NET] state=BACKOFF
+20:27:35.967 < [NET] retry=569 backoff_ms=50
+20:27:36.266 < [FAULT] network restored
+20:27:36.266 < [NET] state=CONNECTING
+20:27:36.266 < [NET] state=CONNECTED
+20:27:36.267 < [NET] reconnect=SUCCESS
+20:27:36.267 < [BUFFER] flush_start count=0
+20:27:36.267 < [BUFFER] flush_end count=0
+20:27:39.955 > STATUS
+20:27:40.210 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":569,"heap":347884}
+20:27:40.956 > NET DOWN
+20:27:41.283 < [NET] state=DISCONNECTED
+20:27:41.283 < [NET] state=BACKOFF
+20:27:41.283 < [NET] retry=570 backoff_ms=500
+20:27:41.774 < [NET] state=CONNECTING
+20:27:41.833 < [NET] reconnect=FAILED
+20:27:41.833 < [NET] state=BACKOFF
+20:27:41.833 < [NET] retry=571 backoff_ms=50
+20:27:41.888 < [NET] state=CONNECTING
+20:27:41.888 < [NET] reconnect=FAILED
+20:27:41.888 < [NET] state=BACKOFF
+20:27:41.889 < [NET] retry=572 backoff_ms=50
+20:27:41.942 < [NET] state=CONNECTING
+20:27:41.942 < [NET] reconnect=FAILED
+20:27:41.942 < [NET] state=BACKOFF
+20:27:41.942 < [NET] retry=573 backoff_ms=50
+20:27:42.005 < [NET] state=CONNECTING
+20:27:42.005 < [NET] reconnect=FAILED
+20:27:42.006 < [NET] state=BACKOFF
+20:27:42.006 < [NET] retry=574 backoff_ms=50
+20:27:42.056 < [NET] state=CONNECTING
+20:27:42.056 < [NET] reconnect=FAILED
+20:27:42.056 < [NET] state=BACKOFF
+20:27:42.056 < [NET] retry=575 backoff_ms=50
+20:27:42.056 < [NET] state=CONNECTING
+20:27:42.116 < [NET] reconnect=FAILED
+20:27:42.117 < [NET] state=BACKOFF
+20:27:42.117 < [NET] retry=576 backoff_ms=50
+20:27:42.179 < [NET] state=CONNECTING
+20:27:42.179 < [NET] reconnect=FAILED
+20:27:42.180 < [NET] state=BACKOFF
+20:27:42.180 < [NET] retry=577 backoff_ms=50
+20:27:42.243 < [NET] state=CONNECTING
+20:27:42.244 < [NET] reconnect=FAILED
+20:27:42.244 < [NET] state=BACKOFF
+20:27:42.244 < [NET] retry=578 backoff_ms=50
+20:27:42.307 < [NET] state=CONNECTING
+20:27:42.307 < [NET] reconnect=FAILED
+20:27:42.307 < [NET] state=BACKOFF
+20:27:42.307 < [NET] retry=579 backoff_ms=50
+20:27:42.370 < [NET] state=CONNECTING
+20:27:42.371 < [NET] reconnect=FAILED
+20:27:42.371 < [NET] state=BACKOFF
+20:27:42.371 < [NET] retry=580 backoff_ms=50
+20:27:42.425 < [NET] state=CONNECTING
+20:27:42.425 < [NET] reconnect=FAILED
+20:27:42.425 < [NET] state=BACKOFF
+20:27:42.426 < [NET] retry=581 backoff_ms=50
+20:27:42.483 < [NET] state=CONNECTING
+20:27:42.483 < [NET] reconnect=FAILED
+20:27:42.483 < [NET] state=BACKOFF
+20:27:42.483 < [NET] retry=582 backoff_ms=50
+20:27:42.483 < [NET] state=CONNECTING
+20:27:42.483 < [NET] reconnect=FAILED
+20:27:42.546 < [NET] state=BACKOFF
+20:27:42.546 < [NET] retry=583 backoff_ms=50
+20:27:42.610 < [NET] state=CONNECTING
+20:27:42.610 < [NET] reconnect=FAILED
+20:27:42.610 < [NET] state=BACKOFF
+20:27:42.610 < [NET] retry=584 backoff_ms=50
+20:27:42.661 < [NET] state=CONNECTING
+20:27:42.662 < [NET] reconnect=FAILED
+20:27:42.662 < [NET] state=BACKOFF
+20:27:42.662 < [NET] retry=585 backoff_ms=50
+20:27:42.719 < [NET] state=CONNECTING
+20:27:42.719 < [NET] reconnect=FAILED
+20:27:42.719 < [NET] state=BACKOFF
+20:27:42.719 < [NET] retry=586 backoff_ms=50
+20:27:42.774 < [NET] state=CONNECTING
+20:27:42.774 < [NET] reconnect=FAILED
+20:27:42.774 < [NET] state=BACKOFF
+20:27:42.774 < [NET] retry=587 backoff_ms=50
+20:27:42.825 < [NET] state=CONNECTING
+20:27:42.825 < [NET] reconnect=FAILED
+20:27:42.825 < [NET] state=BACKOFF
+20:27:42.825 < [NET] retry=588 backoff_ms=50
+20:27:42.877 < [NET] state=CONNECTING
+20:27:42.877 < [NET] reconnect=FAILED
+20:27:42.877 < [NET] state=BACKOFF
+20:27:42.877 < [NET] retry=589 backoff_ms=50
+20:27:42.940 < [NET] state=CONNECTING
+20:27:42.940 < [NET] reconnect=FAILED
+20:27:42.940 < [NET] state=BACKOFF
+20:27:42.940 < [NET] retry=590 backoff_ms=50
+20:27:43.004 < [NET] state=CONNECTING
+20:27:43.004 < [NET] reconnect=FAILED
+20:27:43.004 < [NET] state=BACKOFF
+20:27:43.004 < [NET] retry=591 backoff_ms=50
+20:27:43.067 < [NET] state=CONNECTING
+20:27:43.067 < [NET] reconnect=FAILED
+20:27:43.067 < [NET] state=BACKOFF
+20:27:43.067 < [NET] retry=592 backoff_ms=50
+20:27:43.118 < [NET] state=CONNECTING
+20:27:43.118 < [NET] reconnect=FAILED
+20:27:43.118 < [NET] state=BACKOFF
+20:27:43.177 < [NET] retry=593 backoff_ms=50
+20:27:43.177 < [NET] state=CONNECTING
+20:27:43.177 < [NET] reconnect=FAILED
+20:27:43.177 < [NET] state=BACKOFF
+20:27:43.177 < [NET] retry=594 backoff_ms=50
+20:27:43.238 < [NET] state=CONNECTING
+20:27:43.238 < [NET] reconnect=FAILED
+20:27:43.238 < [NET] state=BACKOFF
+20:27:43.238 < [NET] retry=595 backoff_ms=50
+20:27:43.294 < [NET] state=CONNECTING
+20:27:43.294 < [NET] reconnect=FAILED
+20:27:43.345 < [NET] state=BACKOFF
+20:27:43.345 < [NET] retry=596 backoff_ms=50
+20:27:43.396 < [NET] state=CONNECTING
+20:27:43.396 < [NET] reconnect=FAILED
+20:27:43.396 < [NET] state=BACKOFF
+20:27:43.396 < [NET] retry=597 backoff_ms=50
+20:27:43.459 < [NET] state=CONNECTING
+20:27:43.459 < [NET] reconnect=FAILED
+20:27:43.460 < [NET] state=BACKOFF
+20:27:43.460 < [NET] retry=598 backoff_ms=50
+20:27:43.519 < [NET] state=CONNECTING
+20:27:43.519 < [NET] reconnect=FAILED
+20:27:43.519 < [NET] state=BACKOFF
+20:27:43.585 < [NET] retry=599 backoff_ms=50
+20:27:43.585 < [NET] state=CONNECTING
+20:27:43.585 < [NET] reconnect=FAILED
+20:27:43.585 < [NET] state=BACKOFF
+20:27:43.585 < [NET] retry=600 backoff_ms=50
+20:27:43.649 < [NET] state=CONNECTING
+20:27:43.649 < [NET] reconnect=FAILED
+20:27:43.649 < [NET] state=BACKOFF
+20:27:43.649 < [NET] retry=601 backoff_ms=50
+20:27:43.713 < [NET] state=CONNECTING
+20:27:43.713 < [NET] reconnect=FAILED
+20:27:43.713 < [NET] state=BACKOFF
+20:27:43.713 < [NET] retry=602 backoff_ms=50
+20:27:43.774 < [NET] state=CONNECTING
+20:27:43.774 < [NET] reconnect=FAILED
+20:27:43.774 < [NET] state=BACKOFF
+20:27:43.774 < [NET] retry=603 backoff_ms=50
+20:27:43.824 < [NET] state=CONNECTING
+20:27:43.825 < [NET] reconnect=FAILED
+20:27:43.825 < [NET] state=BACKOFF
+20:27:43.825 < [NET] retry=604 backoff_ms=50
+20:27:43.825 < [NET] state=CONNECTING
+20:27:43.884 < [NET] reconnect=FAILED
+20:27:43.884 < [NET] state=BACKOFF
+20:27:43.884 < [NET] retry=605 backoff_ms=50
+20:27:43.948 < [NET] state=CONNECTING
+20:27:43.948 < [NET] reconnect=FAILED
+20:27:43.948 < [NET] state=BACKOFF
+20:27:43.948 < [NET] retry=606 backoff_ms=50
+20:27:43.957 > NET UP
+20:27:44.198 < [NET] state=CONNECTING
+20:27:44.199 < [NET] reconnect=FAILED
+20:27:44.199 < [NET] state=BACKOFF
+20:27:44.199 < [NET] retry=607 backoff_ms=50
+20:27:44.262 < [FAULT] network restored
+20:27:44.262 < [NET] state=CONNECTING
+20:27:44.262 < [NET] state=CONNECTED
+20:27:44.262 < [NET] reconnect=SUCCESS
+20:27:44.262 < [BUFFER] flush_start count=0
+20:27:44.263 < [BUFFER] flush_end count=0
+20:27:47.958 > STATUS
+20:27:48.151 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":607,"heap":347884}
+20:27:48.959 > NET DOWN
+20:27:49.295 < [NET] state=DISCONNECTED
+20:27:49.296 < [NET] state=BACKOFF
+20:27:49.296 < [NET] retry=608 backoff_ms=500
+20:27:49.739 < [NET] state=CONNECTING
+20:27:49.739 < [NET] reconnect=FAILED
+20:27:49.739 < [NET] state=BACKOFF
+20:27:49.739 < [NET] retry=609 backoff_ms=50
+20:27:49.801 < [NET] state=CONNECTING
+20:27:49.801 < [NET] reconnect=FAILED
+20:27:49.801 < [NET] state=BACKOFF
+20:27:49.802 < [NET] retry=610 backoff_ms=50
+20:27:49.864 < [NET] state=CONNECTING
+20:27:49.864 < [NET] reconnect=FAILED
+20:27:49.864 < [NET] state=BACKOFF
+20:27:49.864 < [NET] retry=611 backoff_ms=50
+20:27:49.928 < [NET] state=CONNECTING
+20:27:49.928 < [NET] reconnect=FAILED
+20:27:49.928 < [NET] state=BACKOFF
+20:27:49.929 < [NET] retry=612 backoff_ms=50
+20:27:49.979 < [NET] state=CONNECTING
+20:27:49.979 < [NET] reconnect=FAILED
+20:27:49.979 < [NET] state=BACKOFF
+20:27:49.980 < [NET] retry=613 backoff_ms=50
+20:27:49.980 < [NET] state=CONNECTING
+20:27:50.038 < [NET] reconnect=FAILED
+20:27:50.038 < [NET] state=BACKOFF
+20:27:50.038 < [NET] retry=614 backoff_ms=50
+20:27:50.102 < [NET] state=CONNECTING
+20:27:50.102 < [NET] reconnect=FAILED
+20:27:50.103 < [NET] state=BACKOFF
+20:27:50.103 < [NET] retry=615 backoff_ms=50
+20:27:50.165 < [NET] state=CONNECTING
+20:27:50.166 < [NET] reconnect=FAILED
+20:27:50.166 < [NET] state=BACKOFF
+20:27:50.166 < [NET] retry=616 backoff_ms=50
+20:27:50.221 < [NET] state=CONNECTING
+20:27:50.221 < [NET] reconnect=FAILED
+20:27:50.221 < [NET] state=BACKOFF
+20:27:50.221 < [NET] retry=617 backoff_ms=50
+20:27:50.274 < [NET] state=CONNECTING
+20:27:50.274 < [NET] reconnect=FAILED
+20:27:50.275 < [NET] state=BACKOFF
+20:27:50.275 < [NET] retry=618 backoff_ms=50
+20:27:50.330 < [NET] state=CONNECTING
+20:27:50.330 < [NET] reconnect=FAILED
+20:27:50.330 < [NET] state=BACKOFF
+20:27:50.330 < [NET] retry=619 backoff_ms=50
+20:27:50.385 < [NET] state=CONNECTING
+20:27:50.385 < [NET] reconnect=FAILED
+20:27:50.385 < [NET] state=BACKOFF
+20:27:50.385 < [NET] retry=620 backoff_ms=50
+20:27:50.448 < [NET] state=CONNECTING
+20:27:50.448 < [NET] reconnect=FAILED
+20:27:50.448 < [NET] state=BACKOFF
+20:27:50.448 < [NET] retry=621 backoff_ms=50
+20:27:50.511 < [NET] state=CONNECTING
+20:27:50.511 < [NET] reconnect=FAILED
+20:27:50.511 < [NET] state=BACKOFF
+20:27:50.511 < [NET] retry=622 backoff_ms=50
+20:27:50.573 < [NET] state=CONNECTING
+20:27:50.573 < [NET] reconnect=FAILED
+20:27:50.574 < [NET] state=BACKOFF
+20:27:50.574 < [NET] retry=623 backoff_ms=50
+20:27:50.636 < [NET] state=CONNECTING
+20:27:50.636 < [NET] reconnect=FAILED
+20:27:50.700 < [NET] state=BACKOFF
+20:27:50.700 < [NET] retry=624 backoff_ms=50
+20:27:50.700 < [NET] state=CONNECTING
+20:27:50.700 < [NET] reconnect=FAILED
+20:27:50.701 < [NET] state=BACKOFF
+20:27:50.701 < [NET] retry=625 backoff_ms=50
+20:27:50.764 < [NET] state=CONNECTING
+20:27:50.764 < [NET] reconnect=FAILED
+20:27:50.765 < [NET] state=BACKOFF
+20:27:50.765 < [NET] retry=626 backoff_ms=50
+20:27:50.826 < [NET] state=CONNECTING
+20:27:50.826 < [NET] reconnect=FAILED
+20:27:50.826 < [NET] state=BACKOFF
+20:27:50.826 < [NET] retry=627 backoff_ms=50
+20:27:50.889 < [NET] state=CONNECTING
+20:27:50.890 < [NET] reconnect=FAILED
+20:27:50.890 < [NET] state=BACKOFF
+20:27:50.890 < [NET] retry=628 backoff_ms=50
+20:27:50.952 < [NET] state=CONNECTING
+20:27:50.953 < [NET] reconnect=FAILED
+20:27:50.953 < [NET] state=BACKOFF
+20:27:50.953 < [NET] retry=629 backoff_ms=50
+20:27:50.953 < [NET] state=CONNECTING
+20:27:50.953 < [NET] reconnect=FAILED
+20:27:50.953 < [NET] state=BACKOFF
+20:27:50.953 < [NET] retry=630 backoff_ms=50
+20:27:51.013 < [NET] state=CONNECTING
+20:27:51.078 < [NET] reconnect=FAILED
+20:27:51.078 < [NET] state=BACKOFF
+20:27:51.078 < [NET] retry=631 backoff_ms=50
+20:27:51.078 < [NET] state=CONNECTING
+20:27:51.078 < [NET] reconnect=FAILED
+20:27:51.078 < [NET] state=BACKOFF
+20:27:51.078 < [NET] retry=632 backoff_ms=50
+20:27:51.184 < [NET] state=CONNECTING
+20:27:51.184 < [NET] reconnect=FAILED
+20:27:51.184 < [NET] state=BACKOFF
+20:27:51.184 < [NET] retry=633 backoff_ms=50
+20:27:51.184 < [NET] state=CONNECTING
+20:27:51.250 < [NET] reconnect=FAILED
+20:27:51.313 < [NET] state=BACKOFF
+20:27:51.313 < [NET] retry=634 backoff_ms=50
+20:27:51.313 < [NET] state=CONNECTING
+20:27:51.313 < [NET] reconnect=FAILED
+20:27:51.313 < [NET] state=BACKOFF
+20:27:51.313 < [NET] retry=635 backoff_ms=50
+20:27:51.374 < [NET] state=CONNECTING
+20:27:51.375 < [NET] reconnect=FAILED
+20:27:51.375 < [NET] state=BACKOFF
+20:27:51.375 < [NET] retry=636 backoff_ms=50
+20:27:51.436 < [NET] state=CONNECTING
+20:27:51.436 < [NET] reconnect=FAILED
+20:27:51.436 < [NET] state=BACKOFF
+20:27:51.436 < [NET] retry=637 backoff_ms=50
+20:27:51.500 < [NET] state=CONNECTING
+20:27:51.500 < [NET] reconnect=FAILED
+20:27:51.500 < [NET] state=BACKOFF
+20:27:51.500 < [NET] retry=638 backoff_ms=50
+20:27:51.562 < [NET] state=CONNECTING
+20:27:51.562 < [NET] reconnect=FAILED
+20:27:51.562 < [NET] state=BACKOFF
+20:27:51.562 < [NET] retry=639 backoff_ms=50
+20:27:51.625 < [NET] state=CONNECTING
+20:27:51.626 < [NET] reconnect=FAILED
+20:27:51.626 < [NET] state=BACKOFF
+20:27:51.676 < [NET] retry=640 backoff_ms=50
+20:27:51.735 < [NET] state=CONNECTING
+20:27:51.736 < [NET] reconnect=FAILED
+20:27:51.736 < [NET] state=BACKOFF
+20:27:51.736 < [NET] retry=641 backoff_ms=50
+20:27:51.798 < [NET] state=CONNECTING
+20:27:51.798 < [NET] reconnect=FAILED
+20:27:51.798 < [NET] state=BACKOFF
+20:27:51.799 < [NET] retry=642 backoff_ms=50
+20:27:51.799 < [NET] state=CONNECTING
+20:27:51.799 < [NET] reconnect=FAILED
+20:27:51.799 < [NET] state=BACKOFF
+20:27:51.799 < [NET] retry=643 backoff_ms=50
+20:27:51.860 < [NET] state=CONNECTING
+20:27:51.860 < [NET] reconnect=FAILED
+20:27:51.860 < [NET] state=BACKOFF
+20:27:51.860 < [NET] retry=644 backoff_ms=50
+20:27:51.923 < [NET] state=CONNECTING
+20:27:51.924 < [NET] reconnect=FAILED
+20:27:51.924 < [NET] state=BACKOFF
+20:27:51.924 < [NET] retry=645 backoff_ms=50
+20:27:51.960 > NET UP
+20:27:51.987 < [NET] state=CONNECTING
+20:27:51.988 < [NET] reconnect=FAILED
+20:27:51.988 < [NET] state=BACKOFF
+20:27:51.988 < [NET] retry=646 backoff_ms=50
+20:27:52.051 < [NET] state=CONNECTING
+20:27:52.052 < [NET] reconnect=FAILED
+20:27:52.052 < [NET] state=BACKOFF
+20:27:52.286 < [NET] retry=647 backoff_ms=50
+20:27:52.286 < [FAULT] network restored
+20:27:52.287 < [NET] state=CONNECTING
+20:27:52.349 < [NET] state=CONNECTED
+20:27:52.349 < [NET] reconnect=SUCCESS
+20:27:52.349 < [BUFFER] flush_start count=0
+20:27:52.349 < [BUFFER] flush_end count=0
+20:27:55.961 > STATUS
+20:27:56.377 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":647,"heap":347884}
+20:27:56.962 > NET DOWN
+20:27:57.197 < [NET] state=DISCONNECTED
+20:27:57.197 < [NET] state=BACKOFF
+20:27:57.197 < [NET] retry=648 backoff_ms=500
+20:27:57.701 < [NET] state=CONNECTING
+20:27:57.702 < [NET] reconnect=FAILED
+20:27:57.703 < [NET] state=BACKOFF
+20:27:57.703 < [NET] retry=649 backoff_ms=50
+20:27:57.757 < [NET] state=CONNECTING
+20:27:57.757 < [NET] reconnect=FAILED
+20:27:57.758 < [NET] state=BACKOFF
+20:27:57.758 < [NET] retry=650 backoff_ms=50
+20:27:57.811 < [NET] state=CONNECTING
+20:27:57.811 < [NET] reconnect=FAILED
+20:27:57.811 < [NET] state=BACKOFF
+20:27:57.811 < [NET] retry=651 backoff_ms=50
+20:27:57.874 < [NET] state=CONNECTING
+20:27:57.874 < [NET] reconnect=FAILED
+20:27:57.874 < [NET] state=BACKOFF
+20:27:57.874 < [NET] retry=652 backoff_ms=50
+20:27:57.999 < [NET] state=CONNECTING
+20:27:57.999 < [NET] reconnect=FAILED
+20:27:57.999 < [NET] state=BACKOFF
+20:27:57.999 < [NET] retry=653 backoff_ms=50
+20:27:58.000 < [NET] state=CONNECTING
+20:27:58.000 < [NET] reconnect=FAILED
+20:27:58.065 < [NET] state=BACKOFF
+20:27:58.065 < [NET] retry=654 backoff_ms=50
+20:27:58.065 < [NET] state=CONNECTING
+20:27:58.065 < [NET] reconnect=FAILED
+20:27:58.065 < [NET] state=BACKOFF
+20:27:58.065 < [NET] retry=655 backoff_ms=50
+20:27:58.127 < [NET] state=CONNECTING
+20:27:58.127 < [NET] reconnect=FAILED
+20:27:58.127 < [NET] state=BACKOFF
+20:27:58.127 < [NET] retry=656 backoff_ms=50
+20:27:58.178 < [NET] state=CONNECTING
+20:27:58.178 < [NET] reconnect=FAILED
+20:27:58.178 < [NET] state=BACKOFF
+20:27:58.238 < [NET] retry=657 backoff_ms=50
+20:27:58.238 < [NET] state=CONNECTING
+20:27:58.238 < [NET] reconnect=FAILED
+20:27:58.238 < [NET] state=BACKOFF
+20:27:58.238 < [NET] retry=658 backoff_ms=50
+20:27:58.300 < [NET] state=CONNECTING
+20:27:58.301 < [NET] reconnect=FAILED
+20:27:58.301 < [NET] state=BACKOFF
+20:27:58.301 < [NET] retry=659 backoff_ms=50
+20:27:58.363 < [NET] state=CONNECTING
+20:27:58.363 < [NET] reconnect=FAILED
+20:27:58.363 < [NET] state=BACKOFF
+20:27:58.363 < [NET] retry=660 backoff_ms=50
+20:27:58.426 < [NET] state=CONNECTING
+20:27:58.426 < [NET] reconnect=FAILED
+20:27:58.426 < [NET] state=BACKOFF
+20:27:58.426 < [NET] retry=661 backoff_ms=50
+20:27:58.536 < [NET] state=CONNECTING
+20:27:58.536 < [NET] reconnect=FAILED
+20:27:58.536 < [NET] state=BACKOFF
+20:27:58.536 < [NET] retry=662 backoff_ms=50
+20:27:58.536 < [NET] state=CONNECTING
+20:27:58.536 < [NET] reconnect=FAILED
+20:27:58.536 < [NET] state=BACKOFF
+20:27:58.536 < [NET] retry=663 backoff_ms=50
+20:27:58.597 < [NET] state=CONNECTING
+20:27:58.597 < [NET] reconnect=FAILED
+20:27:58.597 < [NET] state=BACKOFF
+20:27:58.597 < [NET] retry=664 backoff_ms=50
+20:27:58.712 < [NET] state=CONNECTING
+20:27:58.712 < [NET] reconnect=FAILED
+20:27:58.712 < [NET] state=BACKOFF
+20:27:58.713 < [NET] retry=665 backoff_ms=50
+20:27:58.769 < [NET] state=CONNECTING
+20:27:58.769 < [NET] reconnect=FAILED
+20:27:58.769 < [NET] state=BACKOFF
+20:27:58.769 < [NET] retry=666 backoff_ms=50
+20:27:58.829 < [NET] state=CONNECTING
+20:27:58.830 < [NET] reconnect=FAILED
+20:27:58.830 < [NET] state=BACKOFF
+20:27:58.830 < [NET] retry=667 backoff_ms=50
+20:27:58.894 < [NET] state=CONNECTING
+20:27:58.895 < [NET] reconnect=FAILED
+20:27:58.895 < [NET] state=BACKOFF
+20:27:58.895 < [NET] retry=668 backoff_ms=50
+20:27:58.953 < [NET] state=CONNECTING
+20:27:58.954 < [NET] reconnect=FAILED
+20:27:58.954 < [NET] state=BACKOFF
+20:27:58.954 < [NET] retry=669 backoff_ms=50
+20:27:59.006 < [NET] state=CONNECTING
+20:27:59.006 < [NET] reconnect=FAILED
+20:27:59.006 < [NET] state=BACKOFF
+20:27:59.006 < [NET] retry=670 backoff_ms=50
+20:27:59.070 < [NET] state=CONNECTING
+20:27:59.070 < [NET] reconnect=FAILED
+20:27:59.070 < [NET] state=BACKOFF
+20:27:59.070 < [NET] retry=671 backoff_ms=50
+20:27:59.132 < [NET] state=CONNECTING
+20:27:59.132 < [NET] reconnect=FAILED
+20:27:59.132 < [NET] state=BACKOFF
+20:27:59.132 < [NET] retry=672 backoff_ms=50
+20:27:59.132 < [NET] state=CONNECTING
+20:27:59.132 < [NET] reconnect=FAILED
+20:27:59.132 < [NET] state=BACKOFF
+20:27:59.132 < [NET] retry=673 backoff_ms=50
+20:27:59.183 < [NET] state=CONNECTING
+20:27:59.183 < [NET] reconnect=FAILED
+20:27:59.242 < [NET] state=BACKOFF
+20:27:59.243 < [NET] retry=674 backoff_ms=50
+20:27:59.305 < [NET] state=CONNECTING
+20:27:59.305 < [NET] reconnect=FAILED
+20:27:59.305 < [NET] state=BACKOFF
+20:27:59.305 < [NET] retry=675 backoff_ms=50
+20:27:59.356 < [NET] state=CONNECTING
+20:27:59.356 < [NET] reconnect=FAILED
+20:27:59.357 < [NET] state=BACKOFF
+20:27:59.357 < [NET] retry=676 backoff_ms=50
+20:27:59.357 < [NET] state=CONNECTING
+20:27:59.416 < [NET] reconnect=FAILED
+20:27:59.416 < [NET] state=BACKOFF
+20:27:59.416 < [NET] retry=677 backoff_ms=50
+20:27:59.472 < [NET] state=CONNECTING
+20:27:59.472 < [NET] reconnect=FAILED
+20:27:59.472 < [NET] state=BACKOFF
+20:27:59.472 < [NET] retry=678 backoff_ms=50
+20:27:59.522 < [NET] state=CONNECTING
+20:27:59.523 < [NET] reconnect=FAILED
+20:27:59.523 < [NET] state=BACKOFF
+20:27:59.523 < [NET] retry=679 backoff_ms=50
+20:27:59.523 < [NET] state=CONNECTING
+20:27:59.574 < [NET] reconnect=FAILED
+20:27:59.574 < [NET] state=BACKOFF
+20:27:59.575 < [NET] retry=680 backoff_ms=50
+20:27:59.634 < [NET] state=CONNECTING
+20:27:59.635 < [NET] reconnect=FAILED
+20:27:59.635 < [NET] state=BACKOFF
+20:27:59.635 < [NET] retry=681 backoff_ms=50
+20:27:59.692 < [NET] state=CONNECTING
+20:27:59.692 < [NET] reconnect=FAILED
+20:27:59.693 < [NET] state=BACKOFF
+20:27:59.693 < [NET] retry=682 backoff_ms=50
+20:27:59.743 < [NET] state=CONNECTING
+20:27:59.743 < [NET] reconnect=FAILED
+20:27:59.744 < [NET] state=BACKOFF
+20:27:59.744 < [NET] retry=683 backoff_ms=50
+20:27:59.744 < [NET] state=CONNECTING
+20:27:59.807 < [NET] reconnect=FAILED
+20:27:59.807 < [NET] state=BACKOFF
+20:27:59.807 < [NET] retry=684 backoff_ms=50
+20:27:59.870 < [NET] state=CONNECTING
+20:27:59.870 < [NET] reconnect=FAILED
+20:27:59.870 < [NET] state=BACKOFF
+20:27:59.870 < [NET] retry=685 backoff_ms=50
+20:27:59.934 < [NET] state=CONNECTING
+20:27:59.934 < [NET] reconnect=FAILED
+20:27:59.934 < [NET] state=BACKOFF
+20:27:59.934 < [NET] retry=686 backoff_ms=50
+20:27:59.963 > NET UP
+20:27:59.998 < [NET] state=CONNECTING
+20:27:59.998 < [NET] reconnect=FAILED
+20:27:59.998 < [NET] state=BACKOFF
+20:27:59.998 < [NET] retry=687 backoff_ms=50
+20:28:00.297 < [NET] state=CONNECTING
+20:28:00.297 < [NET] reconnect=FAILED
+20:28:00.297 < [NET] state=BACKOFF
+20:28:00.297 < [NET] retry=688 backoff_ms=50
+20:28:00.297 < [FAULT] network restored
+20:28:00.297 < [NET] state=CONNECTING
+20:28:00.297 < [NET] state=CONNECTED
+20:28:00.297 < [NET] reconnect=SUCCESS
+20:28:00.297 < [BUFFER] flush_start count=0
+20:28:00.297 < [BUFFER] flush_end count=0
+20:28:03.964 > STATUS
+20:28:04.141 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":688,"heap":347884}
+20:28:04.965 > NET DOWN
+20:28:05.277 < [NET] state=DISCONNECTED
+20:28:05.277 < [NET] state=BACKOFF
+20:28:05.277 < [NET] retry=689 backoff_ms=500
+20:28:05.778 < [NET] state=CONNECTING
+20:28:05.778 < [NET] reconnect=FAILED
+20:28:05.778 < [NET] state=BACKOFF
+20:28:05.778 < [NET] retry=690 backoff_ms=50
+20:28:05.829 < [NET] state=CONNECTING
+20:28:05.887 < [NET] reconnect=FAILED
+20:28:05.888 < [NET] state=BACKOFF
+20:28:05.888 < [NET] retry=691 backoff_ms=50
+20:28:05.951 < [NET] state=CONNECTING
+20:28:05.952 < [NET] reconnect=FAILED
+20:28:05.952 < [NET] state=BACKOFF
+20:28:05.952 < [NET] retry=692 backoff_ms=50
+20:28:06.011 < [NET] state=CONNECTING
+20:28:06.011 < [NET] reconnect=FAILED
+20:28:06.011 < [NET] state=BACKOFF
+20:28:06.012 < [NET] retry=693 backoff_ms=50
+20:28:06.062 < [NET] state=CONNECTING
+20:28:06.062 < [NET] reconnect=FAILED
+20:28:06.063 < [NET] state=BACKOFF
+20:28:06.063 < [NET] retry=694 backoff_ms=50
+20:28:06.125 < [NET] state=CONNECTING
+20:28:06.125 < [NET] reconnect=FAILED
+20:28:06.125 < [NET] state=BACKOFF
+20:28:06.125 < [NET] retry=695 backoff_ms=50
+20:28:06.184 < [NET] state=CONNECTING
+20:28:06.185 < [NET] reconnect=FAILED
+20:28:06.185 < [NET] state=BACKOFF
+20:28:06.185 < [NET] retry=696 backoff_ms=50
+20:28:06.251 < [NET] state=CONNECTING
+20:28:06.251 < [NET] reconnect=FAILED
+20:28:06.251 < [NET] state=BACKOFF
+20:28:06.309 < [NET] retry=697 backoff_ms=50
+20:28:06.362 < [NET] state=CONNECTING
+20:28:06.362 < [NET] reconnect=FAILED
+20:28:06.363 < [NET] state=BACKOFF
+20:28:06.363 < [NET] retry=698 backoff_ms=50
+20:28:06.425 < [NET] state=CONNECTING
+20:28:06.426 < [NET] reconnect=FAILED
+20:28:06.426 < [NET] state=BACKOFF
+20:28:06.426 < [NET] retry=699 backoff_ms=50
+20:28:06.488 < [NET] state=CONNECTING
+20:28:06.488 < [NET] reconnect=FAILED
+20:28:06.489 < [NET] state=BACKOFF
+20:28:06.489 < [NET] retry=700 backoff_ms=50
+20:28:06.552 < [NET] state=CONNECTING
+20:28:06.553 < [NET] reconnect=FAILED
+20:28:06.553 < [NET] state=BACKOFF
+20:28:06.553 < [NET] retry=701 backoff_ms=50
+20:28:06.615 < [NET] state=CONNECTING
+20:28:06.616 < [NET] reconnect=FAILED
+20:28:06.616 < [NET] state=BACKOFF
+20:28:06.616 < [NET] retry=702 backoff_ms=50
+20:28:06.680 < [NET] state=CONNECTING
+20:28:06.680 < [NET] reconnect=FAILED
+20:28:06.680 < [NET] state=BACKOFF
+20:28:06.680 < [NET] retry=703 backoff_ms=50
+20:28:06.743 < [NET] state=CONNECTING
+20:28:06.743 < [NET] reconnect=FAILED
+20:28:06.743 < [NET] state=BACKOFF
+20:28:06.743 < [NET] retry=704 backoff_ms=50
+20:28:06.794 < [NET] state=CONNECTING
+20:28:06.794 < [NET] reconnect=FAILED
+20:28:06.794 < [NET] state=BACKOFF
+20:28:06.794 < [NET] retry=705 backoff_ms=50
+20:28:06.794 < [NET] state=CONNECTING
+20:28:06.795 < [NET] reconnect=FAILED
+20:28:06.795 < [NET] state=BACKOFF
+20:28:06.845 < [NET] retry=706 backoff_ms=50
+20:28:06.845 < [NET] state=CONNECTING
+20:28:06.901 < [NET] reconnect=FAILED
+20:28:06.901 < [NET] state=BACKOFF
+20:28:06.901 < [NET] retry=707 backoff_ms=50
+20:28:06.902 < [NET] state=CONNECTING
+20:28:06.964 < [NET] reconnect=FAILED
+20:28:06.965 < [NET] state=BACKOFF
+20:28:06.965 < [NET] retry=708 backoff_ms=50
+20:28:07.027 < [NET] state=CONNECTING
+20:28:07.027 < [NET] reconnect=FAILED
+20:28:07.027 < [NET] state=BACKOFF
+20:28:07.027 < [NET] retry=709 backoff_ms=50
+20:28:07.093 < [NET] state=CONNECTING
+20:28:07.094 < [NET] reconnect=FAILED
+20:28:07.094 < [NET] state=BACKOFF
+20:28:07.094 < [NET] retry=710 backoff_ms=50
+20:28:07.200 < [NET] state=CONNECTING
+20:28:07.200 < [NET] reconnect=FAILED
+20:28:07.200 < [NET] state=BACKOFF
+20:28:07.200 < [NET] retry=711 backoff_ms=50
+20:28:07.264 < [NET] state=CONNECTING
+20:28:07.264 < [NET] reconnect=FAILED
+20:28:07.264 < [NET] state=BACKOFF
+20:28:07.264 < [NET] retry=712 backoff_ms=50
+20:28:07.264 < [NET] state=CONNECTING
+20:28:07.264 < [NET] reconnect=FAILED
+20:28:07.264 < [NET] state=BACKOFF
+20:28:07.264 < [NET] retry=713 backoff_ms=50
+20:28:07.373 < [NET] state=CONNECTING
+20:28:07.374 < [NET] reconnect=FAILED
+20:28:07.374 < [NET] state=BACKOFF
+20:28:07.374 < [NET] retry=714 backoff_ms=50
+20:28:07.435 < [NET] state=CONNECTING
+20:28:07.435 < [NET] reconnect=FAILED
+20:28:07.436 < [NET] state=BACKOFF
+20:28:07.436 < [NET] retry=715 backoff_ms=50
+20:28:07.436 < [NET] state=CONNECTING
+20:28:07.436 < [NET] reconnect=FAILED
+20:28:07.436 < [NET] state=BACKOFF
+20:28:07.436 < [NET] retry=716 backoff_ms=50
+20:28:07.499 < [NET] state=CONNECTING
+20:28:07.499 < [NET] reconnect=FAILED
+20:28:07.499 < [NET] state=BACKOFF
+20:28:07.562 < [NET] retry=717 backoff_ms=50
+20:28:07.562 < [NET] state=CONNECTING
+20:28:07.562 < [NET] reconnect=FAILED
+20:28:07.562 < [NET] state=BACKOFF
+20:28:07.562 < [NET] retry=718 backoff_ms=50
+20:28:07.613 < [NET] state=CONNECTING
+20:28:07.613 < [NET] reconnect=FAILED
+20:28:07.613 < [NET] state=BACKOFF
+20:28:07.673 < [NET] retry=719 backoff_ms=50
+20:28:07.673 < [NET] state=CONNECTING
+20:28:07.673 < [NET] reconnect=FAILED
+20:28:07.673 < [NET] state=BACKOFF
+20:28:07.673 < [NET] retry=720 backoff_ms=50
+20:28:07.736 < [NET] state=CONNECTING
+20:28:07.736 < [NET] reconnect=FAILED
+20:28:07.736 < [NET] state=BACKOFF
+20:28:07.736 < [NET] retry=721 backoff_ms=50
+20:28:07.794 < [NET] state=CONNECTING
+20:28:07.794 < [NET] reconnect=FAILED
+20:28:07.795 < [NET] state=BACKOFF
+20:28:07.795 < [NET] retry=722 backoff_ms=50
+20:28:07.845 < [NET] state=CONNECTING
+20:28:07.845 < [NET] reconnect=FAILED
+20:28:07.845 < [NET] state=BACKOFF
+20:28:07.845 < [NET] retry=723 backoff_ms=50
+20:28:07.897 < [NET] state=CONNECTING
+20:28:07.898 < [NET] reconnect=FAILED
+20:28:07.898 < [NET] state=BACKOFF
+20:28:07.898 < [NET] retry=724 backoff_ms=50
+20:28:07.954 < [NET] state=CONNECTING
+20:28:07.955 < [NET] reconnect=FAILED
+20:28:07.955 < [NET] state=BACKOFF
+20:28:07.955 < [NET] retry=725 backoff_ms=50
+20:28:07.966 > NET UP
+20:28:08.017 < [NET] state=CONNECTING
+20:28:08.018 < [NET] reconnect=FAILED
+20:28:08.018 < [NET] state=BACKOFF
+20:28:08.018 < [NET] retry=726 backoff_ms=50
+20:28:08.203 < [FAULT] network restored
+20:28:08.204 < [NET] state=CONNECTING
+20:28:08.204 < [NET] state=CONNECTED
+20:28:08.204 < [NET] reconnect=SUCCESS
+20:28:08.204 < [BUFFER] flush_start count=0
+20:28:08.204 < [BUFFER] flush_end count=0
+20:28:11.968 > STATUS
+20:28:12.052 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":726,"heap":347884}

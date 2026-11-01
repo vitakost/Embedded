@@ -1,0 +1,402 @@
+20:34:42.102 > NET UP
+20:34:42.519 < [FAULT] network restored
+20:34:48.103 > RESET STATS
+20:34:48.588 < [STATS] reset
+20:34:49.104 > STATUS
+20:34:49.589 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":0,"heap":262920}
+20:34:50.105 > NET DOWN
+20:34:50.540 < [NET] state=DISCONNECTED
+20:34:50.541 < [NET] state=BACKOFF
+20:34:50.541 < [NET] retry=1 backoff_ms=500
+20:34:51.059 < [NET] state=CONNECTING
+20:34:51.060 < [NET] reconnect=FAILED
+20:34:51.060 < [NET] state=BACKOFF
+20:34:51.060 < [NET] retry=2 backoff_ms=50
+20:34:51.126 < [NET] state=CONNECTING
+20:34:51.126 < [NET] reconnect=FAILED
+20:34:51.126 < [NET] state=BACKOFF
+20:34:51.126 < [NET] retry=3 backoff_ms=50
+20:34:51.241 < [NET] state=CONNECTING
+20:34:51.241 < [NET] reconnect=FAILED
+20:34:51.241 < [NET] state=BACKOFF
+20:34:51.241 < [NET] retry=4 backoff_ms=50
+20:34:51.293 < [NET] state=CONNECTING
+20:34:51.293 < [NET] reconnect=FAILED
+20:34:51.293 < [NET] state=BACKOFF
+20:34:51.293 < [NET] retry=5 backoff_ms=50
+20:34:51.403 < [NET] state=CONNECTING
+20:34:51.403 < [NET] reconnect=FAILED
+20:34:51.403 < [NET] state=BACKOFF
+20:34:51.403 < [NET] retry=6 backoff_ms=50
+20:34:51.513 < [NET] state=CONNECTING
+20:34:51.513 < [NET] reconnect=FAILED
+20:34:51.514 < [NET] state=BACKOFF
+20:34:51.514 < [NET] retry=7 backoff_ms=50
+20:34:51.578 < [NET] state=CONNECTING
+20:34:51.579 < [NET] reconnect=FAILED
+20:34:51.579 < [NET] state=BACKOFF
+20:34:51.579 < [NET] retry=8 backoff_ms=50
+20:34:51.606 > SEND
+20:34:51.629 < [NET] state=CONNECTING
+20:34:51.629 < [NET] reconnect=FAILED
+20:34:51.689 < [NET] state=BACKOFF
+20:34:51.689 < [NET] retry=9 backoff_ms=50
+20:34:52.200 < [BUFFER] queued id=1097 count=1/8
+20:34:52.200 < [NET] state=CONNECTING
+20:34:52.200 < [NET] reconnect=FAILED
+20:34:52.200 < [NET] state=BACKOFF
+20:34:52.201 < [NET] retry=10 backoff_ms=50
+20:34:52.322 < [NET] state=CONNECTING
+20:34:52.322 < [NET] reconnect=FAILED
+20:34:52.322 < [NET] state=BACKOFF
+20:34:52.322 < [NET] retry=11 backoff_ms=50
+20:34:52.385 < [NET] state=CONNECTING
+20:34:52.385 < [NET] reconnect=FAILED
+20:34:52.385 < [NET] state=BACKOFF
+20:34:52.385 < [NET] retry=12 backoff_ms=50
+20:34:52.407 > SEND
+20:34:52.445 < [NET] state=CONNECTING
+20:34:52.445 < [NET] reconnect=FAILED
+20:34:52.445 < [NET] state=BACKOFF
+20:34:52.446 < [NET] retry=13 backoff_ms=50
+20:34:52.912 < [BUFFER] queued id=1098 count=2/8
+20:34:52.912 < [NET] state=CONNECTING
+20:34:52.912 < [NET] reconnect=FAILED
+20:34:52.912 < [NET] state=BACKOFF
+20:34:52.912 < [NET] retry=14 backoff_ms=50
+20:34:52.978 < [NET] state=CONNECTING
+20:34:52.979 < [NET] reconnect=FAILED
+20:34:53.043 < [NET] state=BACKOFF
+20:34:53.047 < [NET] retry=15 backoff_ms=50
+20:34:53.097 < [NET] state=CONNECTING
+20:34:53.097 < [NET] reconnect=FAILED
+20:34:53.151 < [NET] state=BACKOFF
+20:34:53.151 < [NET] retry=16 backoff_ms=50
+20:34:53.208 > SEND
+20:34:53.210 < [NET] state=CONNECTING
+20:34:53.211 < [NET] reconnect=FAILED
+20:34:53.211 < [NET] state=BACKOFF
+20:34:53.211 < [NET] retry=17 backoff_ms=50
+20:34:53.267 < [NET] state=CONNECTING
+20:34:53.268 < [NET] reconnect=FAILED
+20:34:53.268 < [NET] state=BACKOFF
+20:34:53.563 < [NET] retry=18 backoff_ms=50
+20:34:53.922 < [BUFFER] queued id=1099 count=3/8
+20:34:53.980 < [NET] state=CONNECTING
+20:34:53.980 < [NET] reconnect=FAILED
+20:34:53.981 < [NET] state=BACKOFF
+20:34:53.981 < [NET] retry=19 backoff_ms=50
+20:34:53.981 < [NET] state=CONNECTING
+20:34:53.981 < [NET] reconnect=FAILED
+20:34:53.981 < [NET] state=BACKOFF
+20:34:54.009 > SEND
+20:34:54.044 < [NET] retry=20 backoff_ms=50
+20:34:54.107 < [NET] state=CONNECTING
+20:34:54.107 < [NET] reconnect=FAILED
+20:34:54.108 < [NET] state=BACKOFF
+20:34:54.108 < [NET] retry=21 backoff_ms=50
+20:34:54.460 < [BUFFER] queued id=1100 count=4/8
+20:34:54.460 < [NET] state=CONNECTING
+20:34:54.460 < [NET] reconnect=FAILED
+20:34:54.460 < [NET] state=BACKOFF
+20:34:54.460 < [NET] retry=22 backoff_ms=50
+20:34:54.522 < [NET] state=CONNECTING
+20:34:54.522 < [NET] reconnect=FAILED
+20:34:54.586 < [NET] state=BACKOFF
+20:34:54.586 < [NET] retry=23 backoff_ms=50
+20:34:54.648 < [NET] state=CONNECTING
+20:34:54.648 < [NET] reconnect=FAILED
+20:34:54.648 < [NET] state=BACKOFF
+20:34:54.648 < [NET] retry=24 backoff_ms=50
+20:34:54.751 < [NET] state=CONNECTING
+20:34:54.751 < [NET] reconnect=FAILED
+20:34:54.752 < [NET] state=BACKOFF
+20:34:54.752 < [NET] retry=25 backoff_ms=50
+20:34:54.805 < [NET] state=CONNECTING
+20:34:54.805 < [NET] reconnect=FAILED
+20:34:54.805 < [NET] state=BACKOFF
+20:34:54.805 < [NET] retry=26 backoff_ms=50
+20:34:54.810 > SEND
+20:34:54.856 < [NET] state=CONNECTING
+20:34:54.856 < [NET] reconnect=FAILED
+20:34:54.910 < [NET] state=BACKOFF
+20:34:54.910 < [NET] retry=27 backoff_ms=50
+20:34:55.302 < [BUFFER] queued id=1101 count=5/8
+20:34:55.302 < [NET] state=CONNECTING
+20:34:55.302 < [NET] reconnect=FAILED
+20:34:55.302 < [NET] state=BACKOFF
+20:34:55.302 < [NET] retry=28 backoff_ms=50
+20:34:55.362 < [NET] state=CONNECTING
+20:34:55.363 < [NET] reconnect=FAILED
+20:34:55.363 < [NET] state=BACKOFF
+20:34:55.363 < [NET] retry=29 backoff_ms=50
+20:34:55.426 < [NET] state=CONNECTING
+20:34:55.426 < [NET] reconnect=FAILED
+20:34:55.426 < [NET] state=BACKOFF
+20:34:55.426 < [NET] retry=30 backoff_ms=50
+20:34:55.552 < [NET] state=CONNECTING
+20:34:55.552 < [NET] reconnect=FAILED
+20:34:55.552 < [NET] state=BACKOFF
+20:34:55.552 < [NET] retry=31 backoff_ms=50
+20:34:55.612 > SEND
+20:34:55.613 < [NET] state=CONNECTING
+20:34:55.614 < [NET] reconnect=FAILED
+20:34:55.614 < [NET] state=BACKOFF
+20:34:55.614 < [NET] retry=32 backoff_ms=50
+20:34:55.724 < [NET] state=CONNECTING
+20:34:55.724 < [NET] reconnect=FAILED
+20:34:55.724 < [NET] state=BACKOFF
+20:34:55.724 < [NET] retry=33 backoff_ms=50
+20:34:56.095 < [NET] state=CONNECTING
+20:34:56.095 < [NET] reconnect=FAILED
+20:34:56.095 < [NET] state=BACKOFF
+20:34:56.095 < [NET] retry=34 backoff_ms=50
+20:34:56.158 < [BUFFER] queued id=1102 count=6/8
+20:34:56.158 < [NET] state=CONNECTING
+20:34:56.158 < [NET] reconnect=FAILED
+20:34:56.158 < [NET] state=BACKOFF
+20:34:56.158 < [NET] retry=35 backoff_ms=50
+20:34:56.208 < [NET] state=CONNECTING
+20:34:56.259 < [NET] reconnect=FAILED
+20:34:56.259 < [NET] state=BACKOFF
+20:34:56.259 < [NET] retry=36 backoff_ms=50
+20:34:56.321 < [NET] state=CONNECTING
+20:34:56.321 < [NET] reconnect=FAILED
+20:34:56.321 < [NET] state=BACKOFF
+20:34:56.321 < [NET] retry=37 backoff_ms=50
+20:34:56.384 < [NET] state=CONNECTING
+20:34:56.384 < [NET] reconnect=FAILED
+20:34:56.384 < [NET] state=BACKOFF
+20:34:56.384 < [NET] retry=38 backoff_ms=50
+20:34:56.413 > SEND
+20:34:56.510 < [NET] state=CONNECTING
+20:34:56.511 < [NET] reconnect=FAILED
+20:34:56.511 < [NET] state=BACKOFF
+20:34:56.511 < [NET] retry=39 backoff_ms=50
+20:34:56.876 < [BUFFER] queued id=1103 count=7/8
+20:34:56.877 < [NET] state=CONNECTING
+20:34:56.877 < [NET] reconnect=FAILED
+20:34:56.877 < [NET] state=BACKOFF
+20:34:56.877 < [NET] retry=40 backoff_ms=50
+20:34:56.930 < [NET] state=CONNECTING
+20:34:56.930 < [NET] reconnect=FAILED
+20:34:56.983 < [NET] state=BACKOFF
+20:34:56.983 < [NET] retry=41 backoff_ms=50
+20:34:57.039 < [NET] state=CONNECTING
+20:34:57.040 < [NET] reconnect=FAILED
+20:34:57.040 < [NET] state=BACKOFF
+20:34:57.040 < [NET] retry=42 backoff_ms=50
+20:34:57.091 < [NET] state=CONNECTING
+20:34:57.091 < [NET] reconnect=FAILED
+20:34:57.091 < [NET] state=BACKOFF
+20:34:57.091 < [NET] retry=43 backoff_ms=50
+20:34:57.142 < [NET] state=CONNECTING
+20:34:57.142 < [NET] reconnect=FAILED
+20:34:57.143 < [NET] state=BACKOFF
+20:34:57.202 < [NET] retry=44 backoff_ms=50
+20:34:57.214 > SEND
+20:34:57.262 < [NET] state=CONNECTING
+20:34:57.262 < [NET] reconnect=FAILED
+20:34:57.262 < [NET] state=BACKOFF
+20:34:57.262 < [NET] retry=45 backoff_ms=50
+20:34:57.980 < [BUFFER] queued id=1104 count=8/8
+20:34:57.980 < [NET] state=CONNECTING
+20:34:57.980 < [NET] reconnect=FAILED
+20:34:57.980 < [NET] state=BACKOFF
+20:34:57.980 < [NET] retry=46 backoff_ms=50
+20:34:58.015 > SEND
+20:34:58.088 < [NET] state=CONNECTING
+20:34:58.088 < [NET] reconnect=FAILED
+20:34:58.088 < [NET] state=BACKOFF
+20:34:58.088 < [NET] retry=47 backoff_ms=50
+20:34:58.149 < [NET] state=CONNECTING
+20:34:58.150 < [NET] reconnect=FAILED
+20:34:58.150 < [NET] state=BACKOFF
+20:34:58.150 < [NET] retry=48 backoff_ms=50
+20:34:58.514 < [BUFFER] overflow policy=DROP_OLDEST dropped_total=0
+20:34:58.515 < [BUFFER] queued id=1105 count=9/8
+20:34:58.515 < [NET] state=CONNECTING
+20:34:58.516 < [NET] reconnect=FAILED
+20:34:58.516 < [NET] state=BACKOFF
+20:34:58.517 < [NET] retry=49 backoff_ms=50
+20:34:58.583 < [NET] state=CONNECTING
+20:34:58.583 < [NET] reconnect=FAILED
+20:34:58.583 < [NET] state=BACKOFF
+20:34:58.583 < [NET] retry=50 backoff_ms=50
+20:34:58.636 < [NET] state=CONNECTING
+20:34:58.636 < [NET] reconnect=FAILED
+20:34:58.636 < [NET] state=BACKOFF
+20:34:58.636 < [NET] retry=51 backoff_ms=50
+20:34:58.753 < [NET] state=CONNECTING
+20:34:58.754 < [NET] reconnect=FAILED
+20:34:58.754 < [NET] state=BACKOFF
+20:34:58.754 < [NET] retry=52 backoff_ms=50
+20:34:58.817 < [NET] state=CONNECTING
+20:34:58.817 < [NET] reconnect=FAILED
+20:34:58.817 < [NET] state=BACKOFF
+20:34:58.817 > SEND
+20:34:58.872 < [NET] retry=53 backoff_ms=50
+20:34:58.930 < [NET] state=CONNECTING
+20:34:58.930 < [NET] reconnect=FAILED
+20:34:58.930 < [NET] state=BACKOFF
+20:34:58.930 < [NET] retry=54 backoff_ms=50
+20:34:59.340 < [BUFFER] queued id=1106 count=10/8
+20:34:59.340 < [NET] state=CONNECTING
+20:34:59.340 < [NET] reconnect=FAILED
+20:34:59.341 < [NET] state=BACKOFF
+20:34:59.341 < [NET] retry=55 backoff_ms=50
+20:34:59.397 < [NET] state=CONNECTING
+20:34:59.397 < [NET] reconnect=FAILED
+20:34:59.397 < [NET] state=BACKOFF
+20:34:59.397 < [NET] retry=56 backoff_ms=50
+20:34:59.459 < [NET] state=CONNECTING
+20:34:59.459 < [NET] reconnect=FAILED
+20:34:59.459 < [NET] state=BACKOFF
+20:34:59.459 < [NET] retry=57 backoff_ms=50
+20:34:59.572 < [NET] state=CONNECTING
+20:34:59.572 < [NET] reconnect=FAILED
+20:34:59.572 < [NET] state=BACKOFF
+20:34:59.573 < [NET] retry=58 backoff_ms=50
+20:34:59.619 > SEND
+20:34:59.628 < [NET] state=CONNECTING
+20:34:59.628 < [NET] reconnect=FAILED
+20:34:59.628 < [NET] state=BACKOFF
+20:34:59.681 < [NET] retry=59 backoff_ms=50
+20:35:00.053 < [BUFFER] queued id=1107 count=11/8
+20:35:00.053 < [NET] state=CONNECTING
+20:35:00.053 < [NET] reconnect=FAILED
+20:35:00.053 < [NET] state=BACKOFF
+20:35:00.053 < [NET] retry=60 backoff_ms=50
+20:35:00.117 < [NET] state=CONNECTING
+20:35:00.117 < [NET] reconnect=FAILED
+20:35:00.172 < [NET] state=BACKOFF
+20:35:00.173 < [NET] retry=61 backoff_ms=50
+20:35:00.227 < [NET] state=CONNECTING
+20:35:00.228 < [NET] reconnect=FAILED
+20:35:00.228 < [NET] state=BACKOFF
+20:35:00.228 < [NET] retry=62 backoff_ms=50
+20:35:00.282 < [NET] state=CONNECTING
+20:35:00.282 < [NET] reconnect=FAILED
+20:35:00.283 < [NET] state=BACKOFF
+20:35:00.283 < [NET] retry=63 backoff_ms=50
+20:35:00.348 < [NET] state=CONNECTING
+20:35:00.348 < [NET] reconnect=FAILED
+20:35:00.349 < [NET] state=BACKOFF
+20:35:00.411 < [NET] retry=64 backoff_ms=50
+20:35:00.420 > SEND
+20:35:00.474 < [NET] state=CONNECTING
+20:35:00.475 < [NET] reconnect=FAILED
+20:35:00.475 < [NET] state=BACKOFF
+20:35:00.475 < [NET] retry=65 backoff_ms=50
+20:35:01.222 > BUFFER
+20:35:01.254 < [BUFFER] queued id=1108 count=12/8
+20:35:01.254 < [NET] state=CONNECTING
+20:35:01.254 < [NET] reconnect=FAILED
+20:35:01.254 < [NET] state=BACKOFF
+20:35:01.254 < [NET] retry=66 backoff_ms=50
+20:35:01.317 < [NET] state=CONNECTING
+20:35:01.317 < [NET] reconnect=FAILED
+20:35:01.632 < [NET] state=BACKOFF
+20:35:01.632 < [NET] retry=67 backoff_ms=50
+20:35:01.694 < [BUFFER] count=12 capacity=8 dropped=0
+20:35:01.694 < [NET] state=CONNECTING
+20:35:01.694 < [NET] reconnect=FAILED
+20:35:01.694 < [NET] state=BACKOFF
+20:35:01.694 < [NET] retry=68 backoff_ms=50
+20:35:01.745 < [NET] state=CONNECTING
+20:35:01.745 < [NET] reconnect=FAILED
+20:35:01.745 < [NET] state=BACKOFF
+20:35:01.745 < [NET] retry=69 backoff_ms=50
+20:35:01.795 < [NET] state=CONNECTING
+20:35:01.795 < [NET] reconnect=FAILED
+20:35:01.795 < [NET] state=BACKOFF
+20:35:01.849 < [NET] retry=70 backoff_ms=50
+20:35:01.911 < [NET] state=CONNECTING
+20:35:01.912 < [NET] reconnect=FAILED
+20:35:01.912 < [NET] state=BACKOFF
+20:35:01.912 < [NET] retry=71 backoff_ms=50
+20:35:02.017 < [NET] state=CONNECTING
+20:35:02.019 < [NET] reconnect=FAILED
+20:35:02.019 < [NET] state=BACKOFF
+20:35:02.019 < [NET] retry=72 backoff_ms=50
+20:35:02.081 < [NET] state=CONNECTING
+20:35:02.081 < [NET] reconnect=FAILED
+20:35:02.081 < [NET] state=BACKOFF
+20:35:02.081 < [NET] retry=73 backoff_ms=50
+20:35:02.206 < [NET] state=CONNECTING
+20:35:02.207 < [NET] reconnect=FAILED
+20:35:02.207 < [NET] state=BACKOFF
+20:35:02.207 < [NET] retry=74 backoff_ms=50
+20:35:02.223 > STATUS
+20:35:02.259 < [NET] state=CONNECTING
+20:35:02.259 < [NET] reconnect=FAILED
+20:35:02.259 < [NET] state=BACKOFF
+20:35:02.259 < [NET] retry=75 backoff_ms=50
+20:35:02.715 < {"net":"BACKOFF","broker":false,"buffer":12,"capacity":8,"sent":0,"dropped":0,"duplicates":0,"reconnect_attempts":75,"heap":261960}
+20:35:02.715 < [NET] state=CONNECTING
+20:35:02.715 < [NET] reconnect=FAILED
+20:35:02.715 < [NET] state=BACKOFF
+20:35:02.715 < [NET] retry=76 backoff_ms=50
+20:35:02.770 < [NET] state=CONNECTING
+20:35:02.770 < [NET] reconnect=FAILED
+20:35:02.770 < [NET] state=BACKOFF
+20:35:02.770 < [NET] retry=77 backoff_ms=50
+20:35:02.832 < [NET] state=CONNECTING
+20:35:02.832 < [NET] reconnect=FAILED
+20:35:02.892 < [NET] state=BACKOFF
+20:35:02.892 < [NET] retry=78 backoff_ms=50
+20:35:02.944 < [NET] state=CONNECTING
+20:35:02.945 < [NET] reconnect=FAILED
+20:35:02.945 < [NET] state=BACKOFF
+20:35:02.945 < [NET] retry=79 backoff_ms=50
+20:35:03.050 < [NET] state=CONNECTING
+20:35:03.051 < [NET] reconnect=FAILED
+20:35:03.051 < [NET] state=BACKOFF
+20:35:03.051 < [NET] retry=80 backoff_ms=50
+20:35:03.051 < [NET] state=CONNECTING
+20:35:03.051 < [NET] reconnect=FAILED
+20:35:03.051 < [NET] state=BACKOFF
+20:35:03.164 < [NET] retry=81 backoff_ms=50
+20:35:03.164 < [NET] state=CONNECTING
+20:35:03.164 < [NET] reconnect=FAILED
+20:35:03.164 < [NET] state=BACKOFF
+20:35:03.164 < [NET] retry=82 backoff_ms=50
+20:35:03.224 > NET UP
+20:35:03.277 < [NET] state=CONNECTING
+20:35:03.277 < [NET] reconnect=FAILED
+20:35:03.277 < [NET] state=BACKOFF
+20:35:03.277 < [NET] retry=83 backoff_ms=50
+20:35:03.703 < [FAULT] network restored
+20:35:03.704 < [NET] state=CONNECTING
+20:35:03.704 < [NET] state=CONNECTED
+20:35:03.704 < [NET] reconnect=SUCCESS
+20:35:03.704 < [BUFFER] flush_start count=12
+20:35:03.704 < [MQTT] publish id=1105 temp=24.5
+20:35:03.704 < [MQTT] publish id=1105 temp=24.5
+20:35:03.704 < [MQTT] publish id=1106 temp=24.5
+20:35:03.705 < [MQTT] publish id=1106 temp=24.5
+20:35:03.705 < [MQTT] publish id=1107 temp=24.5
+20:35:03.705 < [MQTT] publish id=1107 temp=24.5
+20:35:03.705 < [MQTT] publish id=1108 temp=24.5
+20:35:03.765 < [MQTT] publish id=1108 temp=24.5
+20:35:03.765 < [MQTT] publish id=1101 temp=24.5
+20:35:03.766 < [MQTT] publish id=1101 temp=24.5
+20:35:03.766 < [MQTT] publish id=1102 temp=24.5
+20:35:03.766 < [MQTT] publish id=1102 temp=24.5
+20:35:03.766 < [MQTT] publish id=1103 temp=24.5
+20:35:03.766 < [MQTT] publish id=1103 temp=24.5
+20:35:03.766 < [MQTT] publish id=1104 temp=24.5
+20:35:03.766 < [MQTT] publish id=1104 temp=24.5
+20:35:03.766 < [MQTT] publish id=1105 temp=24.5
+20:35:03.766 < [MQTT] publish id=1105 temp=24.5
+20:35:03.818 < [MQTT] publish id=1106 temp=24.5
+20:35:03.819 < [MQTT] publish id=1106 temp=24.5
+20:35:03.819 < [MQTT] publish id=1107 temp=24.5
+20:35:03.819 < [MQTT] publish id=1107 temp=24.5
+20:35:03.819 < [MQTT] publish id=1108 temp=24.5
+20:35:03.819 < [MQTT] publish id=1108 temp=24.5
+20:35:03.819 < [BUFFER] flush_end count=0
+20:35:11.225 > STATUS
+20:35:11.627 < {"net":"CONNECTED","broker":true,"buffer":0,"capacity":8,"sent":24,"dropped":0,"duplicates":12,"reconnect_attempts":83,"heap":261960}
+20:35:12.226 > BUFFER
+20:35:12.478 < [BUFFER] count=0 capacity=8 dropped=0
