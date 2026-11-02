@@ -1,0 +1,64 @@
+___________________ test_pwm_value_is_applied_in_status[1] ____________________
+
+device = <conftest.LoggedDevice object at 0x0000026093186CB0>, value = 1
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 1: STATUS pwm=2
+E       assert 2 == 1
+E        +  where 2 = <built-in method get of dict object at 0x0000026093225B00>('pwm')
+E        +    where <built-in method get of dict object at 0x0000026093225B00> = {'status': 'OK', 'led': True, 'pwm': 2, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+
+___________________ test_pwm_value_is_applied_in_status[50] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000260931D9520>, value = 50
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 50: STATUS pwm=127
+E       assert 127 == 50
+E        +  where 127 = <built-in method get of dict object at 0x0000026093231F40>('pwm')
+E        +    where <built-in method get of dict object at 0x0000026093231F40> = {'status': 'OK', 'led': True, 'pwm': 127, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+
+___________________ test_pwm_value_is_applied_in_status[99] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000260931EE950>, value = 99
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 99: STATUS pwm=252
+E       assert 252 == 99
+E        +  where 252 = <built-in method get of dict object at 0x00000260931F9980>('pwm')
+E        +    where <built-in method get of dict object at 0x00000260931F9980> = {'status': 'OK', 'led': True, 'pwm': 252, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+
+_________________ test_rejected_pwm_does_not_change_state[-1] _________________
+
+device = <conftest.LoggedDevice object at 0x0000026093228E30>, bad = '-1'
+
+    @pytest.mark.parametrize("bad", ["-1", "101", "abc"])
+    def test_rejected_pwm_does_not_change_state(device, bad):
+        device.command("SET PWM 30")
+        device.command(f"SET PWM {bad}")
+>       assert status(device).get("pwm") == 30
+E       AssertionError: assert 76 == 30
+E        +  where 76 = <built-in method get of dict object at 0x000002609320F740>('pwm')
+E        +    where <built-in method get of dict object at 0x000002609320F740> = {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852}.get
+E        +      where {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852} = status(<conftest.LoggedDevice object at 0x0000026093228E30>)
+
+tests\test_firmware_cli.py:64: AssertionError
+

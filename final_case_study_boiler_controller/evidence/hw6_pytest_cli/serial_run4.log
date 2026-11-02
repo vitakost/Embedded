@@ -1,0 +1,737 @@
+# started 2026-11-01T12:47:33
+[12:47:34.104] === tests/test_boundaries.py::test_pwm_valid_boundaries[0]
+[12:47:34.155] >> RESET
+[12:47:34.679] << {"status":"OK","reset":true}  (+523 ms)
+[12:47:35.238] >> SET PWM 0
+[12:47:35.672] << {"status":"OK","pwm":0}  (+434 ms)
+[12:47:35.828] >> RESET
+[12:47:36.121] << {"status":"OK","reset":true}  (+293 ms)
+[12:47:37.627] === tests/test_boundaries.py::test_pwm_valid_boundaries[1]
+[12:47:37.678] >> RESET
+[12:47:38.008] << {"status":"OK","reset":true}  (+330 ms)
+[12:47:38.574] >> SET PWM 1
+[12:47:39.158] << {"status":"OK","pwm":1}  (+584 ms)
+[12:47:39.312] >> RESET
+[12:47:39.804] << {"status":"OK","reset":true}  (+477 ms)
+[12:47:41.313] === tests/test_boundaries.py::test_pwm_valid_boundaries[50]
+[12:47:41.365] >> RESET
+[12:47:41.922] << {"status":"OK","reset":true}  (+557 ms)
+[12:47:42.494] >> SET PWM 50
+[12:47:43.220] << {"status":"OK","pwm":50}  (+726 ms)
+[12:47:43.375] >> RESET
+[12:47:44.177] << {"status":"OK","reset":true}  (+801 ms)
+[12:47:45.682] === tests/test_boundaries.py::test_pwm_valid_boundaries[99]
+[12:47:45.733] >> RESET
+[12:47:46.564] << {"status":"OK","reset":true}  (+831 ms)
+[12:47:47.131] >> SET PWM 99
+[12:47:48.040] << {"status":"OK","pwm":99}  (+909 ms)
+[12:47:48.195] >> RESET
+[12:47:48.901] << {"status":"OK","reset":true}  (+706 ms)
+[12:47:50.389] === tests/test_boundaries.py::test_pwm_valid_boundaries[100]
+[12:47:50.440] >> RESET
+[12:47:51.107] << {"status":"OK","reset":true}  (+667 ms)
+[12:47:51.669] >> SET PWM 100
+[12:47:52.686] << {"status":"ERROR","code":"INVALID_VALUE"}  (+1017 ms)
+[12:47:53.143] >> RESET
+[12:47:54.091] << {"status":"OK","reset":true}  (+948 ms)
+[12:47:55.617] === tests/test_boundaries.py::test_pwm_invalid_boundaries[-1]
+[12:47:55.668] >> RESET
+[12:47:56.453] << {"status":"OK","reset":true}  (+784 ms)
+[12:47:57.020] >> SET PWM -1
+[12:47:57.884] << {"status":"ERROR","code":"INVALID_VALUE"}  (+864 ms)
+[12:47:58.038] >> RESET
+[12:47:58.749] << {"status":"OK","reset":true}  (+711 ms)
+[12:48:00.230] === tests/test_boundaries.py::test_pwm_invalid_boundaries[101]
+[12:48:00.281] >> RESET
+[12:48:00.997] << {"status":"OK","reset":true}  (+716 ms)
+[12:48:01.558] >> SET PWM 101
+[12:48:02.239] << {"status":"ERROR","code":"INVALID_VALUE"}  (+681 ms)
+[12:48:02.394] >> RESET
+[12:48:02.850] << {"status":"OK","reset":true}  (+456 ms)
+[12:48:04.335] === tests/test_boundaries.py::test_pwm_invalid_boundaries[999]
+[12:48:04.386] >> RESET
+[12:48:05.045] << {"status":"OK","reset":true}  (+659 ms)
+[12:48:05.612] >> SET PWM 999
+[12:48:06.472] << {"status":"ERROR","code":"INVALID_VALUE"}  (+860 ms)
+[12:48:06.627] >> RESET
+[12:48:07.084] << {"status":"OK","reset":true}  (+457 ms)
+[12:48:08.568] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[0]
+[12:48:08.619] >> RESET
+[12:48:09.303] << {"status":"OK","reset":true}  (+684 ms)
+[12:48:09.867] >> SET PWM 0
+[12:48:10.712] << {"status":"OK","pwm":0}  (+844 ms)
+[12:48:10.867] >> RESET
+[12:48:11.322] << {"status":"OK","reset":true}  (+455 ms)
+[12:48:12.806] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[1]
+[12:48:12.857] >> RESET
+[12:48:13.097] << {"status":"OK","reset":true}  (+239 ms)
+[12:48:13.661] >> SET PWM 1
+[12:48:14.331] << {"status":"OK","pwm":1}  (+670 ms)
+[12:48:14.486] >> RESET
+[12:48:15.213] << {"status":"OK","reset":true}  (+727 ms)
+[12:48:16.701] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[2]
+[12:48:16.753] >> RESET
+[12:48:17.741] << {"status":"OK","reset":true}  (+988 ms)
+[12:48:18.307] >> SET PWM 2
+[12:48:19.215] << {"status":"OK","pwm":2}  (+908 ms)
+[12:48:19.369] >> RESET
+[12:48:19.795] << {"status":"OK","reset":true}  (+425 ms)
+[12:48:21.297] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[49]
+[12:48:21.348] >> RESET
+[12:48:21.992] << {"status":"OK","reset":true}  (+644 ms)
+[12:48:22.559] >> SET PWM 49
+[12:48:23.500] << {"status":"OK","pwm":49}  (+940 ms)
+[12:48:23.661] >> RESET
+[12:48:24.362] << {"status":"OK","reset":true}  (+700 ms)
+[12:48:25.864] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[50]
+[12:48:25.915] >> RESET
+[12:48:26.746] << {"status":"OK","reset":true}  (+823 ms)
+[12:48:27.315] >> SET PWM 50
+[12:48:28.297] << {"status":"OK","pwm":50}  (+982 ms)
+[12:48:28.451] >> RESET
+[12:48:29.147] << {"status":"OK","reset":true}  (+696 ms)
+[12:48:30.687] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[51]
+[12:48:30.738] >> RESET
+[12:48:31.082] << {"status":"OK","reset":true}  (+344 ms)
+[12:48:31.651] >> SET PWM 51
+[12:48:32.521] << {"status":"OK","pwm":51}  (+870 ms)
+[12:48:32.676] >> RESET
+[12:48:33.463] << {"status":"OK","reset":true}  (+787 ms)
+[12:48:34.972] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[98]
+[12:48:35.022] >> RESET
+[12:48:35.901] << {"status":"OK","reset":true}  (+878 ms)
+[12:48:36.470] >> SET PWM 98
+[12:48:37.381] << {"status":"OK","pwm":98}  (+910 ms)
+[12:48:37.536] >> RESET
+[12:48:38.373] << {"status":"OK","reset":true}  (+837 ms)
+[12:48:39.878] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[99]
+[12:48:39.928] >> RESET
+[12:48:40.805] << {"status":"OK","reset":true}  (+877 ms)
+[12:48:41.375] >> SET PWM 99
+[12:48:42.235] << {"status":"OK","pwm":99}  (+860 ms)
+[12:48:42.390] >> RESET
+[12:48:43.124] << {"status":"OK","reset":true}  (+734 ms)
+[12:48:44.632] === tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[100]
+[12:48:44.683] >> RESET
+[12:48:45.518] << {"status":"OK","reset":true}  (+834 ms)
+[12:48:46.079] >> SET PWM 100
+[12:48:46.485] << {"status":"ERROR","code":"INVALID_VALUE"}  (+406 ms)
+[12:48:46.656] >> RESET
+[12:48:47.456] << {"status":"OK","reset":true}  (+799 ms)
+[12:48:48.936] === tests/test_firmware_cli.py::test_pwm_full_range_sweep_0_to_100
+[12:48:48.987] >> RESET
+[12:48:49.870] << {"status":"OK","reset":true}  (+883 ms)
+[12:48:50.432] >> SET PWM 0
+[12:48:50.958] << {"status":"OK","pwm":0}  (+526 ms)
+[12:48:50.958] >> SET PWM 1
+[12:48:51.673] << {"status":"OK","pwm":1}  (+714 ms)
+[12:48:51.673] >> SET PWM 2
+[12:48:52.530] << {"status":"OK","pwm":2}  (+857 ms)
+[12:48:52.530] >> SET PWM 3
+[12:48:53.384] << {"status":"OK","pwm":3}  (+854 ms)
+[12:48:53.384] >> SET PWM 4
+[12:48:54.251] << {"status":"OK","pwm":4}  (+867 ms)
+[12:48:54.251] >> SET PWM 5
+[12:48:54.847] << {"status":"OK","pwm":5}  (+595 ms)
+[12:48:54.847] >> SET PWM 6
+[12:48:55.516] << {"status":"OK","pwm":6}  (+670 ms)
+[12:48:55.517] >> SET PWM 7
+[12:48:56.100] << {"status":"OK","pwm":7}  (+583 ms)
+[12:48:56.100] >> SET PWM 8
+[12:48:57.134] << {"status":"OK","pwm":8}  (+1034 ms)
+[12:48:57.135] >> SET PWM 9
+[12:48:58.088] << {"status":"OK","pwm":9}  (+953 ms)
+[12:48:58.088] >> SET PWM 10
+[12:48:58.793] << {"status":"OK","pwm":10}  (+705 ms)
+[12:48:58.793] >> SET PWM 11
+[12:48:59.675] << {"status":"OK","pwm":11}  (+882 ms)
+[12:48:59.676] >> SET PWM 12
+[12:49:00.614] << {"status":"OK","pwm":12}  (+938 ms)
+[12:49:00.614] >> SET PWM 13
+[12:49:01.460] << {"status":"OK","pwm":13}  (+846 ms)
+[12:49:01.460] >> SET PWM 14
+[12:49:02.323] << {"status":"OK","pwm":14}  (+863 ms)
+[12:49:02.323] >> SET PWM 15
+[12:49:03.175] << {"status":"OK","pwm":15}  (+852 ms)
+[12:49:03.175] >> SET PWM 16
+[12:49:04.182] << {"status":"OK","pwm":16}  (+1006 ms)
+[12:49:04.182] >> SET PWM 17
+[12:49:05.025] << {"status":"OK","pwm":17}  (+843 ms)
+[12:49:05.026] >> SET PWM 18
+[12:49:05.916] << {"status":"OK","pwm":18}  (+891 ms)
+[12:49:05.916] >> SET PWM 19
+[12:49:06.505] << {"status":"OK","pwm":19}  (+588 ms)
+[12:49:06.505] >> SET PWM 20
+[12:49:07.356] << {"status":"OK","pwm":20}  (+851 ms)
+[12:49:07.356] >> SET PWM 21
+[12:49:08.229] << {"status":"OK","pwm":21}  (+873 ms)
+[12:49:08.230] >> SET PWM 22
+[12:49:09.091] << {"status":"OK","pwm":22}  (+861 ms)
+[12:49:09.091] >> SET PWM 23
+[12:49:09.947] << {"status":"OK","pwm":23}  (+856 ms)
+[12:49:09.947] >> SET PWM 24
+[12:49:10.916] << {"status":"OK","pwm":24}  (+969 ms)
+[12:49:10.917] >> SET PWM 25
+[12:49:11.757] << {"status":"OK","pwm":25}  (+840 ms)
+[12:49:11.757] >> SET PWM 26
+[12:49:12.325] << {"status":"OK","pwm":26}  (+568 ms)
+[12:49:12.326] >> SET PWM 27
+[12:49:13.233] << {"status":"OK","pwm":27}  (+907 ms)
+[12:49:13.233] >> SET PWM 28
+[12:49:13.875] << {"status":"OK","pwm":28}  (+641 ms)
+[12:49:13.875] >> SET PWM 29
+[12:49:14.742] << {"status":"OK","pwm":29}  (+868 ms)
+[12:49:14.743] >> SET PWM 30
+[12:49:15.618] << {"status":"OK","pwm":30}  (+876 ms)
+[12:49:15.619] >> SET PWM 31
+[12:49:16.448] << {"status":"OK","pwm":31}  (+829 ms)
+[12:49:16.448] >> SET PWM 32
+[12:49:17.300] << {"status":"OK","pwm":32}  (+852 ms)
+[12:49:17.301] >> SET PWM 33
+[12:49:18.163] << {"status":"OK","pwm":33}  (+862 ms)
+[12:49:18.163] >> SET PWM 34
+[12:49:19.252] << {"status":"OK","pwm":34}  (+1089 ms)
+[12:49:19.252] >> SET PWM 35
+[12:49:19.877] << {"status":"OK","pwm":35}  (+624 ms)
+[12:49:19.877] >> SET PWM 36
+[12:49:20.755] << {"status":"OK","pwm":36}  (+878 ms)
+[12:49:20.755] >> SET PWM 37
+[12:49:21.606] << {"status":"OK","pwm":37}  (+851 ms)
+[12:49:21.607] >> SET PWM 38
+[12:49:22.503] << {"status":"OK","pwm":38}  (+896 ms)
+[12:49:22.503] >> SET PWM 39
+[12:49:23.336] << {"status":"OK","pwm":39}  (+833 ms)
+[12:49:23.337] >> SET PWM 40
+[12:49:24.192] << {"status":"OK","pwm":40}  (+855 ms)
+[12:49:24.192] >> SET PWM 41
+[12:49:25.052] << {"status":"OK","pwm":41}  (+859 ms)
+[12:49:25.052] >> SET PWM 42
+[12:49:25.983] << {"status":"OK","pwm":42}  (+931 ms)
+[12:49:25.983] >> SET PWM 43
+[12:49:26.843] << {"status":"OK","pwm":43}  (+860 ms)
+[12:49:26.843] >> SET PWM 44
+[12:49:27.728] << {"status":"OK","pwm":44}  (+884 ms)
+[12:49:27.728] >> SET PWM 45
+[12:49:28.628] << {"status":"OK","pwm":45}  (+900 ms)
+[12:49:28.628] >> SET PWM 46
+[12:49:29.516] << {"status":"OK","pwm":46}  (+887 ms)
+[12:49:29.516] >> SET PWM 47
+[12:49:30.088] << {"status":"OK","pwm":47}  (+571 ms)
+[12:49:30.088] >> SET PWM 48
+[12:49:30.660] << {"status":"OK","pwm":48}  (+572 ms)
+[12:49:30.660] >> SET PWM 49
+[12:49:31.532] << {"status":"OK","pwm":49}  (+872 ms)
+[12:49:31.533] >> SET PWM 50
+[12:49:32.400] << {"status":"OK","pwm":50}  (+867 ms)
+[12:49:32.400] >> SET PWM 51
+[12:49:33.250] << {"status":"OK","pwm":51}  (+850 ms)
+[12:49:33.250] >> SET PWM 52
+[12:49:34.148] << {"status":"OK","pwm":52}  (+898 ms)
+[12:49:34.149] >> SET PWM 53
+[12:49:34.725] << {"status":"OK","pwm":53}  (+576 ms)
+[12:49:34.725] >> SET PWM 54
+[12:49:35.592] << {"status":"OK","pwm":54}  (+867 ms)
+[12:49:35.592] >> SET PWM 55
+[12:49:36.547] << {"status":"OK","pwm":55}  (+955 ms)
+[12:49:36.547] >> SET PWM 56
+[12:49:37.411] << {"status":"OK","pwm":56}  (+863 ms)
+[12:49:37.411] >> SET PWM 57
+[12:49:38.315] << {"status":"OK","pwm":57}  (+904 ms)
+[12:49:38.315] >> SET PWM 58
+[12:49:38.989] << {"status":"OK","pwm":58}  (+673 ms)
+[12:49:38.989] >> SET PWM 59
+[12:49:39.569] << {"status":"OK","pwm":59}  (+579 ms)
+[12:49:39.569] >> SET PWM 60
+[12:49:40.166] << {"status":"OK","pwm":60}  (+597 ms)
+[12:49:40.166] >> SET PWM 61
+[12:49:41.123] << {"status":"OK","pwm":61}  (+957 ms)
+[12:49:41.123] >> SET PWM 62
+[12:49:41.968] << {"status":"OK","pwm":62}  (+845 ms)
+[12:49:41.969] >> SET PWM 63
+[12:49:42.857] << {"status":"OK","pwm":63}  (+888 ms)
+[12:49:42.857] >> SET PWM 64
+[12:49:43.781] << {"status":"OK","pwm":64}  (+924 ms)
+[12:49:43.781] >> SET PWM 65
+[12:49:44.614] << {"status":"OK","pwm":65}  (+833 ms)
+[12:49:44.614] >> SET PWM 66
+[12:49:45.538] << {"status":"OK","pwm":66}  (+923 ms)
+[12:49:45.538] >> SET PWM 67
+[12:49:46.402] << {"status":"OK","pwm":67}  (+864 ms)
+[12:49:46.402] >> SET PWM 68
+[12:49:47.331] << {"status":"OK","pwm":68}  (+929 ms)
+[12:49:47.332] >> SET PWM 69
+[12:49:48.274] << {"status":"OK","pwm":69}  (+942 ms)
+[12:49:48.274] >> SET PWM 70
+[12:49:49.131] << {"status":"OK","pwm":70}  (+858 ms)
+[12:49:49.132] >> SET PWM 71
+[12:49:50.048] << {"status":"OK","pwm":71}  (+916 ms)
+[12:49:50.048] >> SET PWM 72
+[12:49:50.947] << {"status":"OK","pwm":72}  (+899 ms)
+[12:49:50.947] >> SET PWM 73
+[12:49:51.580] << {"status":"OK","pwm":73}  (+633 ms)
+[12:49:51.580] >> SET PWM 74
+[12:49:52.157] << {"status":"OK","pwm":74}  (+577 ms)
+[12:49:52.157] >> SET PWM 75
+[12:49:53.099] << {"status":"OK","pwm":75}  (+941 ms)
+[12:49:53.099] >> SET PWM 76
+[12:49:53.963] << {"status":"OK","pwm":76}  (+864 ms)
+[12:49:53.963] >> SET PWM 77
+[12:49:54.947] << {"status":"OK","pwm":77}  (+984 ms)
+[12:49:54.947] >> SET PWM 78
+[12:49:55.829] << {"status":"OK","pwm":78}  (+882 ms)
+[12:49:55.829] >> SET PWM 79
+[12:49:56.800] << {"status":"OK","pwm":79}  (+971 ms)
+[12:49:56.801] >> SET PWM 80
+[12:49:57.427] << {"status":"OK","pwm":80}  (+626 ms)
+[12:49:57.427] >> SET PWM 81
+[12:49:58.309] << {"status":"OK","pwm":81}  (+882 ms)
+[12:49:58.310] >> SET PWM 82
+[12:49:59.161] << {"status":"OK","pwm":82}  (+852 ms)
+[12:49:59.162] >> SET PWM 83
+[12:50:00.061] << {"status":"OK","pwm":83}  (+899 ms)
+[12:50:00.061] >> SET PWM 84
+[12:50:00.946] << {"status":"OK","pwm":84}  (+884 ms)
+[12:50:00.946] >> SET PWM 85
+[12:50:01.855] << {"status":"OK","pwm":85}  (+909 ms)
+[12:50:01.855] >> SET PWM 86
+[12:50:02.689] << {"status":"OK","pwm":86}  (+834 ms)
+[12:50:02.699] >> SET PWM 87
+[12:50:03.522] << {"status":"OK","pwm":87}  (+823 ms)
+[12:50:03.522] >> SET PWM 88
+[12:50:04.383] << {"status":"OK","pwm":88}  (+860 ms)
+[12:50:04.383] >> SET PWM 89
+[12:50:04.951] << {"status":"OK","pwm":89}  (+568 ms)
+[12:50:04.952] >> SET PWM 90
+[12:50:05.837] << {"status":"OK","pwm":90}  (+885 ms)
+[12:50:05.837] >> SET PWM 91
+[12:50:06.734] << {"status":"OK","pwm":91}  (+897 ms)
+[12:50:06.734] >> SET PWM 92
+[12:50:07.580] << {"status":"OK","pwm":92}  (+845 ms)
+[12:50:07.580] >> SET PWM 93
+[12:50:08.523] << {"status":"OK","pwm":93}  (+943 ms)
+[12:50:08.523] >> SET PWM 94
+[12:50:09.399] << {"status":"OK","pwm":94}  (+876 ms)
+[12:50:09.399] >> SET PWM 95
+[12:50:09.991] << {"status":"OK","pwm":95}  (+592 ms)
+[12:50:09.992] >> SET PWM 96
+[12:50:10.998] << {"status":"OK","pwm":96}  (+1006 ms)
+[12:50:10.998] >> SET PWM 97
+[12:50:11.630] << {"status":"OK","pwm":97}  (+632 ms)
+[12:50:11.631] >> SET PWM 98
+[12:50:12.535] << {"status":"OK","pwm":98}  (+904 ms)
+[12:50:12.535] >> SET PWM 99
+[12:50:13.101] << {"status":"OK","pwm":99}  (+566 ms)
+[12:50:13.101] >> SET PWM 100
+[12:50:14.047] << {"status":"ERROR","code":"INVALID_VALUE"}  (+946 ms)
+[12:50:14.219] >> RESET
+[12:50:14.911] << {"status":"OK","reset":true}  (+692 ms)
+[12:50:16.407] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[0]
+[12:50:16.457] >> RESET
+[12:50:17.248] << {"status":"OK","reset":true}  (+791 ms)
+[12:50:17.820] >> SET PWM 0
+[12:50:18.671] << {"status":"OK","pwm":0}  (+851 ms)
+[12:50:18.671] >> STATUS
+[12:50:19.287] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+616 ms)
+[12:50:19.440] >> RESET
+[12:50:19.869] << {"status":"OK","reset":true}  (+429 ms)
+[12:50:21.373] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[1]
+[12:50:21.424] >> RESET
+[12:50:21.756] << {"status":"OK","reset":true}  (+331 ms)
+[12:50:22.325] >> SET PWM 1
+[12:50:22.681] << {"status":"OK","pwm":1}  (+356 ms)
+[12:50:22.681] >> STATUS
+[12:50:23.568] << {"status":"OK","led":true,"pwm":2,"heap":349852}  (+887 ms)
+[12:50:23.736] >> RESET
+[12:50:24.422] << {"status":"OK","reset":true}  (+686 ms)
+[12:50:25.907] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[49]
+[12:50:25.958] >> RESET
+[12:50:26.667] << {"status":"OK","reset":true}  (+708 ms)
+[12:50:27.229] >> SET PWM 49
+[12:50:28.102] << {"status":"OK","pwm":49}  (+873 ms)
+[12:50:28.102] >> STATUS
+[12:50:28.946] << {"status":"OK","led":true,"pwm":124,"heap":349852}  (+843 ms)
+[12:50:29.122] >> RESET
+[12:50:29.826] << {"status":"OK","reset":true}  (+704 ms)
+[12:50:31.336] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[50]
+[12:50:31.387] >> RESET
+[12:50:32.212] << {"status":"OK","reset":true}  (+825 ms)
+[12:50:32.785] >> SET PWM 50
+[12:50:33.658] << {"status":"OK","pwm":50}  (+873 ms)
+[12:50:33.658] >> STATUS
+[12:50:34.554] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+896 ms)
+[12:50:34.727] >> RESET
+[12:50:35.468] << {"status":"OK","reset":true}  (+741 ms)
+[12:50:36.958] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[51]
+[12:50:37.009] >> RESET
+[12:50:37.766] << {"status":"OK","reset":true}  (+757 ms)
+[12:50:38.325] >> SET PWM 51
+[12:50:38.772] << {"status":"OK","pwm":51}  (+446 ms)
+[12:50:38.772] >> STATUS
+[12:50:39.631] << {"status":"OK","led":true,"pwm":130,"heap":349852}  (+859 ms)
+[12:50:39.804] >> RESET
+[12:50:40.561] << {"status":"OK","reset":true}  (+757 ms)
+[12:50:42.057] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[99]
+[12:50:42.108] >> RESET
+[12:50:42.682] << {"status":"OK","reset":true}  (+574 ms)
+[12:50:43.243] >> SET PWM 99
+[12:50:44.168] << {"status":"OK","pwm":99}  (+925 ms)
+[12:50:44.168] >> STATUS
+[12:50:44.761] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+593 ms)
+[12:50:44.926] >> RESET
+[12:50:45.600] << {"status":"OK","reset":true}  (+674 ms)
+[12:50:47.073] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[100]
+[12:50:47.125] >> RESET
+[12:50:47.750] << {"status":"OK","reset":true}  (+624 ms)
+[12:50:48.313] >> SET PWM 100
+[12:50:48.774] << {"status":"ERROR","code":"INVALID_VALUE"}  (+460 ms)
+[12:50:48.774] >> STATUS
+[12:50:49.777] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+1003 ms)
+[12:50:49.948] >> RESET
+[12:50:50.426] << {"status":"OK","reset":true}  (+478 ms)
+[12:50:51.909] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[-1]
+[12:50:51.960] >> RESET
+[12:50:52.795] << {"status":"OK","reset":true}  (+835 ms)
+[12:50:53.367] >> SET PWM -1
+[12:50:53.976] << {"status":"ERROR","code":"INVALID_VALUE"}  (+609 ms)
+[12:50:54.129] >> RESET
+[12:50:54.817] << {"status":"OK","reset":true}  (+688 ms)
+[12:50:56.324] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[-100]
+[12:50:56.375] >> RESET
+[12:50:57.180] << {"status":"OK","reset":true}  (+805 ms)
+[12:50:57.739] >> SET PWM -100
+[12:50:58.644] << {"status":"ERROR","code":"INVALID_VALUE"}  (+905 ms)
+[12:50:58.798] >> RESET
+[12:50:59.488] << {"status":"OK","reset":true}  (+689 ms)
+[12:51:00.991] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[101]
+[12:51:01.042] >> RESET
+[12:51:01.714] << {"status":"OK","reset":true}  (+672 ms)
+[12:51:02.275] >> SET PWM 101
+[12:51:03.137] << {"status":"ERROR","code":"INVALID_VALUE"}  (+861 ms)
+[12:51:03.291] >> RESET
+[12:51:03.975] << {"status":"OK","reset":true}  (+683 ms)
+[12:51:05.462] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[102]
+[12:51:05.513] >> RESET
+[12:51:06.066] << {"status":"OK","reset":true}  (+552 ms)
+[12:51:06.628] >> SET PWM 102
+[12:51:07.606] << {"status":"ERROR","code":"INVALID_VALUE"}  (+978 ms)
+[12:51:07.761] >> RESET
+[12:51:08.454] << {"status":"OK","reset":true}  (+693 ms)
+[12:51:09.924] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[255]
+[12:51:09.975] >> RESET
+[12:51:10.721] << {"status":"OK","reset":true}  (+746 ms)
+[12:51:11.283] >> SET PWM 255
+[12:51:11.986] << {"status":"ERROR","code":"INVALID_VALUE"}  (+703 ms)
+[12:51:12.141] >> RESET
+[12:51:12.875] << {"status":"OK","reset":true}  (+734 ms)
+[12:51:14.371] === tests/test_firmware_cli.py::test_pwm_out_of_range_is_rejected[1000]
+[12:51:14.422] >> RESET
+[12:51:14.964] << {"status":"OK","reset":true}  (+541 ms)
+[12:51:15.534] >> SET PWM 1000
+[12:51:16.389] << {"status":"ERROR","code":"INVALID_VALUE"}  (+854 ms)
+[12:51:16.543] >> RESET
+[12:51:17.012] << {"status":"OK","reset":true}  (+469 ms)
+[12:51:18.496] === tests/test_firmware_cli.py::test_pwm_non_integer_is_rejected[abc]
+[12:51:18.547] >> RESET
+[12:51:19.368] << {"status":"OK","reset":true}  (+822 ms)
+[12:51:19.939] >> SET PWM abc
+[12:51:20.596] << {"status":"ERROR","code":"INVALID_VALUE"}  (+656 ms)
+[12:51:20.750] >> RESET
+[12:51:21.489] << {"status":"OK","reset":true}  (+739 ms)
+[12:51:23.029] === tests/test_firmware_cli.py::test_pwm_non_integer_is_rejected[50.5]
+[12:51:23.080] >> RESET
+[12:51:23.845] << {"status":"OK","reset":true}  (+766 ms)
+[12:51:24.406] >> SET PWM 50.5
+[12:51:25.000] << {"status":"ERROR","code":"INVALID_VALUE"}  (+594 ms)
+[12:51:25.155] >> RESET
+[12:51:25.821] << {"status":"OK","reset":true}  (+666 ms)
+[12:51:27.366] === tests/test_firmware_cli.py::test_pwm_non_integer_is_rejected[50abc]
+[12:51:27.417] >> RESET
+[12:51:28.178] << {"status":"OK","reset":true}  (+761 ms)
+[12:51:28.745] >> SET PWM 50abc
+[12:51:29.580] << {"status":"ERROR","code":"INVALID_VALUE"}  (+835 ms)
+[12:51:29.734] >> RESET
+[12:51:30.161] << {"status":"OK","reset":true}  (+427 ms)
+[12:51:31.668] === tests/test_firmware_cli.py::test_pwm_non_integer_is_rejected[]
+[12:51:31.719] >> RESET
+[12:51:32.533] << {"status":"OK","reset":true}  (+814 ms)
+[12:51:33.099] >> SET PWM
+[12:51:34.024] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+925 ms)
+[12:51:34.179] >> RESET
+[12:51:34.861] << {"status":"OK","reset":true}  (+682 ms)
+[12:51:36.357] === tests/test_firmware_cli.py::test_pwm_non_integer_is_rejected[0x10]
+[12:51:36.409] >> RESET
+[12:51:37.251] << {"status":"OK","reset":true}  (+842 ms)
+[12:51:37.820] >> SET PWM 0x10
+[12:51:38.530] << {"status":"ERROR","code":"INVALID_VALUE"}  (+709 ms)
+[12:51:38.683] >> RESET
+[12:51:39.468] << {"status":"OK","reset":true}  (+785 ms)
+[12:51:40.961] === tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[-1]
+[12:51:41.012] >> RESET
+[12:51:41.684] << {"status":"OK","reset":true}  (+672 ms)
+[12:51:42.258] >> SET PWM 30
+[12:51:43.173] << {"status":"OK","pwm":30}  (+915 ms)
+[12:51:43.173] >> SET PWM -1
+[12:51:44.076] << {"status":"ERROR","code":"INVALID_VALUE"}  (+903 ms)
+[12:51:44.077] >> STATUS
+[12:51:44.935] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+858 ms)
+[12:51:45.102] >> RESET
+[12:51:45.790] << {"status":"OK","reset":true}  (+688 ms)
+[12:51:47.323] === tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[101]
+[12:51:47.374] >> RESET
+[12:51:48.190] << {"status":"OK","reset":true}  (+816 ms)
+[12:51:48.764] >> SET PWM 30
+[12:51:49.746] << {"status":"OK","pwm":30}  (+982 ms)
+[12:51:49.746] >> SET PWM 101
+[12:51:50.621] << {"status":"ERROR","code":"INVALID_VALUE"}  (+875 ms)
+[12:51:50.621] >> STATUS
+[12:51:51.500] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+879 ms)
+[12:51:51.665] >> RESET
+[12:51:52.370] << {"status":"OK","reset":true}  (+705 ms)
+[12:51:53.906] === tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[abc]
+[12:51:53.956] >> RESET
+[12:51:54.776] << {"status":"OK","reset":true}  (+820 ms)
+[12:51:55.336] >> SET PWM 30
+[12:51:56.265] << {"status":"OK","pwm":30}  (+928 ms)
+[12:51:56.265] >> SET PWM abc
+[12:51:57.185] << {"status":"ERROR","code":"INVALID_VALUE"}  (+919 ms)
+[12:51:57.185] >> STATUS
+[12:51:58.195] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+1010 ms)
+[12:51:58.366] >> RESET
+[12:51:59.099] << {"status":"OK","reset":true}  (+733 ms)
+[12:52:00.593] === tests/test_firmware_cli.py::test_unknown_command_is_structured_error[FOO]
+[12:52:00.643] >> RESET
+[12:52:00.984] << {"status":"OK","reset":true}  (+341 ms)
+[12:52:01.548] >> FOO
+[12:52:02.211] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+663 ms)
+[12:52:02.365] >> RESET
+[12:52:03.116] << {"status":"OK","reset":true}  (+750 ms)
+[12:52:04.597] === tests/test_firmware_cli.py::test_unknown_command_is_structured_error[GET HUMIDITY]
+[12:52:04.648] >> RESET
+[12:52:05.457] << {"status":"OK","reset":true}  (+809 ms)
+[12:52:06.017] >> GET HUMIDITY
+[12:52:06.726] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+708 ms)
+[12:52:06.880] >> RESET
+[12:52:07.693] << {"status":"OK","reset":true}  (+812 ms)
+[12:52:09.217] === tests/test_firmware_cli.py::test_unknown_command_is_structured_error[PINGX]
+[12:52:09.267] >> RESET
+[12:52:09.924] << {"status":"OK","reset":true}  (+656 ms)
+[12:52:10.496] >> PINGX
+[12:52:11.414] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+917 ms)
+[12:52:11.567] >> RESET
+[12:52:12.508] << {"status":"OK","reset":true}  (+941 ms)
+[12:52:14.003] === tests/test_firmware_cli.py::test_unknown_command_is_structured_error[SET]
+[12:52:14.054] >> RESET
+[12:52:14.672] << {"status":"OK","reset":true}  (+617 ms)
+[12:52:15.234] >> SET
+[12:52:15.902] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+658 ms)
+[12:52:16.057] >> RESET
+[12:52:16.789] << {"status":"OK","reset":true}  (+732 ms)
+[12:52:18.571] === tests/test_firmware_cli.py::test_unknown_command_is_structured_error[SET RELAY ON]
+[12:52:18.622] >> RESET
+[12:52:19.502] << {"status":"OK","reset":true}  (+880 ms)
+[12:52:20.072] >> SET RELAY ON
+[12:52:20.793] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+721 ms)
+[12:52:20.948] >> RESET
+[12:52:21.630] << {"status":"OK","reset":true}  (+682 ms)
+[12:52:23.112] === tests/test_firmware_cli.py::test_device_still_works_after_unknown_command
+[12:52:23.162] >> RESET
+[12:52:23.712] << {"status":"OK","reset":true}  (+549 ms)
+[12:52:24.274] >> FOO
+[12:52:25.226] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+952 ms)
+[12:52:25.227] >> STATUS
+[12:52:25.804] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+577 ms)
+[12:52:25.959] >> RESET
+[12:52:26.645] << {"status":"OK","reset":true}  (+687 ms)
+[12:52:28.147] === tests/test_firmware_cli.py::test_led_state_reflected_in_status[ON-True]
+[12:52:28.198] >> RESET
+[12:52:28.524] << {"status":"OK","reset":true}  (+326 ms)
+[12:52:29.095] >> SET LED ON
+[12:52:29.874] << {"status":"OK","led":true}  (+779 ms)
+[12:52:29.875] >> STATUS
+[12:52:30.479] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+605 ms)
+[12:52:30.634] >> RESET
+[12:52:31.064] << {"status":"OK","reset":true}  (+430 ms)
+[12:52:32.596] === tests/test_firmware_cli.py::test_led_state_reflected_in_status[OFF-False]
+[12:52:32.647] >> RESET
+[12:52:33.105] << {"status":"OK","reset":true}  (+458 ms)
+[12:52:33.667] >> SET LED OFF
+[12:52:34.313] << {"status":"OK","led":false}  (+646 ms)
+[12:52:34.313] >> STATUS
+[12:52:34.939] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+626 ms)
+[12:52:35.094] >> RESET
+[12:52:35.386] << {"status":"OK","reset":true}  (+291 ms)
+[12:52:36.875] === tests/test_firmware_cli.py::test_status_fields_types
+[12:52:36.926] >> RESET
+[12:52:37.256] << {"status":"OK","reset":true}  (+330 ms)
+[12:52:37.818] >> STATUS
+[12:52:38.463] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+645 ms)
+[12:52:38.617] >> RESET
+[12:52:38.896] << {"status":"OK","reset":true}  (+278 ms)
+[12:52:40.380] === tests/test_firmware_cli.py::test_reset_from_state[OFF-100]
+[12:52:40.431] >> RESET
+[12:52:40.986] << {"status":"OK","reset":true}  (+555 ms)
+[12:52:41.550] >> SET LED OFF
+[12:52:42.047] << {"status":"OK","led":false}  (+497 ms)
+[12:52:42.047] >> SET PWM 100
+[12:52:42.656] << {"status":"ERROR","code":"INVALID_VALUE"}  (+609 ms)
+[12:52:42.657] >> RESET
+[12:52:43.292] << {"status":"OK","reset":true}  (+635 ms)
+[12:52:43.292] >> STATUS
+[12:52:43.918] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+625 ms)
+[12:52:44.072] >> RESET
+[12:52:44.511] << {"status":"OK","reset":true}  (+439 ms)
+[12:52:46.137] === tests/test_firmware_cli.py::test_reset_from_state[ON-0]
+[12:52:46.188] >> RESET
+[12:52:46.599] << {"status":"OK","reset":true}  (+411 ms)
+[12:52:47.174] >> SET LED ON
+[12:52:47.839] << {"status":"OK","led":true}  (+665 ms)
+[12:52:47.839] >> SET PWM 0
+[12:52:48.444] << {"status":"OK","pwm":0}  (+605 ms)
+[12:52:48.444] >> RESET
+[12:52:48.868] << {"status":"OK","reset":true}  (+423 ms)
+[12:52:48.868] >> STATUS
+[12:52:49.590] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+722 ms)
+[12:52:49.745] >> RESET
+[12:52:50.197] << {"status":"OK","reset":true}  (+451 ms)
+[12:52:51.695] === tests/test_firmware_cli.py::test_reset_from_state[ON-50]
+[12:52:51.746] >> RESET
+[12:52:52.815] << {"status":"OK","reset":true}  (+1070 ms)
+[12:52:53.381] >> SET LED ON
+[12:52:54.311] << {"status":"OK","led":true}  (+924 ms)
+[12:52:54.312] >> SET PWM 50
+[12:52:55.360] << {"status":"OK","pwm":50}  (+1048 ms)
+[12:52:55.360] >> RESET
+[12:52:56.368] << {"status":"OK","reset":true}  (+1007 ms)
+[12:52:56.368] >> STATUS
+[12:52:57.273] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+905 ms)
+[12:52:57.446] >> RESET
+[12:52:58.293] << {"status":"OK","reset":true}  (+847 ms)
+[12:52:59.789] === tests/test_firmware_cli.py::test_reset_from_state[ON-1]
+[12:52:59.839] >> RESET
+[12:53:00.777] << {"status":"OK","reset":true}  (+937 ms)
+[12:53:01.346] >> SET LED ON
+[12:53:01.982] << {"status":"OK","led":true}  (+636 ms)
+[12:53:01.982] >> SET PWM 1
+[12:53:02.811] << {"status":"OK","pwm":1}  (+829 ms)
+[12:53:02.811] >> RESET
+[12:53:03.895] << {"status":"OK","reset":true}  (+1083 ms)
+[12:53:03.895] >> STATUS
+[12:53:04.823] << {"status":"OK","led":true,"pwm":2,"heap":349852}  (+928 ms)
+[12:53:04.997] >> RESET
+[12:53:05.934] << {"status":"OK","reset":true}  (+936 ms)
+[12:53:07.438] === tests/test_firmware_cli.py::test_get_temp_repeated[0]
+[12:53:07.489] >> RESET
+[12:53:08.336] << {"status":"OK","reset":true}  (+846 ms)
+[12:53:08.895] >> GET TEMP
+[12:53:09.888] << {"status":"OK","temperature":24.5  (+993 ms)
+[12:53:10.107] >> RESET
+[12:53:10.802] << {"status":"OK","reset":true}  (+695 ms)
+[12:53:12.299] === tests/test_firmware_cli.py::test_get_temp_repeated[1]
+[12:53:12.350] >> RESET
+[12:53:13.200] << {"status":"OK","reset":true}  (+849 ms)
+[12:53:13.762] >> GET TEMP
+[12:53:14.611] << {"status":"OK","temperature":24.5  (+849 ms)
+[12:53:14.804] >> RESET
+[12:53:15.456] << {"status":"OK","reset":true}  (+652 ms)
+[12:53:16.955] === tests/test_firmware_cli.py::test_get_temp_repeated[2]
+[12:53:17.006] >> RESET
+[12:53:17.679] << {"status":"OK","reset":true}  (+673 ms)
+[12:53:18.252] >> GET TEMP
+[12:53:19.129] << {"status":"OK","temperature":24.5  (+877 ms)
+[12:53:19.339] >> RESET
+[12:53:20.020] << {"status":"OK","reset":true}  (+681 ms)
+[12:53:21.523] === tests/test_firmware_cli.py::test_get_temp_repeated[3]
+[12:53:21.574] >> RESET
+[12:53:22.224] << {"status":"OK","reset":true}  (+650 ms)
+[12:53:22.793] >> GET TEMP
+[12:53:23.644] << {"status":"OK","temperature":24.5  (+850 ms)
+[12:53:23.840] >> RESET
+[12:53:24.495] << {"status":"OK","reset":true}  (+654 ms)
+[12:53:25.979] === tests/test_firmware_cli.py::test_get_temp_repeated[4]
+[12:53:26.030] >> RESET
+[12:53:26.928] << {"status":"OK","reset":true}  (+898 ms)
+[12:53:27.490] >> GET TEMP
+[12:53:28.409] << {"status":"OK","temperature":24.5  (+918 ms)
+[12:53:28.597] >> RESET
+[12:53:29.264] << {"status":"OK","reset":true}  (+666 ms)
+[12:53:30.743] === tests/test_firmware_cli.py::test_no_response_times_out_in_bounded_time
+[12:53:30.794] >> RESET
+[12:53:31.959] << {"status":"OK","reset":true}  (+1165 ms)
+[12:53:32.531] >> NO_RESPONSE
+[12:53:35.584] -- timeout after 3053 ms (timeout=3.0s)
+[12:53:35.738] >> RESET
+[12:53:36.369] << {"status":"OK","reset":true}  (+631 ms)
+[12:53:37.868] === tests/test_firmware_cli.py::test_ping_vs_client_timeout[1.0-False]
+[12:53:37.919] >> RESET
+[12:53:38.607] << {"status":"OK","reset":true}  (+688 ms)
+[12:53:39.274] >> PING
+[12:53:40.329] -- timeout after 1055 ms (timeout=1.0s)
+[12:53:40.483] >> RESET
+[12:53:44.687] -- no RESET reply in 4000 ms
+[12:53:44.891] << {"status":"OK","command":"PING"}  (late)
+[12:53:44.892] << {"status":"OK","reset":true}  (late)
+[12:53:46.184] === tests/test_firmware_cli.py::test_ping_vs_client_timeout[3.0-True]
+[12:53:46.235] >> RESET
+[12:53:47.082] << {"status":"OK","reset":true}  (+846 ms)
+[12:53:47.748] >> PING
+[12:53:50.808] -- timeout after 3060 ms (timeout=3.0s)
+[12:53:50.982] >> RESET
+[12:53:53.300] << {"status":"OK","command":"PING"}  (late)
+[12:53:53.301] << {"status":"OK","reset":true}  (+2319 ms)
+[12:53:54.838] === tests/test_firmware_cli.py::test_late_reply_after_timeout_is_not_taken_as_next_reply
+[12:53:54.889] >> RESET
+[12:53:55.626] << {"status":"OK","reset":true}  (+736 ms)
+[12:53:56.296] >> PING
+[12:53:57.348] -- timeout after 1051 ms (timeout=1.0s)
+[12:53:59.206] >> STATUS
+[12:54:01.938] << {"status":"OK","command":"PING"}  (+2732 ms)
+[12:54:02.112] >> RESET
+[12:54:02.809] << {"status":"OK","reset":true}  (+696 ms)
+[12:54:04.310] === tests/test_relay.py::test_led_on_off
+[12:54:04.361] >> RESET
+[12:54:05.187] << {"status":"OK","reset":true}  (+826 ms)
+[12:54:05.758] >> SET LED ON
+[12:54:06.597] << {"status":"OK","led":true}  (+838 ms)
+[12:54:06.597] >> SET LED OFF
+[12:54:07.200] << {"status":"OK","led":false}  (+603 ms)
+[12:54:07.354] >> RESET
+[12:54:07.851] << {"status":"OK","reset":true}  (+497 ms)
+[12:54:09.349] === tests/test_relay.py::test_reset_restores_safe_state
+[12:54:09.401] >> RESET
+[12:54:09.927] << {"status":"OK","reset":true}  (+526 ms)
+[12:54:10.500] >> SET LED ON
+[12:54:11.134] << {"status":"OK","led":true}  (+634 ms)
+[12:54:11.134] >> RESET
+[12:54:11.718] << {"status":"OK","reset":true}  (+584 ms)
+[12:54:11.718] >> STATUS
+[12:54:12.321] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+603 ms)
+[12:54:12.481] >> RESET
+[12:54:12.963] << {"status":"OK","reset":true}  (+481 ms)
+[12:54:14.473] === tests/test_sensor.py::test_temperature_is_valid_json
+[12:54:14.524] >> RESET
+[12:54:14.989] << {"status":"OK","reset":true}  (+465 ms)
+[12:54:15.547] >> GET TEMP
+[12:54:16.266] << {"status":"OK","temperature":24.5  (+718 ms)
+[12:54:16.469] >> RESET
+[12:54:16.873] << {"status":"OK","reset":true}  (+404 ms)
+[12:54:18.353] === tests/test_status.py::test_ping
+[12:54:18.404] >> RESET
+[12:54:18.956] << {"status":"OK","reset":true}  (+551 ms)
+[12:54:19.527] >> PING
+[12:54:21.589] << {"status":"OK","command":"PING"}  (+2062 ms)
+[12:54:21.743] >> RESET
+[12:54:22.240] << {"status":"OK","reset":true}  (+497 ms)
+[12:54:23.734] === tests/test_status.py::test_status
+[12:54:23.784] >> RESET
+[12:54:24.268] << {"status":"OK","reset":true}  (+483 ms)
+[12:54:24.840] >> STATUS
+[12:54:25.315] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+475 ms)
+[12:54:25.469] >> RESET
+[12:54:25.900] << {"status":"OK","reset":true}  (+431 ms)
+[12:54:27.380] === tests/test_timeout.py::test_no_response_becomes_timeout
+[12:54:27.431] >> RESET
+[12:54:27.979] << {"status":"OK","reset":true}  (+548 ms)
+[12:54:28.538] >> NO_RESPONSE
+[12:54:31.590] -- timeout after 3052 ms (timeout=3.0s)
+[12:54:31.744] >> RESET
+[12:54:32.231] << {"status":"OK","reset":true}  (+487 ms)

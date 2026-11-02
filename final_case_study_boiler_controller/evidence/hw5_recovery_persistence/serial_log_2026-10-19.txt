@@ -1,0 +1,1039 @@
+=== RUN 1 ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:02.333] status
+[00:03.933] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[00:05.433] sensor
+[00:05.566] [SENSOR] temp=24.5C humidity=45.0%
+[00:06.233] status
+[00:06.533] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332136,"sensor_ok":true}
+[00:06.866] sleep 5
+[00:07.566] [STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:08.933] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:09.466] status
+[00:09.633] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":1,"heap":332400,"sensor_ok":true}
+[00:10.166] sleep 10
+[00:10.566] [STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:11.799] status
+[00:12.466] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:13.233] status
+[00:13.366] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[00:13.999] hang
+[00:14.233] [FAULT] firmware hang
+[00:19.233] E (24029) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[00:19.299] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:20.232] [BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:20.999] status
+[00:21.132] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":2,"heap":332400,"sensor_ok":false}
+[00:21.466] relay on
+[00:21.666] [STORE] saved
+[RELAY] ON
+[00:21.999] status
+[00:22.132] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":3,"heap":332400,"sensor_ok":false}
+[00:22.466] hang
+[00:22.599] [FAULT] firmware hang
+[00:27.599] E (14740) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[00:27.666] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:28.599] [BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:29.199] status
+[00:29.332] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":3,"heap":332400,"sensor_ok":false}
+[00:30.532] relay off
+[00:30.732] [STORE] saved
+[RELAY] OFF
+[00:31.032] save
+[00:31.232] [STORE] saved
+[00:31.566] status
+[00:31.699] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":5,"heap":332400,"sensor_ok":true}
+[00:32.066] powerloss
+[00:32.199] [FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:33.165] [BOOT] reset_reason=SOFTWARE_RESET
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:33.532] status
+[00:33.665] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":105,"heap":332400,"sensor_ok":false}
+[00:34.365] powerloss
+[00:34.632] [FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:35.565] [BOOT] reset_reason=SOFTWARE_RESET
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:35.965] status
+[00:36.098] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":205,"heap":332400,"sensor_ok":false}
+[00:36.432] sensor
+[00:36.598] [SENSOR] temp=0.0C humidity=0.0%
+[00:37.198] status
+[00:37.365] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":205,"heap":332368,"sensor_ok":false}
+[00:37.798] [STORE] saved
+[BUTTON] relay=ON
+[00:37.898] [STORE] saved
+[BUTTON] relay=OFF
+[00:38.531] [STORE] saved
+[BUTTON] relay=ON
+[00:38.598] [STORE] saved
+[BUTTON] relay=OFF
+[00:38.665] [STORE] saved
+[BUTTON] relay=ON
+[00:38.731] [STORE] saved
+[BUTTON] relay=OFF
+[00:38.798] [STORE] saved
+[BUTTON] relay=ON
+[00:38.865] [STORE] saved
+[BUTTON] relay=OFF
+[00:38.931] [STORE] saved
+[BUTTON] relay=ON
+[00:38.965] [STORE] saved
+[BUTTON] relay=OFF
+[00:38.998] [STORE] saved
+[BUTTON] relay=ON
+[00:39.065] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.131] [STORE] saved
+[BUTTON] relay=ON
+[00:39.198] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.265] [STORE] saved
+[BUTTON] relay=ON
+[00:39.331] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.398] [STORE] saved
+[BUTTON] relay=ON
+[00:39.465] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.531] [STORE] saved
+[BUTTON] relay=ON
+[00:39.598] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.665] [STORE] saved
+[BUTTON] relay=ON
+[00:39.731] [STORE] saved
+[BUTTON] relay=OFF
+[00:39.798] [STORE] saved
+[BUTTON] relay=ON
+[00:40.065] status
+[00:40.198] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":228,"heap":332220,"sensor_ok":true}
+[00:40.931] status
+[00:40.965] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":228,"heap":332220,"sensor_ok":true}
+[00:44.763] relay off
+[00:44.830] [STORE] saved
+[RELAY] OFF
+[00:48.411] hang
+[00:48.444] [FAULT] firmware hang
+[00:53.439] E (32049) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[00:53.505] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:54.422] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:56.537] status
+[00:56.571] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[00:56.987] hang
+[00:57.020] [FAULT] firmware hang
+[01:01.999] E (12073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:02.065] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:02.999] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:05.381] status
+[01:05.414] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:05.846] hang
+[01:05.879] [FAULT] firmware hang
+[01:10.859] E (20838) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:10.925] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:11.859] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:14.274] status
+[01:14.307] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:14.740] hang
+[01:14.774] [FAULT] firmware hang
+[01:19.751] E (11494) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:19.817] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:20.784] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:20.884] status
+[01:20.917] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:20.917] hang
+[01:20.951] [FAULT] firmware hang
+[01:25.951] E (14578) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:26.017] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:26.950] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:27.017] status
+[01:27.050] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:27.050] hang
+[01:27.083] [FAULT] firmware hang
+[01:32.083] E (20288) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:32.150] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:33.083] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:33.150] status
+[01:33.183] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:33.183] hang
+[01:33.216] [FAULT] firmware hang
+[01:38.198] E (8149) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:38.265] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:39.198] [BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:41.596] status
+[01:41.630] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:42.063] hang
+[01:42.096] [FAULT] firmware hang
+[01:47.094] E (19399) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:47.127]
+[01:47.160] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:48.077] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:49.477] status
+[01:49.510] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:49.810] hang
+[01:49.843] [FAULT] firmware hang
+[01:54.825] E (7740) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[01:54.891] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:55.825] [BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:57.457] status
+[01:57.490] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+[01:57.856] hang
+[01:57.890] [FAULT] firmware hang
+[02:02.887] E (15710) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[02:02.953] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[02:03.870] [BOOT] reset_reason=TASK_WDT
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[02:05.270] status
+[02:05.303] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":229,"heap":332400,"sensor_ok":false}
+
+=== RUN 2: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json, simulation restarted ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:35.529] status
+[00:35.562] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":false}
+[00:37.927] sensor
+[00:37.960] [SENSOR] temp=0.0C humidity=0.0%
+[00:40.393] sensor
+[00:40.426] [SENSOR] temp=0.0C humidity=0.0%
+[00:42.824] relay on
+[00:42.858] [STORE] saved
+[RELAY] ON
+[00:45.323] sensor
+[00:45.356] [SENSOR] temp=0.0C humidity=0.0%
+[00:47.788] status
+[00:47.821] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":true,"counter":1,"heap":332368,"sensor_ok":false}
+[00:50.153] relay off
+[00:50.219] [STORE] saved
+[RELAY] OFF
+[01:02.246] sleep 5
+[01:02.279] [STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:03.662] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:12.890] status
+[01:12.923] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":3,"heap":332400,"sensor_ok":false}
+[01:15.655] sleep 20
+[01:15.688] [STORE] saved
+[STATE] SLEEP timer=20 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:17.188] [BOOT] reset_reason=INT_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:18.588] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:28.865] status
+[01:28.898] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":4,"heap":332400,"sensor_ok":false}
+[01:50.386] status
+[01:50.419] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":4,"heap":332400,"sensor_ok":false}
+[01:52.718] [STORE] saved
+[BUTTON] relay=ON
+[01:53.451] [STORE] saved
+[BUTTON] relay=OFF
+[01:54.150] [STORE] saved
+[BUTTON] relay=ON
+[01:54.283] [STORE] saved
+[BUTTON] relay=OFF
+[01:54.783] [STORE] saved
+[BUTTON] relay=ON
+[01:55.483] [STORE] saved
+[BUTTON] relay=OFF
+[01:56.215] [STORE] saved
+[BUTTON] relay=ON
+[01:56.949] [STORE] saved
+[BUTTON] relay=OFF
+[01:57.082] [STORE] saved
+[BUTTON] relay=ON
+[01:57.648] [STORE] saved
+[BUTTON] relay=OFF
+[01:58.348] [STORE] saved
+[BUTTON] relay=ON
+[01:59.114] [STORE] saved
+[BUTTON] relay=OFF
+[02:01.179] status
+[02:01.213] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":16,"heap":332400,"sensor_ok":false}
+[04:34.585] relay on
+[RELAY] ON
+[04:36.352] status
+[04:36.385] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":17,"heap":332400,"sensor_ok":false}
+[04:38.217] hang
+[04:38.251] [FAULT] firmware hang
+[04:43.248] E (217420) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[04:44.231] [BOOT] reset_reason=TASK_WDT
+[04:58.327] status
+[04:58.360] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":17,"heap":332400,"sensor_ok":false}
+[05:00.260] sensor
+[05:00.293] [SENSOR] temp=0.0C humidity=0.0%
+
+=== RUN 3 ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:03.499] status
+[00:03.533] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[00:03.533] relay on
+[00:03.566] [STORE] saved
+[RELAY] ON
+[00:05.033] save
+[00:05.066] [STORE] saved
+[00:06.533] status
+[00:06.566] {"state":"ACTIVE","reset_reason":"POWER_ON","relay":true,"counter":2,"heap":332400,"sensor_ok":true}
+[00:06.566] reboot
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:07.432] [BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:10.032] status
+[00:10.066] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":2,"heap":332400,"sensor_ok":false}
+[00:10.066] relay off
+[00:10.132] [STORE] saved
+[RELAY] OFF
+[00:11.566] relay on
+[00:11.632] [STORE] saved
+[RELAY] ON
+[00:13.066] status
+[00:13.099] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":4,"heap":332400,"sensor_ok":true}
+[00:13.099] powerloss
+[00:13.132] [FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:13.999] [BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:16.532] status
+[00:16.566] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":104,"heap":332400,"sensor_ok":false}
+[00:16.566] relay off
+[00:16.632] [STORE] saved
+[RELAY] OFF
+[00:18.066] status
+[00:18.099] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":105,"heap":332400,"sensor_ok":false}
+[00:18.099] sleep 5
+[00:18.132] [STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:19.532] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:25.032] sensor
+[00:25.066] [SENSOR] temp=24.5C humidity=45.0%
+[00:26.032] relay on
+[00:26.099] [STORE] saved
+[RELAY] ON
+[00:27.532] status
+[00:27.566] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":107,"heap":332136,"sensor_ok":true}
+[00:27.566] relay off
+[00:27.632] [STORE] saved
+[RELAY] OFF
+[00:29.198] status
+[00:29.232] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":108,"heap":332136,"sensor_ok":true}
+[00:29.532] [STORE] saved
+[BUTTON] relay=ON
+[00:30.898] status
+[00:30.931] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":109,"heap":332136,"sensor_ok":true}
+[00:31.098] relay off
+[00:31.164] [STORE] saved
+[RELAY] OFF
+[00:32.830] hang
+[00:32.863] [FAULT] firmware hang
+[00:37.859] E (18906) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+[00:37.926] Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:38.843] [BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:41.724] status
+[00:41.758] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":false}
+[00:42.024] foo
+[00:42.058] [CLI] ERROR unknown command
+[00:44.156] status
+[00:44.190] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:44.323] status
+[00:44.356] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:44.623] STATUS
+[00:44.656] [CLI] ERROR unknown command
+[00:46.788] status
+[00:46.821] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:46.988] status
+[00:47.021] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:47.254] Relay on
+[00:47.288] [CLI] ERROR unknown command
+[00:49.387] status
+[00:49.420] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:49.553] status
+[00:49.586] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:49.886] relay maybe
+[00:49.920] [CLI] ERROR unknown command
+[00:52.085] status
+[00:52.118] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:52.251] status
+[00:52.285] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:52.518] hang now
+[00:52.551] [CLI] ERROR unknown command
+[00:54.849] status
+[00:54.883] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:55.016] status
+[00:55.049] {"state":"ACTIVE","reset_reason":"TASK_WDT","relay":false,"counter":110,"heap":332400,"sensor_ok":true}
+[00:55.283] sleep abc
+[00:55.316] [STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[00:56.382] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[00:58.981] status
+[00:59.014] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":111,"heap":332400,"sensor_ok":true}
+[00:59.147] status
+[00:59.181] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":111,"heap":332400,"sensor_ok":true}
+[00:59.414] sleep 0
+[00:59.447] [STORE] saved
+[00:59.481] [STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:00.514] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:03.312] status
+[01:03.346] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":112,"heap":332400,"sensor_ok":true}
+[01:03.479] status
+[01:03.512] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":112,"heap":332400,"sensor_ok":true}
+[01:03.779] sleep -5
+[01:03.812] [STORE] saved
+[STATE] SLEEP timer=60 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:05.395] [BOOT] reset_reason=INT_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:08.393] status
+[01:08.427] {"state":"ACTIVE","reset_reason":"INT_WDT","relay":false,"counter":113,"heap":332400,"sensor_ok":true}
+[01:08.560] status
+[01:08.593] {"state":"ACTIVE","reset_reason":"INT_WDT","relay":false,"counter":113,"heap":332400,"sensor_ok":true}
+[01:08.826] sleep 999
+[01:08.860] [STORE] saved
+[STATE] SLEEP timer=60 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:10.443] [BOOT] reset_reason=INT_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:13.141] status
+[01:13.174] {"state":"ACTIVE","reset_reason":"INT_WDT","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+[01:13.341] status
+[01:13.374] {"state":"ACTIVE","reset_reason":"INT_WDT","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:15.857] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:18.655] status
+[01:18.688] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+[01:18.855] status
+[01:18.888] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+[01:21.252] status
+[01:21.286] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+[01:21.452] status
+[01:21.486] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332400,"sensor_ok":true}
+[01:21.719] AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[01:21.752] [CLI] ERROR unknown command
+[01:23.818] status
+[01:23.851] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332256,"sensor_ok":true}
+[01:23.984] status
+[01:24.018] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332256,"sensor_ok":true}
+[01:24.251] !@#$%^&*()
+[01:24.284] [CLI] ERROR unknown command
+[01:26.316] status
+[01:26.350] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":114,"heap":332256,"sensor_ok":true}
+[01:26.483] sleep 5
+[01:26.516] [STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:27.983] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:30.681] status
+[01:30.714] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:30.881] foo
+[01:30.914] [CLI] ERROR unknown command
+[01:32.980] status
+[01:33.013] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:33.080] status
+[01:33.113] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:33.280] STATUS
+[01:33.313] [CLI] ERROR unknown command
+[01:35.380] status
+[01:35.413] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:35.446] status
+[01:35.480] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:35.613] relay maybe
+[01:35.646] [CLI] ERROR unknown command
+[01:37.878] status
+[01:37.911] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:38.044] status
+[01:38.078] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":115,"heap":332400,"sensor_ok":true}
+[01:38.344] sleep abc
+[01:38.378] [STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:39.444] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:42.410] status
+[01:42.443] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":116,"heap":332400,"sensor_ok":true}
+[01:42.543] status
+[01:42.576] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":116,"heap":332400,"sensor_ok":true}
+[01:42.776] AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[01:42.809] [CLI] ERROR unknown command
+[01:44.875] status
+[01:44.908] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":116,"heap":332256,"sensor_ok":true}
+[01:45.075] status
+[01:45.108] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":116,"heap":332256,"sensor_ok":true}
+[01:47.639] status
+[01:47.673] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":116,"heap":332256,"sensor_ok":true}
+[01:47.773] powerloss
+[01:47.806] [FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[01:48.739] [BOOT] reset_reason=SOFTWARE_RESET
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[01:51.554] status
+[01:51.587] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":false}
+[01:51.820] foo
+[01:51.854] [CLI] ERROR unknown command
+[01:54.119] status
+[01:54.152] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[01:54.285] status
+[01:54.319] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[01:54.585] STATUS
+[01:54.618] [CLI] ERROR unknown command
+[01:56.883] status
+[01:56.917] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[01:57.083] status
+[01:57.116] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[01:57.383] relay maybe
+[01:57.416] [CLI] ERROR unknown command
+[01:59.648] status
+[01:59.682] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[01:59.848] status
+[01:59.881] {"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":false,"counter":216,"heap":332400,"sensor_ok":true}
+[02:00.115] sleep abc
+[02:00.148] [STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[02:01.217] [BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[02:04.182] status
+[02:04.215] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":217,"heap":332400,"sensor_ok":true}
+[02:04.349] status
+[02:04.382] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":217,"heap":332400,"sensor_ok":true}
+[02:04.615] AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+[02:04.648] [CLI] ERROR unknown command
+[02:06.880] status
+[02:06.914] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":217,"heap":332256,"sensor_ok":true}
+[02:07.014] status
+[02:07.047] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":217,"heap":332256,"sensor_ok":true}
+[02:09.429] status
+[02:09.462] {"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":217,"heap":332256,"sensor_ok":true}
+
+=== REG-1A: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json ===
+sensor
+[SENSOR] temp=0.0C humidity=0.0%
+status
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332368,"sensor_ok":false}
+
+=== REG-1B ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":18,"heap":332252,"sensor_ok":true}
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":18,"heap":332252,"sensor_ok":true}
+[STORE] saved
+[RELAY] ON
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":19,"heap":332252,"sensor_ok":true}
+[FAULT] firmware hang
+E (22635) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+[FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":119,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":119,"heap":332400,"sensor_ok":false}
+[STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":120,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] OFF
+
+=== REG-2A: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json ===
+sensor
+[SENSOR] temp=0.0C humidity=0.0%
+status
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332368,"sensor_ok":false}
+
+=== REG-2B ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] ON
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":15,"heap":332400,"sensor_ok":true}
+[FAULT] firmware hang
+E (21353) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+[FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+[STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":116,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] OFF
+
+=== REG-3A: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json ===
+sensor
+[SENSOR] temp=0.0C humidity=0.0%
+status
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332368,"sensor_ok":false}
+
+=== REG-3B ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":18,"heap":332252,"sensor_ok":true}
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":18,"heap":332252,"sensor_ok":true}
+[STORE] saved
+[RELAY] ON
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":19,"heap":332252,"sensor_ok":true}
+[FAULT] firmware hang
+E (22621) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":19,"heap":332400,"sensor_ok":false}
+[FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":119,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":119,"heap":332400,"sensor_ok":false}
+[STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":120,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] OFF
+
+=== REG-4A: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json ===
+sensor
+[SENSOR] temp=0.0C humidity=0.0%
+status
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332368,"sensor_ok":false}
+
+=== REG-4B ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] ON
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":15,"heap":332400,"sensor_ok":true}
+[FAULT] firmware hang
+E (23652) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+[FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=SOFTWARE_RESET
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+[STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":116,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] OFF
+
+=== REG-5A: DHT22 data wire esp:D15 -> dht:SDA removed in diagram.json ===
+sensor
+[SENSOR] temp=0.0C humidity=0.0%
+status
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332368,"sensor_ok":false}
+
+=== REG-5B ===
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=POWER_ON
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"POWER_ON","relay":false,"counter":0,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[STATE] SLEEP timer=5 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+[STORE] saved
+[STATE] SLEEP timer=10 s
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":2,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+[STORE] saved
+[BUTTON] relay=ON
+[STORE] saved
+[BUTTON] relay=OFF
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":false,"counter":14,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] ON
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":15,"heap":332400,"sensor_ok":true}
+[FAULT] firmware hang
+E (22615) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+Rebooting...
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=TASK_WDT
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"TASK_WDT","relay":true,"counter":15,"heap":332400,"sensor_ok":false}
+[FAULT] power loss DURING save
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=SOFTWARE_RESET
+E (330) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+{"state":"ACTIVE","reset_reason":"SOFTWARE_RESET","relay":true,"counter":115,"heap":332400,"sensor_ok":false}
+[STORE] saved
+[STATE] SLEEP timer=1 s
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOOT] reset_reason=DEEP_SLEEP
+[WAKE] cause=4
+E (331) task_wdt: esp_task_wdt_init(517): TWDT already initialized
+[WDT] enabled timeout=4000 ms
+{"state":"ACTIVE","reset_reason":"DEEP_SLEEP","relay":true,"counter":116,"heap":332400,"sensor_ok":true}
+[STORE] saved
+[RELAY] OFF

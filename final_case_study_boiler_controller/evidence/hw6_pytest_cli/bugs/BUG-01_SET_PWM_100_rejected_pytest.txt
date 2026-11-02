@@ -1,0 +1,55 @@
+_______________________ test_pwm_valid_boundaries[100] ________________________
+
+device = <conftest.LoggedDevice object at 0x0000026093145480>, value = 100
+
+    @pytest.mark.parametrize("value", [0, 1, 50, 99, 100])
+    def test_pwm_valid_boundaries(device, value):
+        r = device.command(f"SET PWM {value}")
+>       assert r["status"] == "OK"
+E       AssertionError: assert 'ERROR' == 'OK'
+E         
+E         - OK
+E         + ERROR
+
+tests\test_boundaries.py:6: AssertionError
+
+___________________ test_pwm_boundary_values_accepted[100] ____________________
+
+device = <conftest.LoggedDevice object at 0x0000026093086E10>, value = 100
+
+    @pytest.mark.parametrize("value", [0, 1, 2, 49, 50, 51, 98, 99, 100])
+    def test_pwm_boundary_values_accepted(device, value):
+        r = device.command(f"SET PWM {value}")
+>       ok(r, f"SET PWM {value}")
+
+tests\test_firmware_cli.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = {'status': 'ERROR', 'code': 'INVALID_VALUE'}, cmd = 'SET PWM 100'
+
+    def ok(r, cmd):
+>       assert r.get("status") == "OK", f"{cmd}: expected status=OK, got {r}"
+E       AssertionError: SET PWM 100: expected status=OK, got {'status': 'ERROR', 'code': 'INVALID_VALUE'}
+E       assert 'ERROR' == 'OK'
+E         
+E         - OK
+E         + ERROR
+
+tests\test_firmware_cli.py:12: AssertionError
+
+_____________________ test_pwm_full_range_sweep_0_to_100 ______________________
+
+device = <conftest.LoggedDevice object at 0x0000026093152620>
+
+    def test_pwm_full_range_sweep_0_to_100(device):
+        rejected = []
+        for value in range(0, 101):
+            r = device.command(f"SET PWM {value}")
+            if r.get("status") != "OK" or r.get("pwm") != value:
+                rejected.append((value, r))
+>       assert not rejected, f"values in 0..100 not accepted: {rejected}"
+E       AssertionError: values in 0..100 not accepted: [(100, {'status': 'ERROR', 'code': 'INVALID_VALUE'})]
+E       assert not [(100, {'status': 'ERROR', 'code': 'INVALID_VALUE'})]
+
+tests\test_firmware_cli.py:35: AssertionError
+

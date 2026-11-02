@@ -1,0 +1,86 @@
+name: 'Debounce QA'
+version: 1
+author: 'QA Demo'
+
+steps:
+  - delay: 2s  
+  # Test 1: Normal press
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+      
+  - wait-serial: 'LOGICAL EVENT #1'
+
+  - delay: 100ms
+
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+
+  
+
+  # Test 2: Short noise pulse - must not create a logical event
+  - delay: 500ms
+
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+
+  - delay: 5ms
+
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+
+  - delay: 100ms
+
+  # Test 3: Heavy bouncing followed by a stable state
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+
+  - delay: 100ms
+
+  - wait-serial: 'LOGICAL EVENT #2'
+
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+
+  - delay: 100ms
