@@ -1,0 +1,24 @@
+12:39:40.523 < ets Jul 29 2019 12:21:46
+12:39:40.523 < rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:39:40.523 < configsip: 0, SPIWP:0xee
+12:39:40.524 < clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:39:40.524 < mode:DIO, clock div:2
+12:39:40.524 < load:0x3fff0030,len:1156
+12:39:40.524 < load:0x40078000,len:11456
+12:39:40.524 < ho 0 tail 12 room 4
+12:39:40.524 < load:0x40080400,len:2972
+12:39:40.524 < entry 0x400805dc
+12:39:41.576 < === WEBINAR 4: I2C PRACTICE / BUGGY ===
+12:39:41.576 < Find the defect using trace + firmware behavior.
+12:39:41.576 < FAULT OFF = normal sensor; FAULT ON = simulated peripheral loss.
+12:39:41.577 < [DATA] Temperature: 24.00 C
+12:39:41.578 < [SYSTEM] Main loop alive
+12:39:42.527 < [DATA] Temperature: 24.00 C
+12:39:42.528 < [SYSTEM] Main loop alive
+12:39:43.528 < [DATA] Temperature: 24.00 C
+12:39:43.528 < [SYSTEM] Main loop alive
+12:39:44.559 < [DATA] Temperature: 24.00 C
+12:39:44.560 < [SYSTEM] Main loop alive
+12:39:45.562 < [DATA] Temperature: 24.00 C
+12:39:45.562 < [SYSTEM] Main loop alive
+12:39:46.559 < [  5519][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1

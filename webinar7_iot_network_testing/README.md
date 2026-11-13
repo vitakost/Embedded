@@ -7,9 +7,9 @@
 
 | Файл | Призначення |
 |---|---|
-| `IoT_Network_Memory_Test_Sheet_Webinar_7.docx` | Test Sheet: state model, ризики, Test Matrix, Fault Log, Memory Stability Log, Message ID evidence, bug reports, висновок |
+| `IoT_Network_Memory_Test_Sheet_Webinar_7_FAIL.docx` | Test Sheet: state model, ризики, Test Matrix, Fault Log, Memory Stability Log, Message ID evidence, bug reports, висновок |
 | `state_model.png` | Network state model за фактичними переходами з логу |
-| `run_scenarios.py` | Відправляє команди CLI сценаріїв A–D у Serial через RFC2217 і пише лог з мітками часу |
+| `run_scenarios.py` | Відправляє команди CLI сценаріїв A–F у Serial через RFC2217 і пише лог з мітками часу: A — втрата зв'язку, B — офлайн-буфер, C — межа буфера (8 / 9 / 12), D — stress і пам'ять, E — 20 циклів reconnect, F — heap на SEND і STRESS офлайн |
 | `evidence/runN_<scenario>.log` | Повний Serial-лог кожного сценарію, 3 прогони (24 файли) |
 
 ## Сценарії

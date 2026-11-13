@@ -1,0 +1,162 @@
+12:03:43.347 > reset
+12:03:43.880 < > OK: reset
+12:03:45.458 # length 30
+12:03:45.458 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:45.758 > status
+12:03:45.890 < > ERROR: unknown command
+12:03:46.273 < > SPEED=120
+12:03:46.274 < TIMEOUT=10
+12:03:46.274 < LED=OFF
+12:03:46.274 < CONFIG=SAVED
+12:03:47.165 # length 38
+12:03:47.165 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:47.420 < > ERROR: unknown command
+12:03:48.972 > status
+12:03:49.273 # length 39
+12:03:49.274 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:49.534 < > SPEED=120
+12:03:49.534 < TIMEOUT=10
+12:03:49.535 < LED=OFF
+12:03:49.549 < CONFIG=SAVED
+12:03:49.879 < > ERROR: unknown command
+12:03:51.383 > status
+12:03:51.684 # length 40
+12:03:51.684 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:51.809 < > SPEED=120
+12:03:51.809 < TIMEOUT=10
+12:03:51.809 < LED=OFF
+12:03:51.809 < CONFIG=SAVED
+12:03:52.190 < > ERROR: unknown command
+12:03:53.692 > status
+12:03:53.993 # length 41
+12:03:53.994 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:54.216 < > SPEED=120
+12:03:54.216 < TIMEOUT=10
+12:03:54.216 < LED=OFF
+12:03:54.216 < CONFIG=SAVED
+12:03:54.446 < > 
+12:03:54.446 < *** SYSTEM FAULT ***
+12:03:54.446 < Reason: input line boundary failure
+12:03:54.446 < rst:0xc (SW_CPU_RESET)
+12:03:54.446 < Rebooting...
+12:03:54.661 < ======================================
+12:03:54.661 <  UART CLI HOMEWORK DEVICE v2.0
+12:03:54.661 <  READY
+12:03:54.786 < ======================================
+12:03:54.786 < Type 'help'
+12:03:54.786 < > ERROR: empty command
+12:03:56.304 > status
+12:03:56.605 # length 42
+12:03:56.605 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:56.906 > status
+12:03:57.092 < > SPEED=120
+12:03:57.092 < TIMEOUT=10
+12:03:57.092 < LED=OFF
+12:03:57.092 < CONFIG=SAVED
+12:03:57.092 < > 
+12:03:57.092 < *** SYSTEM FAULT ***
+12:03:57.093 < Reason: input line boundary failure
+12:03:57.093 < rst:0xc (SW_CPU_RESET)
+12:03:57.093 < Rebooting...
+12:03:57.342 < ======================================
+12:03:57.720 <  UART CLI HOMEWORK DEVICE v2.0
+12:03:57.721 <  READY
+12:03:57.721 < ======================================
+12:03:57.721 < Type 'help'
+12:03:57.721 < > ERROR: unknown command
+12:03:57.721 < > SPEED=120
+12:03:57.721 < TIMEOUT=10
+12:03:57.721 < LED=OFF
+12:03:57.721 < CONFIG=SAVED
+12:03:58.615 # length 45
+12:03:58.615 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:03:59.318 > status
+12:03:59.536 < > 
+12:03:59.536 < *** SYSTEM FAULT ***
+12:03:59.536 < Reason: input line boundary failure
+12:03:59.536 < rst:0xc (SW_CPU_RESET)
+12:03:59.536 < Rebooting...
+12:03:59.834 < ======================================
+12:03:59.834 <  UART CLI HOMEWORK DEVICE v2.0
+12:03:59.834 <  READY
+12:04:00.212 < ======================================
+12:04:00.212 < Type 'help'
+12:04:00.212 < > ERROR: unknown command
+12:04:00.212 < > SPEED=120
+12:04:00.212 < TIMEOUT=10
+12:04:00.212 < LED=OFF
+12:04:00.212 < CONFIG=SAVED
+12:04:01.028 # length 60
+12:04:01.028 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:01.732 > status
+12:04:02.034 # length 100
+12:04:02.034 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:02.221 < > 
+12:04:02.221 < *** SYSTEM FAULT ***
+12:04:02.221 < Reason: input line boundary failure
+12:04:02.221 < rst:0xc (SW_CPU_RESET)
+12:04:02.221 < Rebooting...
+12:04:02.460 < ======================================
+12:04:02.460 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:02.460 <  READY
+12:04:02.521 < ======================================
+12:04:02.572 < Type 'help'
+12:04:02.572 < > ERROR: unknown command
+12:04:02.633 < > SPEED=120
+12:04:02.633 < TIMEOUT=10
+12:04:02.633 < LED=OFF
+12:04:02.633 < CONFIG=SAVED
+12:04:02.633 < > 
+12:04:02.633 < *** SYSTEM FAULT ***
+12:04:02.633 < Reason: input line boundary failure
+12:04:02.633 < rst:0xc (SW_CPU_RESET)
+12:04:02.633 < Rebooting...
+12:04:02.991 < ======================================
+12:04:02.991 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:02.992 <  READY
+12:04:03.057 < ======================================
+12:04:03.058 < Type 'help'
+12:04:03.058 < > 
+12:04:03.058 < *** SYSTEM FAULT ***
+12:04:03.058 < Reason: input line boundary failure
+12:04:03.058 < rst:0xc (SW_CPU_RESET)
+12:04:03.058 < Rebooting...
+12:04:03.430 < ======================================
+12:04:03.430 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:03.430 <  READY
+12:04:03.872 < ======================================
+12:04:03.872 < Type 'help'
+12:04:03.872 < > ERROR: unknown command
+12:04:05.375 > status
+12:04:05.676 # two lines 32 + 33
+12:04:05.676 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:05.977 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:05.985 < > SPEED=120
+12:04:05.985 < TIMEOUT=10
+12:04:05.985 < LED=OFF
+12:04:05.985 < CONFIG=SAVED
+12:04:06.261 < > ERROR: unknown command
+12:04:06.640 < > ERROR: unknown command
+12:04:08.188 > status
+12:04:08.489 # valid command padded to 41: 'set speed 10' + spaces
+12:04:08.489 > set speed 10                             
+12:04:08.790 > status
+12:04:08.800 < > SPEED=120
+12:04:08.800 < TIMEOUT=10
+12:04:08.800 < LED=OFF
+12:04:08.800 < CONFIG=SAVED
+12:04:09.202 < > 
+12:04:09.202 < *** SYSTEM FAULT ***
+12:04:09.202 < Reason: input line boundary failure
+12:04:09.202 < rst:0xc (SW_CPU_RESET)
+12:04:09.202 < Rebooting...
+12:04:09.436 < ======================================
+12:04:09.436 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:09.436 <  READY
+12:04:09.821 < ======================================
+12:04:09.821 < Type 'help'
+12:04:09.821 < > ERROR: empty command
+12:04:09.821 < > SPEED=120
+12:04:09.822 < TIMEOUT=10
+12:04:09.822 < LED=OFF
+12:04:09.822 < CONFIG=SAVED

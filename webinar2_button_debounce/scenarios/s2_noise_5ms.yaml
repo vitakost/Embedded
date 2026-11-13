@@ -1,0 +1,16 @@
+name: 'TC-05 noise pulse 5 ms'
+version: 1
+author: 'Vitalii Kostianets'
+
+steps:
+  - delay: 2s
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 5ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 1500ms

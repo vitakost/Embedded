@@ -88,7 +88,7 @@ Impact × Probability → Priority: P1 — блокує реліз до випр
 | System | Поведінка контролера цілком на стенді | Цикл привода клапана, термостат + реле |
 | Recovery / fault injection | Реакція на зависання, reset, power loss | hang, powerloss, FAULT ON / OFF |
 | Network | Втрата зв'язку, буфер, flush | NET DOWN / UP, 20× reconnect |
-| Regression | Повторний запуск після змін | pytest-набір, run_scenarios.py, scenario.yaml |
+| Regression | Повторний запуск після змін | pytest-набір, run_scenarios.py, сценарії кнопки Wokwi CLI |
 
 ## 9. Test Types
 Functional, boundary / negative, protocol, reliability, recovery, persistence, network stress, memory stability, automation.
@@ -97,7 +97,7 @@ Functional, boundary / negative, protocol, reliability, recovery, persistence, n
 | Environment | Purpose | Tools |
 |---|---|---|
 | Wokwi for VS Code + PlatformIO | Симуляція прошивки і схем | ESP32 DevKit V1, Arduino Uno, DHT22, MPU6050, реле (модель реле ТЕН), LED, кнопки |
-| Wokwi CLI | Скриптові сценарії входу | scenario.yaml (шум, дребезг) |
+| Wokwi CLI | Скриптові сценарії входу | 6 сценаріїв кнопки (норма, утримання, 5 натискань, шум, шум під час операції, дребезг) |
 | Logic analysis | Докази на рівні сигналів | Wokwi Logic Analyzer (VCD), PulseView з I2C-декодером |
 | Host automation | Регресія CLI і мережевих сценаріїв | Python 3.14, pytest 9.2, pyserial 3.5, RFC2217 (порт 4000) |
 | Real hardware | Електрична і фізична валідація | **Не виконано** — див. Residual Risks |
@@ -123,7 +123,7 @@ Functional, boundary / negative, protocol, reliability, recovery, persistence, n
 | Тригер | Що запускається |
 |---|---|
 | Будь-яка зміна прошивки (smoke, ≈10 хв) | pytest: status, ping, LED, RESET, межі PWM; run_scenarios.py A і B; boot + reset reason |
-| Зміна input / debounce | scenario.yaml (норма, шум 5 ms, heavy bounce) ×5, Logic Analyzer |
+| Зміна input / debounce | Сценарії кнопки (норма, шум 5 ms, шум під час операції, heavy bounce) ×5, Logic Analyzer |
 | Зміна CLI / парсера | повний pytest-набір (67 тестів) + boundary / negative з тижня 3 |
 | Зміна драйвера датчиків / I2C | FAULT ON / OFF + PulseView, відключення DHT22 |
 | Зміна recovery / NVS / power | hang ×10, relay on → hang / powerloss → STATUS, перерване save ×5 |
@@ -154,6 +154,20 @@ Functional, boundary / negative, protocol, reliability, recovery, persistence, n
 - Реальна мережа: Wi-Fi ≠ broker; QoS / PUBACK, кілька нод на одному брокері.
 - Довготривалі прогони (доби) — витік 80 B на повідомлення дасть відмову через години.
 - Таймінги: швидкість симуляції ≠ реальний час (WDT, sleep, backoff).
+
+### 16.1 Наступний крок: інтеграційний стенд
+Головний залишковий ризик — підсистеми ніколи не працювали в одній прошивці. Наступний етап — один Wokwi-стенд на ESP32 з усіма компонентами (DHT22, I2C-датчик, реле ТЕН, PWM, кнопка BOOST, привод клапана з кінцевиками, UART CLI, NVS, WDT, MQTT-модель) і комбіновані збої, які окремі стенди перевірити не могли:
+
+| ID | Комбінований сценарій | Очікуваний результат |
+|---|---|---|
+| IT-01 | I2C FAULT під час нагріву | Error state, ТЕН OFF, main loop живий, подія в телеметрії; після FAULT OFF — відновлення без reboot |
+| IT-02 | hang під час MQTT flush | Після WDT reset ТЕН OFF, буфер не задубльовано і не втрачено |
+| IT-03 | powerloss під час save при NET DOWN | Налаштування — стара або нова валідна версія; телеметрія за час офлайну в буфері |
+| IT-04 | Шум на кнопці BOOST під час руху клапана | Нагрів не вмикається, напрям клапана не змінюється |
+| IT-05 | Відмова DHT22 + натиск BOOST | Нагрів заблоковано, помилка датчика в STATUS і телеметрії |
+| IT-06 | Soak 24 год: STRESS + цикли NET DOWN / UP + періодичні hang | Heap у межах ±1 КБ від baseline, 100 % reconnect, 0 неочікуваних ребутів |
+
+Для всіх IT-сценаріїв головна перевірка однакова: після кожного збою ТЕН вимкнений, а дані цілі. Автоматизація — pytest-набір і run_scenarios.py, об'єднані в один регресійний прогін для інтеграційної збірки.
 
 ## 17. Release Recommendation
 **NO-GO.** Відкриті Critical-дефекти у P1-ризиках R05, R03, R04, R06, R07, R09, R10 — див. [RELEASE_DECISION.md](RELEASE_DECISION.md).

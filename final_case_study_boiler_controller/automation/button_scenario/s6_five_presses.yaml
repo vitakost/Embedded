@@ -1,0 +1,57 @@
+name: 'TC-04 five separate BUTTON presses'
+version: 1
+author: 'Vitalii Kostianets'
+
+steps:
+  - delay: 2s
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 700ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 700ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 700ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 700ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 300ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 700ms
+  - delay: 1500ms

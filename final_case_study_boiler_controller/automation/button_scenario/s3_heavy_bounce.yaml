@@ -1,0 +1,46 @@
+name: 'TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms'
+version: 1
+author: 'Vitalii Kostianets'
+
+steps:
+  - delay: 2s
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 500ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 1500ms

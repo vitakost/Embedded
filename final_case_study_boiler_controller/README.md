@@ -16,7 +16,7 @@ ESP32 DevKit V1 · DHT22 (кімната) · I2C-датчик теплоносі
 
 ## Test strategy
 - [MASTER_TEST_PLAN.md](MASTER_TEST_PLAN.md) — scope, 12 ризиків, рівні, середовища, entry / exit, регресія, evidence strategy.
-- [FINAL_TEST_MATRIX.md](FINAL_TEST_MATRIX.md) — 26 тестів, кожен ризик → метод → evidence → статус.
+- [FINAL_TEST_MATRIX.md](FINAL_TEST_MATRIX.md) — 28 тестів, кожен ризик → метод → evidence → статус.
 
 ## Key evidence
 - I2C-трейс з PulseView: last ACK → first NACK → 6.7 s тиші ([evidence/hw4_i2c_sensor](evidence/hw4_i2c_sensor/)).
@@ -26,11 +26,11 @@ ESP32 DevKit V1 · DHT22 (кімната) · I2C-датчик теплоносі
 - Повний індекс — [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md).
 
 ## Key findings
-25 дефектів (Critical 12, Major 10) — [BUG_REPORTS.md](BUG_REPORTS.md):
+28 дефектів (Critical 11, Major 12) — [BUG_REPORTS.md](BUG_REPORTS.md):
 - нагрів відновлюється у стані ON після аварійного reset; RESET не вимикає виходи;
 - після першого I2C NACK контролер зависає без retry і без WDT;
 - відключений датчик → `0.0C / 0.0%` без помилки — термостат гріє без обмеження;
-- імпульс шуму 5 ms на кнопці → хибна дія (5/5);
+- імпульс шуму 5 ms на кнопці → хибна дія, шум під час критичної операції → повторна дія (5/5);
 - overflow буфера: 12 повідомлень → 24 publish, 4 втрачено при `dropped=0`; витік 80 B на повідомлення.
 
 ## Automation
@@ -38,7 +38,7 @@ ESP32 DevKit V1 · DHT22 (кімната) · I2C-датчик теплоносі
 |---|---|---|
 | pytest CLI (67 тест-кейсів, RESET-фікстура, UART-лог) | [automation/pytest_cli](automation/pytest_cli/) | `python -m pytest -v` (DEVICE_PORT=rfc2217://localhost:4000) |
 | Мережеві сценарії A–F, 20× reconnect, stress | [automation/network_scenarios](automation/network_scenarios/) | `python run_scenarios.py 1` |
-| Шум / дребезг кнопки | [automation/button_scenario](automation/button_scenario/) | `wokwi-cli --scenario scenario.yaml` |
+| Шум / дребезг кнопки (6 сценаріїв) | [automation/button_scenario](automation/button_scenario/) | `wokwi-cli --scenario s2_noise_5ms.yaml --timeout 30000 <проєкт>` |
 
 Опис і запуск — [automation/README.md](automation/README.md).
 

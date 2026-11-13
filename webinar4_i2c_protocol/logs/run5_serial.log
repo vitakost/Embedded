@@ -1,0 +1,32 @@
+12:41:34.790 < ets Jul 29 2019 12:21:46
+12:41:34.790 < rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:41:34.790 < configsip: 0, SPIWP:0xee
+12:41:34.790 < clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:41:34.791 < mode:DIO, clock div:2
+12:41:34.791 < load:0x3fff0030,len:1156
+12:41:34.791 < load:0x40078000,len:11456
+12:41:34.791 < ho 0 tail 12 room 4
+12:41:34.791 < load:0x40080400,len:2972
+12:41:34.791 < entry 0x400805dc
+12:41:35.786 < === WEBINAR 4: I2C PRACTICE / BUGGY ===
+12:41:35.786 < Find the defect using trace + firmware behavior.
+12:41:35.786 < FAULT OFF = normal sensor; FAULT ON = simulated peripheral loss.
+12:41:35.801 < [DATA] Temperature: 24.00 C
+12:41:35.801 < [SYSTEM] Main loop alive
+12:41:36.753 < [DATA] Temperature: 24.00 C
+12:41:36.753 < [SYSTEM] Main loop alive
+12:41:37.703 < [DATA] Temperature: 24.00 C
+12:41:37.753 < [SYSTEM] Main loop alive
+12:41:38.764 < [DATA] Temperature: 24.00 C
+12:41:38.764 < [SYSTEM] Main loop alive
+12:41:39.755 < [DATA] Temperature: 24.00 C
+12:41:39.756 < [SYSTEM] Main loop alive
+12:41:40.707 < [DATA] Temperature: 24.00 C
+12:41:40.772 < [SYSTEM] Main loop alive
+12:41:41.757 < [DATA] Temperature: 24.00 C
+12:41:41.757 < [SYSTEM] Main loop alive
+12:41:42.735 < [DATA] Temperature: 24.00 C
+12:41:42.735 < [SYSTEM] Main loop alive
+12:41:43.758 < [DATA] Temperature: 24.00 C
+12:41:43.758 < [SYSTEM] Main loop alive
+12:41:44.795 < [  9523][E][Wire.cpp:499] requestFrom(): i2cWriteReadNonStop returned Error -1

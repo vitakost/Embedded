@@ -1,0 +1,59 @@
+Wokwi CLI v0.28.1 (7cf4ffaebfd8)
+Diagram issues in D:\Courses\Embedded\Завдання 2 правильне\diagram.json:
+⚠ [invalid-attribute] Unknown attribute "label" for part "logic1" (type: wokwi-logic-analyzer) (logic1)
+ℹ [unsupported-part] Part "esp" uses undocumented type "wokwi-esp32-devkit-v1". This part may change or be removed in future versions. (esp)
+Connected to Wokwi Simulation API 1.0.0-20261111-ga74d4d0e
+Starting simulation...
+
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2s
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+
+ESP32 BUTTON / INTERRUPT / DEBOUNCE DEMO
+----------------------------------------
+GPIO18 -> INTERRUPT -> ISR -> DEBOUNCE -> EVENT
+
+Green BUTTON = physical button with bouncing
+Red NOISE    = artificial noise input
+
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+[SERIAL] Wokwi UART al
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+ive
+
+================
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+================
+LOGIC
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+AL EVENT #1
+Button pres
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+s ACCEPTED
+RAW interru
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 2ms
+pts total: 1
+RAW interr
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 500ms
+upts since previous logical event: 1
+LOGICAL events total: 1
+ACTIONS total: 1
+ACTION executed ONCE
+LOGGER: physical press -> RAW -> LOGICAL -> ACTION
+================================
+[SYSTEM] Critical operation is running...
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] delay 1500ms
+Button RELEASE accepted
+
+[LOGGER] RAW interrupts: 8 | Logical events: 1 | Actions: 1
+[SERIAL] Wokwi UART alive
+[TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms] Scenario completed successfully

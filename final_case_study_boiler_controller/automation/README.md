@@ -4,7 +4,7 @@
 |---|---|---|
 | `pytest_cli/` | UART CLI контролера: PING, STATUS, GET TEMP, SET LED, SET PWM 0..100, RESET, невідомі команди, timeout | R02, R03, R05, R12 |
 | `network_scenarios/` | NET DOWN / UP, retry, офлайн-буфер 5 / 8 / 9 / 12, 20× reconnect, STRESS і heap | R08, R09, R10 |
-| `button_scenario/` | Нормальний натиск, імпульс шуму 5 ms, heavy bounce 2 ms | R01 |
+| `button_scenario/` | 6 сценаріїв: натиск, утримання 3 s, 5 натискань, шум 5 ms, шум під час критичної операції, heavy bounce 2 ms | R01 |
 
 ## pytest_cli
 Штатні тести курсу (`test_status.py`, `test_relay.py`, `test_sensor.py`, `test_boundaries.py`, `test_timeout.py`) і власні тести `test_firmware_cli.py` — 53 тест-кейси, разом 67.
@@ -32,6 +32,6 @@ python run_scenarios.py 2 A C12    # лише вибрані сценарії
 
 ## button_scenario
 ```powershell
-wokwi-cli --scenario scenario.yaml
+wokwi-cli --scenario s2_noise_5ms.yaml --timeout 30000 <папка проєкту кнопки>
 ```
-Запускається з папки проєкту кнопки (потрібен Wokwi CLI і токен).
+Кожен сценарій перевіряє одну річ і не чекає на номер події (`wait-serial`), тому завершується сам. Запускається для проєкту кнопки (потрібні Wokwi CLI і токен).

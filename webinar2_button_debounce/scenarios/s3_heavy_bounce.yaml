@@ -1,86 +1,46 @@
-name: 'Debounce QA'
+name: 'TC-08 heavy bounce: 7 transitions of 2 ms, then stable press 500 ms'
 version: 1
-author: 'QA Demo'
+author: 'Vitalii Kostianets'
 
 steps:
-  - delay: 2s  
-  # Test 1: Normal press
+  - delay: 2s
   - set-control:
-      part-id: btn1
+      part-id: noise
       control: pressed
       value: 1
-      
-  - wait-serial: 'LOGICAL EVENT #1'
-
-  - delay: 100ms
-
+  - delay: 2ms
   - set-control:
-      part-id: btn1
+      part-id: noise
       control: pressed
       value: 0
-
-  
-
-  # Test 2: Short noise pulse - must not create a logical event
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 0
+  - delay: 2ms
+  - set-control:
+      part-id: noise
+      control: pressed
+      value: 1
   - delay: 500ms
-
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 1
-
-  - delay: 5ms
-
   - set-control:
       part-id: noise
       control: pressed
       value: 0
-
-  - delay: 100ms
-
-  # Test 3: Heavy bouncing followed by a stable state
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 1
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 0
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 1
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 0
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 1
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 0
-  - delay: 2ms
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 1
-
-  - delay: 100ms
-
-  - wait-serial: 'LOGICAL EVENT #2'
-
-  - set-control:
-      part-id: noise
-      control: pressed
-      value: 0
-
-  - delay: 100ms
+  - delay: 1500ms

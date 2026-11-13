@@ -1,0 +1,113 @@
+12:04:10.702 # BUG-speed256
+12:04:10.702 > reset
+12:04:11.405 > set speed 256
+12:04:11.707 > status
+12:04:11.876 < > OK: reset
+12:04:12.318 < > OK: speed=255
+12:04:12.696 < > SPEED=255
+12:04:12.697 < TIMEOUT=10
+12:04:12.697 < LED=OFF
+12:04:12.697 < CONFIG=DIRTY
+12:04:13.516 # BUG-timeout0
+12:04:13.517 > reset
+12:04:14.220 > set timeout 0
+12:04:14.308 < > OK: reset
+12:04:14.828 < > OK: timeout=0
+12:04:15.727 > status
+12:04:16.029 # BUG-uppercase
+12:04:16.029 > reset
+12:04:16.191 < > SPEED=120
+12:04:16.191 < TIMEOUT=0
+12:04:16.191 < LED=OFF
+12:04:16.192 < CONFIG=DIRTY
+12:04:16.640 < > OK: reset
+12:04:18.141 > STATUS
+12:04:18.441 # BUG-specialchars
+12:04:18.442 > reset
+12:04:18.476 < > SPEED=120
+12:04:18.476 < TIMEOUT=10
+12:04:18.476 < LED=OFF
+12:04:18.477 < CONFIG=SAVED
+12:04:19.217 < > OK: reset
+12:04:20.755 > !@#$%^&*()
+12:04:21.056 > status
+12:04:21.356 # BUG-len40
+12:04:21.356 > reset
+12:04:21.445 < > OK
+12:04:21.446 < > SPEED=120
+12:04:21.446 < TIMEOUT=10
+12:04:21.446 < LED=OFF
+12:04:21.446 < CONFIG=SAVED
+12:04:21.842 < > OK: reset
+12:04:23.367 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:23.658 < > ERROR: unknown command
+12:04:24.472 > status
+12:04:24.775 # BUG-len41
+12:04:24.777 > reset
+12:04:25.080 < > SPEED=120
+12:04:25.080 < TIMEOUT=10
+12:04:25.080 < LED=OFF
+12:04:25.080 < CONFIG=SAVED
+12:04:25.303 < > OK: reset
+12:04:26.887 > AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12:04:27.188 > status
+12:04:27.489 # BUG-dirty-set
+12:04:27.489 > reset
+12:04:27.748 < > 
+12:04:27.748 < *** SYSTEM FAULT ***
+12:04:27.748 < Reason: input line boundary failure
+12:04:27.748 < rst:0xc (SW_CPU_RESET)
+12:04:27.748 < Rebooting...
+12:04:28.054 < ======================================
+12:04:28.054 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:28.054 <  READY
+12:04:28.324 < ======================================
+12:04:28.325 < Type 'help'
+12:04:28.325 < > ERROR: empty command
+12:04:28.325 < > SPEED=120
+12:04:28.325 < TIMEOUT=10
+12:04:28.325 < LED=OFF
+12:04:28.325 < CONFIG=SAVED
+12:04:28.325 < > OK: reset
+12:04:29.900 > set speed 40
+12:04:30.201 > status
+12:04:30.502 > set
+12:04:30.543 < > OK: speed=40
+12:04:30.544 < > SPEED=40
+12:04:30.544 < TIMEOUT=10
+12:04:30.544 < LED=OFF
+12:04:30.544 < CONFIG=DIRTY
+12:04:30.827 < > 
+12:04:30.827 < *** SYSTEM FAULT ***
+12:04:30.827 < Reason: parser state mismatch while configuration is dirty
+12:04:30.827 < rst:0xc (SW_CPU_RESET)
+12:04:30.827 < Rebooting...
+12:04:31.118 < ======================================
+12:04:31.119 <  UART CLI HOMEWORK DEVICE v2.0
+12:04:31.119 <  READY
+12:04:31.119 < ======================================
+12:04:31.119 < Type 'help'
+12:04:32.712 > status
+12:04:33.014 # CMP-saved-set
+12:04:33.014 > reset
+12:04:33.119 < > SPEED=120
+12:04:33.119 < TIMEOUT=10
+12:04:33.119 < LED=OFF
+12:04:33.119 < CONFIG=SAVED
+12:04:33.516 < > OK: reset
+12:04:35.025 > set speed 40
+12:04:35.325 > save
+12:04:35.627 > status
+12:04:35.698 < > OK: speed=40
+12:04:35.698 < > OK: configuration saved
+12:04:36.150 < > SPEED=40
+12:04:36.150 < TIMEOUT=10
+12:04:36.150 < LED=OFF
+12:04:36.151 < CONFIG=SAVED
+12:04:37.033 > set
+12:04:37.524 < > ERROR: unknown command
+12:04:39.043 > status
+12:04:39.315 < > SPEED=40
+12:04:39.316 < TIMEOUT=10
+12:04:39.316 < LED=OFF
+12:04:39.316 < CONFIG=SAVED

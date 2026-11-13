@@ -36,7 +36,7 @@ UART CLI ◄►│ 115200  ◄── Python / pytest (RFC2217)    │
 
 | Ризик | Рівень | Метод | Середовище | Evidence |
 |---|---|---|---|---|
-| R01 | Component | Скриптовий шум і дребезг | Wokwi CLI scenario.yaml + Logic Analyzer | Serial counters, VCD |
+| R01 | Component | Скриптовий шум і дребезг, по сценарію на тест | Wokwi CLI + Logic Analyzer | Serial Logger, VCD |
 | R02 | Interface | Boundary / negative CLI | Serial, pytest | Test report, вивід pytest |
 | R03, R04 | Protocol / Recovery | I2C FAULT ON / OFF; hang | Logic Analyzer + PulseView | VCD, скриншоти з маркерами |
 | R05, R06 | Recovery / Persistence | hang, powerloss, RESET | Wokwi + Serial / pytest | Boot log, before / after |
@@ -47,16 +47,16 @@ UART CLI ◄►│ 115200  ◄── Python / pytest (RFC2217)    │
 
 ## 6. Key Scenarios
 1. **relay on → hang → WDT reset → status** — reset відбувається за 5.0 s, але реле знову ON (DEF-06). Показує різницю між «reset відбувся» і «recovery безпечний».
-2. **I2C FAULT ON → OFF з PulseView** — last ACK 10.524791 s, first NACK 11.525565 s, далі 6.7 s тиші, 0 retry (DEF-05). Протокольний трейс доводить, що шина вільна і проблема в прошивці.
+2. **I2C FAULT ON → OFF з PulseView** — last ACK 10.524791 s, first NACK 11.525565 s, далі 6.7 s тиші, 0 retry (DEF-05). Повторено 5/5 з записом FAULT на D2 (E19). Протокольний трейс доводить, що шина вільна і проблема в прошивці.
 3. **DHT22 відключено** — `0.0C / 0.0%` без помилки (DEF-04). Для термостата це «холодно» → нескінченний нагрів.
-4. **Шум 5 ms на кнопці ×5** — хибна дія 5/5 (DEF-01).
+4. **Шум 5 ms на кнопці ×5** — хибна дія 5/5 (DEF-01); той самий шум під час критичної операції запускає її повторно (DEF-27).
 5. **12× SEND офлайн → NET UP** — 24 publish замість 8, 4 ID втрачено, `dropped=0` (DEF-12).
 6. **STRESS 100 ×10** — рівно −8000 B щоразу, 30/30 ітерацій (DEF-13).
 
 ## 7. Automation
 - **pytest-набір** ([automation/pytest_cli](automation/pytest_cli/)): 67 тест-кейсів CLI — межі PWM 0..100 і повний перебір, negative, невідомі команди, RESET з 4 станів, повторні GET TEMP, timeout. Фікстура: RESET до і після кожного тесту з очікуванням відповіді, сирий UART-лог кожного прогону.
 - **run_scenarios.py** ([automation/network_scenarios](automation/network_scenarios/)): мережеві сценарії A–F, 20× reconnect, stress — однаковий таймінг і логи з мітками часу для 3 прогонів.
-- **scenario.yaml** ([automation/button_scenario](automation/button_scenario/), Wokwi CLI): шум і дребезг кнопки з точною тривалістю імпульсів.
+- **Сценарії Wokwi CLI** ([automation/button_scenario](automation/button_scenario/)): шість окремих сценаріїв кнопки — норма, утримання, 5 натискань, шум 5 ms, шум під час операції, heavy bounce — з точною тривалістю імпульсів.
 
 Чому саме це: ці сценарії треба повторювати після кожної зміни (регресія), вони вимагають точних таймінгів або великої кількості повторів (101 значення PWM, 20 reconnect, 1000 повідомлень), які вручну ненадійні.
 Що свідомо ручне: PulseView-аналіз, зміна схеми (відключення датчика), recovery-сценарії тижня 5.
@@ -64,7 +64,7 @@ UART CLI ◄►│ 115200  ◄── Python / pytest (RFC2217)    │
 ## 8. Fault Injection
 | Fault | Як вводився | Що перевірялось |
 |---|---|---|
-| Шум / дребезг | scenario.yaml: імпульс 5 ms, тоглінг 2 ms | Кількість логічних подій і дій |
+| Шум / дребезг | Сценарії Wokwi CLI: імпульс 5 ms, перемикання по 2 ms, шум під час критичної операції | Кількість логічних подій і дій |
 | Відмова DHT22 | Видалення з'єднання в diagram.json | Явна помилка vs 0.0 °C |
 | Відмова I2C | Перемикач FAULT (адреса 0x68 → 0x69) | Retry, error state, recovery |
 | Зависання | Команда `hang` | WDT, reset reason, стан виходів |
@@ -76,11 +76,11 @@ UART CLI ◄►│ 115200  ◄── Python / pytest (RFC2217)    │
 18 джерел доказів: Serial logs з мітками часу, VCD-трейси, скриншоти PulseView, вивід pytest (6 прогонів), сирі UART-логи, мережеві логи (24 файли), Memory Stability Log. Індекс — [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md).
 
 ## 10. Findings
-25 дефектів: Critical 12, Major 10, Medium 1, Minor 2 — [BUG_REPORTS.md](BUG_REPORTS.md). Найважливіші:
+28 дефектів: Critical 11, Major 12, Medium 2, Minor 3 — [BUG_REPORTS.md](BUG_REPORTS.md). Найважливіші:
 - нагрів ON після аварійного reset і після RESET (DEF-06, DEF-07);
 - контролер «замерзає» при збої I2C-датчика (DEF-05);
 - відмова датчика видається за 0.0 °C (DEF-04);
-- хибна дія від шуму на кнопці (DEF-01);
+- хибна і повторна дія від шуму на кнопці (DEF-01, DEF-27);
 - мовчазна втрата телеметрії і витік пам'яті (DEF-12, DEF-13).
 
 Класифікація FAIL автотестів: з 23 падінь pytest 21 спричинені дефектами прошивки, 1 — затримкою зв'язку з симулятором, 1 — помилкою в самому тесті.
@@ -104,7 +104,7 @@ Wokwi не доводить:
 **NO-GO.** Продукт протестовано за risk-based підходом; evidence підтверджує дефекти саме в safety-функціях (R05, R03, R04, R07), тож рішення визначають критичні ризики, а не кількість пройдених тестів. Деталі — [RELEASE_DECISION.md](RELEASE_DECISION.md).
 
 ## 14. What I Would Improve Next
-1. Інтеграційний стенд: одна збірка з усіма підсистемами і комбінованими збоями (I2C fault + MQTT flush + WDT).
+1. Інтеграційний стенд — логічне продовження, бо головне обмеження цього проєкту в тому, що підсистеми тестувались окремо. Одна збірка з усіма підсистемами і 6 комбінованими сценаріями (I2C FAULT під час нагріву, hang під час MQTT flush, powerloss при NET DOWN, шум на кнопці під час руху клапана, відмова датчика + BOOST, 24-годинний soak) — план у [MASTER_TEST_PLAN.md §16.1](MASTER_TEST_PLAN.md).
 2. Розширити pytest на recovery і мережу (hang / powerloss / NET DOWN через CLI) і запускати в CI з Wokwi CLI.
 3. Автоматичний аналіз VCD (sigrok-cli) замість ручного PulseView.
 4. Довгий soak-тест з графіком heap.

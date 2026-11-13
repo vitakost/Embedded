@@ -1,0 +1,75 @@
+12:30:41.210 < ets Jul 29 2019 12:21:46
+12:30:41.210 < rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+12:30:41.211 < configsip: 0, SPIWP:0xee
+12:30:41.211 < clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+12:30:41.211 < mode:DIO, clock div:2
+12:30:41.211 < load:0x3fff0030,len:1156
+12:30:41.211 < load:0x40078000,len:11456
+12:30:41.211 < ho 0 tail 12 room 4
+12:30:41.211 < load:0x40080400,len:2972
+12:30:41.211 < entry 0x400805dc
+12:30:43.271 < === WEBINAR 4: I2C PRACTICE / BUGGY ===
+12:30:43.271 < Find the defect using trace + firmware behavior.
+12:30:43.272 < FAULT OFF = normal sensor; FAULT ON = simulated peripheral loss.
+12:30:43.273 < [DATA] Temperature: 24.00 C
+12:30:43.273 < [SYSTEM] Main loop alive
+12:30:44.319 < [DATA] Temperature: 24.00 C
+12:30:44.319 < [SYSTEM] Main loop alive
+12:30:45.305 < [DATA] Temperature: 24.00 C
+12:30:45.305 < [SYSTEM] Main loop alive
+12:30:46.308 < [DATA] Temperature: 24.00 C
+12:30:46.308 < [SYSTEM] Main loop alive
+12:30:47.262 < [DATA] Temperature: 24.00 C
+12:30:47.323 < [SYSTEM] Main loop alive
+12:30:48.290 < [DATA] Temperature: 24.00 C
+12:30:48.291 < [SYSTEM] Main loop alive
+12:30:49.271 < [DATA] Temperature: 24.00 C
+12:30:49.271 < [SYSTEM] Main loop alive
+12:30:50.283 < [DATA] Temperature: 24.00 C
+12:30:50.283 < [SYSTEM] Main loop alive
+12:30:51.309 < [DATA] Temperature: 24.00 C
+12:30:51.309 < [SYSTEM] Main loop alive
+12:30:52.279 < [DATA] Temperature: 24.00 C
+12:30:52.279 < [SYSTEM] Main loop alive
+12:30:53.308 < [DATA] Temperature: 24.00 C
+12:30:53.308 < [SYSTEM] Main loop alive
+12:30:54.309 < [DATA] Temperature: 24.00 C
+12:30:54.309 < [SYSTEM] Main loop alive
+12:30:55.328 < [DATA] Temperature: 24.00 C
+12:30:55.328 < [SYSTEM] Main loop alive
+12:30:56.298 < [DATA] Temperature: 24.00 C
+12:30:56.298 < [SYSTEM] Main loop alive
+12:30:57.296 < [DATA] Temperature: 24.00 C
+12:30:57.296 < [SYSTEM] Main loop alive
+12:30:58.284 < [DATA] Temperature: 24.00 C
+12:30:58.284 < [SYSTEM] Main loop alive
+12:30:59.313 < [DATA] Temperature: 24.00 C
+12:30:59.313 < [SYSTEM] Main loop alive
+12:31:00.309 < [DATA] Temperature: 24.00 C
+12:31:00.309 < [SYSTEM] Main loop alive
+12:31:01.339 < [DATA] Temperature: 24.00 C
+12:31:01.340 < [SYSTEM] Main loop alive
+12:31:02.295 < [DATA] Temperature: 24.00 C
+12:31:02.295 < [SYSTEM] Main loop alive
+12:31:03.305 < [DATA] Temperature: 24.00 C
+12:31:03.305 < [SYSTEM] Main loop alive
+12:31:04.317 < [DATA] Temperature: 24.00 C
+12:31:04.318 < [SYSTEM] Main loop alive
+12:31:05.318 < [DATA] Temperature: 24.00 C
+12:31:05.318 < [SYSTEM] Main loop alive
+12:31:06.352 < [DATA] Temperature: 24.00 C
+12:31:06.352 < [SYSTEM] Main loop alive
+12:31:07.362 < [DATA] Temperature: 24.00 C
+12:31:07.363 < [SYSTEM] Main loop alive
+12:31:08.337 < [DATA] Temperature: 24.00 C
+12:31:08.338 < [SYSTEM] Main loop alive
+12:31:09.331 < [DATA] Temperature: 24.00 C
+12:31:09.332 < [SYSTEM] Main loop alive
+12:31:10.356 < [DATA] Temperature: 24.00 C
+12:31:10.356 < [SYSTEM] Main loop alive
+12:31:11.298 < [DATA] Temperature: 24.00 C
+12:31:11.299 < [SYSTEM] Main loop alive
+12:31:12.375 < [DATA] Temperature: 24.00 C
+12:31:12.375 < [SYSTEM] Main loop alive
+12:31:13.363 < [DATA] Temperature: 24.00 C
+12:31:13.363 < [SYSTEM] Main loop alive

@@ -1,0 +1,16 @@
+name: 'TC-03 hold BUTTON 3 s'
+version: 1
+author: 'Vitalii Kostianets'
+
+steps:
+  - delay: 2s
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 1
+  - delay: 3000ms
+  - set-control:
+      part-id: btn1
+      control: pressed
+      value: 0
+  - delay: 1500ms
