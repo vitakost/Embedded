@@ -1,73 +1,73 @@
-# port=rfc2217://localhost:4000 started=2026-11-01T12:18:52
-[12:18:52.170] >> PING
-[12:18:53.870] << {"status":"OK","command":"PING"}  (+1700 ms)
-[12:18:54.334] >> STATUS
-[12:18:54.919] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+585 ms)
-[12:18:55.389] >> GET TEMP
-[12:18:55.962] << {"status":"OK","temperature":24.5  (+573 ms)
-[12:18:56.422] >> GET TEMP
-[12:18:56.773] << {"status":"OK","temperature":24.5  (+350 ms)
-[12:18:57.282] >> GET TEMP
-[12:18:57.569] << {"status":"OK","temperature":24.5  (+288 ms)
-[12:18:58.065] >> SET LED ON
-[12:18:58.414] << {"status":"OK","led":true}  (+349 ms)
-[12:18:58.882] >> STATUS
-[12:18:59.348] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+466 ms)
-[12:18:59.829] >> SET LED OFF
-[12:19:00.168] << {"status":"OK","led":false}  (+339 ms)
-[12:19:00.683] >> STATUS
-[12:19:00.968] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+285 ms)
-[12:19:01.430] >> SET PWM 0
-[12:19:01.767] << {"status":"OK","pwm":0}  (+337 ms)
-[12:19:02.264] >> SET PWM 1
-[12:19:02.844] << {"status":"OK","pwm":1}  (+579 ms)
-[12:19:03.318] >> SET PWM 49
-[12:19:03.765] << {"status":"OK","pwm":49}  (+447 ms)
-[12:19:04.267] >> SET PWM 50
-[12:19:04.709] << {"status":"OK","pwm":50}  (+442 ms)
-[12:19:05.171] >> STATUS
-[12:19:05.954] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+782 ms)
-[12:19:06.439] >> SET PWM 51
-[12:19:06.840] << {"status":"OK","pwm":51}  (+400 ms)
-[12:19:07.341] >> SET PWM 99
-[12:19:08.037] << {"status":"OK","pwm":99}  (+696 ms)
-[12:19:08.505] >> SET PWM 100
-[12:19:09.212] << {"status":"ERROR","code":"INVALID_VALUE"}  (+708 ms)
-[12:19:09.671] >> STATUS
-[12:19:10.109] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+437 ms)
-[12:19:10.610] >> SET PWM -1
-[12:19:10.952] << {"status":"ERROR","code":"INVALID_VALUE"}  (+342 ms)
-[12:19:11.444] >> SET PWM 101
-[12:19:12.164] << {"status":"ERROR","code":"INVALID_VALUE"}  (+721 ms)
-[12:19:12.662] >> SET PWM 999
-[12:19:13.372] << {"status":"ERROR","code":"INVALID_VALUE"}  (+710 ms)
-[12:19:13.862] >> SET PWM abc
-[12:19:14.275] << {"status":"ERROR","code":"INVALID_VALUE"}  (+413 ms)
-[12:19:14.779] >> SET PWM 50.5
-[12:19:15.423] << {"status":"ERROR","code":"INVALID_VALUE"}  (+644 ms)
-[12:19:15.929] >> SET PWM 50abc
-[12:19:16.547] << {"status":"ERROR","code":"INVALID_VALUE"}  (+617 ms)
-[12:19:17.047] >> SET PWM
-[12:19:17.711] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+664 ms)
-[12:19:18.215] >> STATUS
-[12:19:18.828] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+613 ms)
-[12:19:19.282] >> SET LED ON
-[12:19:19.997] << {"status":"OK","led":true}  (+715 ms)
-[12:19:20.472] >> SET PWM 75
-[12:19:21.145] << {"status":"OK","pwm":75}  (+673 ms)
-[12:19:21.653] >> RESET
-[12:19:22.385] << {"status":"OK","reset":true}  (+732 ms)
-[12:19:22.846] >> STATUS
-[12:19:23.609] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+763 ms)
-[12:19:24.119] >> FOO
-[12:19:24.909] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+790 ms)
-[12:19:25.398] >> SET LED MAYBE
-[12:19:26.288] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+890 ms)
-[12:19:26.740] >> GET HUMIDITY
-[12:19:27.527] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+787 ms)
-[12:19:28.024] >> ping
-[12:19:28.702] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+678 ms)
-[12:19:29.203] >> NO_RESPONSE
-[12:19:32.226] -- no response in 3000 ms
-[12:19:32.276] >> STATUS
-[12:19:33.175] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+899 ms)
+# port=rfc2217://127.0.0.1:4000 started=2026-11-16T12:31:05
+[12:31:05.282] >> PING
+[12:31:06.894] << {"status":"OK","command":"PING"}  (+1612 ms)
+[12:31:07.370] >> STATUS
+[12:31:07.832] << {"status":"OK","led":false,"pwm":0,"heap":350140}  (+461 ms)
+[12:31:08.284] >> GET TEMP
+[12:31:08.930] << {"status":"OK","temperature":24.5  (+646 ms)
+[12:31:09.381] >> GET TEMP
+[12:31:09.879] << {"status":"OK","temperature":24.5  (+498 ms)
+[12:31:10.366] >> GET TEMP
+[12:31:10.754] << {"status":"OK","temperature":24.5  (+387 ms)
+[12:31:11.249] >> SET LED ON
+[12:31:11.715] << {"status":"OK","led":true}  (+466 ms)
+[12:31:12.218] >> STATUS
+[12:31:12.495] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+278 ms)
+[12:31:12.985] >> SET LED OFF
+[12:31:13.423] << {"status":"OK","led":false}  (+438 ms)
+[12:31:13.885] >> STATUS
+[12:31:14.225] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+340 ms)
+[12:31:14.718] >> SET PWM 0
+[12:31:15.120] << {"status":"OK","pwm":0}  (+402 ms)
+[12:31:15.671] >> SET PWM 1
+[12:31:16.146] << {"status":"OK","pwm":1}  (+474 ms)
+[12:31:16.638] >> SET PWM 49
+[12:31:17.050] << {"status":"OK","pwm":49}  (+412 ms)
+[12:31:17.539] >> SET PWM 50
+[12:31:18.106] << {"status":"OK","pwm":50}  (+566 ms)
+[12:31:18.621] >> STATUS
+[12:31:19.180] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+559 ms)
+[12:31:19.636] >> SET PWM 51
+[12:31:20.247] << {"status":"OK","pwm":51}  (+610 ms)
+[12:31:20.756] >> SET PWM 99
+[12:31:21.314] << {"status":"OK","pwm":99}  (+558 ms)
+[12:31:21.808] >> SET PWM 100
+[12:31:22.379] << {"status":"ERROR","code":"INVALID_VALUE"}  (+571 ms)
+[12:31:22.876] >> STATUS
+[12:31:23.456] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+580 ms)
+[12:31:23.960] >> SET PWM -1
+[12:31:24.878] << {"status":"ERROR","code":"INVALID_VALUE"}  (+918 ms)
+[12:31:25.377] >> SET PWM 101
+[12:31:26.209] << {"status":"ERROR","code":"INVALID_VALUE"}  (+832 ms)
+[12:31:26.713] >> SET PWM 999
+[12:31:27.575] << {"status":"ERROR","code":"INVALID_VALUE"}  (+862 ms)
+[12:31:28.065] >> SET PWM abc
+[12:31:28.732] << {"status":"ERROR","code":"INVALID_VALUE"}  (+667 ms)
+[12:31:29.211] >> SET PWM 50.5
+[12:31:29.976] << {"status":"ERROR","code":"INVALID_VALUE"}  (+765 ms)
+[12:31:30.448] >> SET PWM 50abc
+[12:31:31.087] << {"status":"ERROR","code":"INVALID_VALUE"}  (+639 ms)
+[12:31:31.582] >> SET PWM
+[12:31:32.154] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+572 ms)
+[12:31:32.665] >> STATUS
+[12:31:33.264] << {"status":"OK","led":true,"pwm":252,"heap":349852}  (+599 ms)
+[12:31:33.763] >> SET LED ON
+[12:31:34.227] << {"status":"OK","led":true}  (+464 ms)
+[12:31:34.720] >> SET PWM 75
+[12:31:35.211] << {"status":"OK","pwm":75}  (+491 ms)
+[12:31:35.718] >> RESET
+[12:31:36.632] << {"status":"OK","reset":true}  (+914 ms)
+[12:31:37.122] >> STATUS
+[12:31:37.933] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+811 ms)
+[12:31:38.387] >> FOO
+[12:31:39.052] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+664 ms)
+[12:31:39.507] >> SET LED MAYBE
+[12:31:39.897] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+390 ms)
+[12:31:40.356] >> GET HUMIDITY
+[12:31:40.985] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+629 ms)
+[12:31:41.458] >> ping
+[12:31:42.089] << {"status":"ERROR","code":"UNKNOWN_COMMAND"}  (+631 ms)
+[12:31:42.554] >> NO_RESPONSE
+[12:31:45.584] -- no response in 3000 ms
+[12:31:45.635] >> STATUS
+[12:31:46.295] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+660 ms)

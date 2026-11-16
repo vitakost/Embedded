@@ -10,7 +10,7 @@
 | T04 | R01 | P1 | System | 1 / 10 / 20 натисків кнопки на стенді котла | Wokwi | N подій | 1 → 2; 10 → 12–16; 20 → 21 | E10 | Yes | **FAIL** (DEF-02) |
 | T05 | R02 CLI приймає некоректне / падає | P2 | Interface | Boundary speed −1…256, timeout 0…61 | Wokwi Serial | Помилка поза діапазоном | timeout 0 прийнято; speed 256 → 255 (5/5) | E03 | Yes | **FAIL** |
 | T06 | R02 | P2 | Interface | Рядок 41+ символів; послідовність 1) set speed 40 2) status 3) set у стані DIRTY | Wokwi Serial | Контрольована помилка | SYSTEM FAULT + SW_CPU_RESET (5/5); у стані SAVED той самий set — звичайна ERROR | E03 | Yes | **FAIL** (DEF-03) |
-| T07 | R02 | P2 | Interface | pytest: 67 тестів CLI (PWM 0–100, negative, unknown, timeout) | Python / pytest, RFC2217 | Усі PASS | 44 PASS / 23 FAIL ×5; SET PWM 100 відхиляється, GET TEMP — невалідний JSON | E12, E13 | Yes | **FAIL** |
+| T07 | R02 | P2 | Interface | pytest: 67 тестів CLI (PWM 0–100, negative, unknown, timeout) | Python / pytest, RFC2217 | Усі PASS | 44 PASS / 23 FAIL ×5 (16.11.2026): 14 — прошивка (SET PWM 100, GET TEMP — невалідний JSON, RESET), 8 — питання до вимог (одиниці pwm), 1 — помилка в тесті | E12, E13 | Yes | **FAIL** |
 | T08 | R03 Відмова датчика не детектується | P1 | System | DHT22 відключено → sensor / STATUS | Wokwi | Явна помилка датчика | 0.0 °C / 0.0 % як валідні дані | E10 | Yes | **FAIL** (DEF-04) |
 | T09 | R03 / R04 | P1 | Protocol | I2C FAULT ON → OFF, VCD + PulseView | Wokwi Logic Analyzer, PulseView | Обмежені retry, error state, відновлення | Після 1-го NACK шина мовчить, main loop стоп, без recovery | E04, E05, E19 | Yes | **FAIL** (DEF-05), 5/5 |
 | T10 | R04 Зависання без відновлення | P1 | Recovery | hang → WDT; 10× hang → reset | Wokwi | Reset ≲ 5 s, ACTIVE, без boot loop | 5.0 s, TASK_WDT, 10/10 | E10 | Yes | PASS |
@@ -29,7 +29,7 @@
 | T23 | R09 | P1 | Network | NET DOWN, 9 / 12 SEND, STRESS 20 → NET UP | Wokwi + run_scenarios.py | ≤ 8 у буфері, DROP_OLDEST, dropped++ | count 12/8, 20/8; найстаріші ID зникли, dropped=0; новіші 4–6 разів | E15 | Yes | **FAIL** (DEF-12) |
 | T24 | R10 Витік пам'яті | P1 | Reliability | STRESS 100 ×10, 20× SEND | Wokwi + run_scenarios.py | Heap стабільний | −80 B на повідомлення, без відновлення (30/30) | E16 | Yes | **FAIL** (DEF-13) |
 | T25 | R11 Неточні таймери | P2 | Reliability | sleep 5 / 10 / 20 | Wokwi | Wake ±15 % | Wake ≈10× раніше; WDT reset при sleep ≥ 10 | E10 | Yes | **FAIL** |
-| T26 | R12 Неправдивий STATUS | P2 | System | Звірка STATUS з діями | pytest, run_scenarios.py | Значення = реальний стан | pwm у шкалі 0..255; sent рахує дублі; dropped завжди 0 | E12, E15 | Yes | **FAIL** |
+| T26 | R12 Неправдивий STATUS | P2 | System | Звірка STATUS з діями | pytest, run_scenarios.py | Значення = реальний стан | pwm у шкалі 0..255 (питання до вимог REQ-05); sent рахує дублі; dropped завжди 0 | E12, E15 | Yes | **FAIL** |
 | T27 | R05 / R12 Відновлення після аварійного reset не видно | P1 | Recovery | relay on → hang / powerloss → boot log → STATUS | Wokwi | Етап відновлення в лозі (перевірка стану, виходи OFF), лише потім ACTIVE | Жодного рядка [RECOVERY]; одразу ACTIVE (150/150 STATUS, 5/5 регресій) | E10, E11 | Yes | **FAIL** (DEF-26) |
 | T28 | R01 | P1 | Component | Натиск, через 50 ms після відпускання — шум 5 ms під час критичної операції ×5 (s4_noise_during_operation) | Wokwi CLI | 1 подія, шум не додає другу | LOGICAL EVENT #2 / ACTIONS total: 2, 5/5 | E01 | Yes | **FAIL** (DEF-27) |
 

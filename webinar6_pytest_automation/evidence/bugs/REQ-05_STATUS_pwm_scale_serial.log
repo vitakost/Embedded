@@ -1,0 +1,43 @@
+# serial_run1.log, 16.11.2026, client timeout 3.0 s
+[12:44:55.162] === tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[50]
+[12:44:55.213] >> RESET
+[12:44:55.597] << {"status":"OK","reset":true}  (+384 ms)
+[12:44:56.256] >> STATUS
+[12:44:56.713] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+457 ms)
+[12:44:56.815] >> SET PWM 50
+[12:44:57.347] << {"status":"OK","pwm":50}  (+531 ms)
+[12:44:57.347] >> STATUS
+[12:44:58.163] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+815 ms)
+[12:44:58.330] >> RESET
+[12:44:58.949] << {"status":"OK","reset":true}  (+619 ms)
+[12:44:59.616] >> STATUS
+[12:45:00.301] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+684 ms)
+[12:45:00.301] -- unsafe state after RESET: {'status': 'OK', 'led': True, 'pwm': 127, 'heap': 349852}; fallback SET LED OFF + SET PWM 0
+[12:45:00.301] >> SET LED OFF
+[12:45:00.995] << {"status":"OK","led":false}  (+693 ms)
+[12:45:00.995] >> SET PWM 0
+[12:45:01.532] << {"status":"OK","pwm":0}  (+536 ms)
+[12:45:01.532] >> STATUS
+[12:45:02.076] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+544 ms)
+[12:46:57.536] === tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[101]
+[12:46:57.587] >> RESET
+[12:46:58.768] << {"status":"OK","reset":true}  (+1181 ms)
+[12:46:59.431] >> STATUS
+[12:47:00.733] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+1302 ms)
+[12:47:00.837] >> SET PWM 30
+[12:47:02.085] << {"status":"OK","pwm":30}  (+1248 ms)
+[12:47:02.085] >> SET PWM 101
+[12:47:03.631] << {"status":"ERROR","code":"INVALID_VALUE"}  (+1545 ms)
+[12:47:03.631] >> STATUS
+[12:47:04.726] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+1095 ms)
+[12:47:04.902] >> RESET
+[12:47:06.154] << {"status":"OK","reset":true}  (+1251 ms)
+[12:47:06.820] >> STATUS
+[12:47:08.288] << {"status":"OK","led":true,"pwm":76,"heap":349852}  (+1467 ms)
+[12:47:08.288] -- unsafe state after RESET: {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852}; fallback SET LED OFF + SET PWM 0
+[12:47:08.288] >> SET LED OFF
+[12:47:09.816] << {"status":"OK","led":false}  (+1528 ms)
+[12:47:09.816] >> SET PWM 0
+[12:47:10.487] << {"status":"OK","pwm":0}  (+671 ms)
+[12:47:10.487] >> STATUS
+[12:47:11.495] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+1008 ms)

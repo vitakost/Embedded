@@ -1,0 +1,65 @@
+[12:31:50.484] >> PING
+[12:31:54.469] << {"status":"OK","command":"PING"}  (+3985 ms)
+[12:31:56.520] >> PING
+[12:32:00.414] << {"status":"OK","command":"PING"}  (+3894 ms)
+[12:32:02.465] >> PING
+[12:32:06.561] << {"status":"OK","command":"PING"}  (+4095 ms)
+[12:32:08.612] >> PING
+[12:32:12.666] << {"status":"OK","command":"PING"}  (+4054 ms)
+[12:32:14.718] >> PING
+[12:32:18.796] << {"status":"OK","command":"PING"}  (+4078 ms)
+[12:32:18.796] >> RESET
+[12:32:19.546] << {"status":"OK","reset":true}  (+749 ms)
+[12:32:19.797] >> PING
+[12:32:23.750] << {"status":"OK","command":"PING"}  (+3952 ms)
+[12:32:23.750] >> RESET
+[12:32:24.550] << {"status":"OK","reset":true}  (+800 ms)
+[12:32:24.801] >> PING
+[12:32:28.822] << {"status":"OK","command":"PING"}  (+4021 ms)
+[12:32:28.822] >> RESET
+[12:32:29.334] << {"status":"OK","reset":true}  (+512 ms)
+[12:32:29.586] >> PING
+[12:32:33.601] << {"status":"OK","command":"PING"}  (+4015 ms)
+[12:32:33.601] >> RESET
+[12:32:34.390] << {"status":"OK","reset":true}  (+788 ms)
+[12:32:34.642] >> PING
+[12:32:38.580] << {"status":"OK","command":"PING"}  (+3938 ms)
+[12:32:38.580] >> RESET
+[12:32:39.364] << {"status":"OK","reset":true}  (+784 ms)
+[12:32:39.614] >> PING
+[12:32:43.959] << {"status":"OK","command":"PING"}  (+4345 ms)
+[12:32:45.214] >> PING
+[12:32:49.212] << {"status":"OK","command":"PING"}  (+3998 ms)
+[12:32:50.467] >> PING
+[12:32:54.550] << {"status":"OK","command":"PING"}  (+4083 ms)
+[12:32:55.804] >> PING
+[12:32:59.874] << {"status":"OK","command":"PING"}  (+4070 ms)
+[12:33:01.129] >> PING
+[12:33:05.169] << {"status":"OK","command":"PING"}  (+4040 ms)
+[12:33:06.425] >> PING
+[12:33:10.530] << {"status":"OK","command":"PING"}  (+4105 ms)
+[12:33:11.530] >> STATUS
+[12:33:12.096] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+566 ms)
+[12:33:12.146] >> PING
+[12:33:16.087] << {"status":"OK","command":"PING"}  (+3940 ms)
+[12:33:17.087] >> STATUS
+[12:33:17.720] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+633 ms)
+[12:33:17.772] >> PING
+[12:33:21.989] << {"status":"OK","command":"PING"}  (+4217 ms)
+[12:33:22.989] >> STATUS
+[12:33:23.341] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+352 ms)
+[12:33:23.393] >> PING
+[12:33:27.368] << {"status":"OK","command":"PING"}  (+3975 ms)
+[12:33:28.369] >> STATUS
+[12:33:28.933] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+564 ms)
+[12:33:28.984] >> PING
+[12:33:32.850] << {"status":"OK","command":"PING"}  (+3866 ms)
+[12:33:33.851] >> STATUS
+[12:33:34.417] << {"status":"OK","led":true,"pwm":191,"heap":349852}  (+567 ms)
+[12:33:34.468] >> PING
+[12:33:38.387] << {"status":"OK","command":"PING"}  (+3918 ms)
+
+A_idle_2s: 3985, 3894, 4095, 4054, 4078  | min 3894 / median 4054 / max 4095 ms
+B_after_RESET: 3952, 4021, 4015, 3938, 4345  | min 3938 / median 4015 / max 4345 ms
+C_after_timeout_change: 3998, 4083, 4070, 4040, 4105  | min 3998 / median 4070 / max 4105 ms
+D_after_STATUS: 3940, 4217, 3975, 3866, 3918  | min 3866 / median 3940 / max 4217 ms

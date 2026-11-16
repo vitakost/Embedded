@@ -1,0 +1,53 @@
+_______________________ test_reset_restores_safe_state ________________________
+
+device = <conftest.LoggedDevice object at 0x00000260936586B0>
+
+    def test_reset_restores_safe_state(device):
+        device.command("SET LED ON")
+        device.command("RESET")
+        status = device.command("STATUS")
+>       assert status["pwm"] == 0
+E       assert 255 == 0
+
+tests\test_relay.py:9: AssertionError
+
+________________________ test_reset_from_state[ON-50] _________________________
+
+device = <conftest.LoggedDevice object at 0x0000026093229730>, led = 'ON'
+pwm = 50
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 100), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        device.command("RESET")
+        s = status(device)
+>       assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
+E       AssertionError: after LED ON/PWM 50 + RESET: {'status': 'OK', 'led': True, 'pwm': 127, 'heap': 349852}
+E       assert (True, 127) == (False, 0)
+E         
+E         At index 0 diff: True != False
+E         Use -v to get more diff
+
+tests\test_firmware_cli.py:105: AssertionError
+
+_________________________ test_reset_from_state[ON-1] _________________________
+
+device = <conftest.LoggedDevice object at 0x0000026093229CD0>, led = 'ON'
+pwm = 1
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 100), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        device.command("RESET")
+        s = status(device)
+>       assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
+E       AssertionError: after LED ON/PWM 1 + RESET: {'status': 'OK', 'led': True, 'pwm': 2, 'heap': 349852}
+E       assert (True, 2) == (False, 0)
+E         
+E         At index 0 diff: True != False
+E         Use -v to get more diff
+
+tests\test_firmware_cli.py:105: AssertionError
+

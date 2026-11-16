@@ -1,0 +1,129 @@
+_______________________ test_temperature_is_valid_json ________________________
+
+self = <conftest.LoggedDevice object at 0x00000260936581D0>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000260907C0050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000260936581D0>
+
+    def test_temperature_is_valid_json(device):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_sensor.py:2: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000260936581D0>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+
+__________________________ test_get_temp_repeated[0] __________________________
+
+self = <conftest.LoggedDevice object at 0x0000026093229D30>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000260907C0050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x0000026093229D30>, attempt = 0
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x0000026093229D30>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+

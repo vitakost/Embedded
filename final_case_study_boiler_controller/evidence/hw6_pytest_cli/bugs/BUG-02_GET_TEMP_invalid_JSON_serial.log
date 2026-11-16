@@ -1,14 +1,23 @@
-[12:32:45.568] === tests/test_sensor.py::test_temperature_is_valid_json
-[12:32:45.618] >> RESET
-[12:32:46.166] << {"status":"OK","reset":true}  (+547 ms)
-[12:32:46.739] >> GET TEMP
-[12:32:47.517] << {"status":"OK","temperature":24.5  (+777 ms)
-[12:32:47.706] >> RESET
-[12:32:47.942] << {"status":"OK","reset":true}  (+236 ms)
-[12:31:43.723] === tests/test_firmware_cli.py::test_get_temp_repeated[0]
-[12:31:43.774] >> RESET
-[12:31:44.473] << {"status":"OK","reset":true}  (+699 ms)
-[12:31:45.030] >> GET TEMP
-[12:31:46.031] << {"status":"OK","temperature":24.5  (+1001 ms)
-[12:31:46.247] >> RESET
-[12:31:46.916] << {"status":"OK","reset":true}  (+669 ms)
+# serial_run1.log, 16.11.2026, client timeout 3.0 s
+[12:50:52.747] === tests/test_sensor.py::test_temperature_is_valid_json
+[12:50:52.798] >> RESET
+[12:50:53.585] << {"status":"OK","reset":true}  (+787 ms)
+[12:50:54.255] >> STATUS
+[12:50:55.044] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+788 ms)
+[12:50:55.148] >> GET TEMP
+[12:50:56.175] << {"status":"OK","temperature":24.5  (+1027 ms)
+[12:50:56.382] >> RESET
+[12:50:57.331] << {"status":"OK","reset":true}  (+949 ms)
+[12:50:58.001] >> STATUS
+[12:50:58.796] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+795 ms)
+[12:49:25.722] === tests/test_firmware_cli.py::test_get_temp_repeated[0]
+[12:49:25.773] >> RESET
+[12:49:26.581] << {"status":"OK","reset":true}  (+808 ms)
+[12:49:27.251] >> STATUS
+[12:49:27.980] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+728 ms)
+[12:49:28.084] >> GET TEMP
+[12:49:29.386] << {"status":"OK","temperature":24.5  (+1301 ms)
+[12:49:29.595] >> RESET
+[12:49:30.260] << {"status":"OK","reset":true}  (+665 ms)
+[12:49:30.923] >> STATUS
+[12:49:31.729] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+806 ms)

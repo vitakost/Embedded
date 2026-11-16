@@ -1,0 +1,37 @@
+[12:32:40.797] === tests/test_relay.py::test_reset_restores_safe_state
+[12:32:40.848] >> RESET
+[12:32:41.242] << {"status":"OK","reset":true}  (+394 ms)
+[12:32:41.810] >> SET LED ON
+[12:32:42.258] << {"status":"OK","led":true}  (+448 ms)
+[12:32:42.258] >> RESET
+[12:32:42.711] << {"status":"OK","reset":true}  (+452 ms)
+[12:32:42.711] >> STATUS
+[12:32:43.390] << {"status":"OK","led":true,"pwm":255,"heap":349852}  (+680 ms)
+[12:32:43.553] >> RESET
+[12:32:44.073] << {"status":"OK","reset":true}  (+520 ms)
+[12:31:31.145] === tests/test_firmware_cli.py::test_reset_from_state[ON-50]
+[12:31:31.196] >> RESET
+[12:31:31.892] << {"status":"OK","reset":true}  (+695 ms)
+[12:31:32.455] >> SET LED ON
+[12:31:32.912] << {"status":"OK","led":true}  (+457 ms)
+[12:31:32.912] >> SET PWM 50
+[12:31:33.587] << {"status":"OK","pwm":50}  (+675 ms)
+[12:31:33.587] >> RESET
+[12:31:34.463] << {"status":"OK","reset":true}  (+875 ms)
+[12:31:34.463] >> STATUS
+[12:31:35.076] << {"status":"OK","led":true,"pwm":127,"heap":349852}  (+613 ms)
+[12:31:35.242] >> RESET
+[12:31:35.672] << {"status":"OK","reset":true}  (+431 ms)
+[12:31:37.179] === tests/test_firmware_cli.py::test_reset_from_state[ON-1]
+[12:31:37.230] >> RESET
+[12:31:37.816] << {"status":"OK","reset":true}  (+586 ms)
+[12:31:38.375] >> SET LED ON
+[12:31:38.985] << {"status":"OK","led":true}  (+610 ms)
+[12:31:38.986] >> SET PWM 1
+[12:31:39.802] << {"status":"OK","pwm":1}  (+816 ms)
+[12:31:39.802] >> RESET
+[12:31:40.744] << {"status":"OK","reset":true}  (+942 ms)
+[12:31:40.744] >> STATUS
+[12:31:41.641] << {"status":"OK","led":true,"pwm":2,"heap":349852}  (+896 ms)
+[12:31:41.814] >> RESET
+[12:31:42.238] << {"status":"OK","reset":true}  (+424 ms)

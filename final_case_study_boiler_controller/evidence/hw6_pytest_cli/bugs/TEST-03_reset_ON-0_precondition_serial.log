@@ -1,0 +1,16 @@
+# serial_run1.log, 16.11.2026, client timeout 3.0 s
+[12:48:44.630] === tests/test_firmware_cli.py::test_reset_from_state[ON-0]
+[12:48:44.681] >> RESET
+[12:48:45.547] << {"status":"OK","reset":true}  (+866 ms)
+[12:48:46.214] >> STATUS
+[12:48:46.831] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+617 ms)
+[12:48:46.936] >> SET LED ON
+[12:48:47.814] << {"status":"OK","led":true}  (+879 ms)
+[12:48:47.814] >> SET PWM 0
+[12:48:48.890] << {"status":"OK","pwm":0}  (+1075 ms)
+[12:48:48.890] >> STATUS
+[12:48:49.940] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+1050 ms)
+[12:48:50.114] >> RESET
+[12:48:50.894] << {"status":"OK","reset":true}  (+779 ms)
+[12:48:51.555] >> STATUS
+[12:48:52.253] << {"status":"OK","led":false,"pwm":0,"heap":349852}  (+699 ms)

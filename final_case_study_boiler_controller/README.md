@@ -26,7 +26,7 @@ ESP32 DevKit V1 · DHT22 (кімната) · I2C-датчик теплоносі
 - Повний індекс — [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md).
 
 ## Key findings
-28 дефектів (Critical 11, Major 12) — [BUG_REPORTS.md](BUG_REPORTS.md):
+27 дефектів (Critical 11, Major 11) і 2 питання до вимог — [BUG_REPORTS.md](BUG_REPORTS.md):
 - нагрів відновлюється у стані ON після аварійного reset; RESET не вимикає виходи;
 - після першого I2C NACK контролер зависає без retry і без WDT;
 - відключений датчик → `0.0C / 0.0%` без помилки — термостат гріє без обмеження;

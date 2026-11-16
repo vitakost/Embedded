@@ -76,7 +76,7 @@ UART CLI ◄►│ 115200  ◄── Python / pytest (RFC2217)    │
 18 джерел доказів: Serial logs з мітками часу, VCD-трейси, скриншоти PulseView, вивід pytest (6 прогонів), сирі UART-логи, мережеві логи (24 файли), Memory Stability Log. Індекс — [EVIDENCE_INDEX.md](EVIDENCE_INDEX.md).
 
 ## 10. Findings
-28 дефектів: Critical 11, Major 12, Medium 2, Minor 3 — [BUG_REPORTS.md](BUG_REPORTS.md). Найважливіші:
+27 дефектів: Critical 11, Major 11, Medium 2, Minor 3, плюс 2 питання до вимог (одиниці pwm у STATUS, час відповіді PING) — [BUG_REPORTS.md](BUG_REPORTS.md). Найважливіші:
 - нагрів ON після аварійного reset і після RESET (DEF-06, DEF-07);
 - контролер «замерзає» при збої I2C-датчика (DEF-05);
 - відмова датчика видається за 0.0 °C (DEF-04);

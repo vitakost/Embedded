@@ -96,10 +96,12 @@ def test_status_fields_types(device):
 
 # ---------- R7: RESET restores safe state for different start states ----------
 
-@pytest.mark.parametrize("led, pwm", [("OFF", 100), ("ON", 0), ("ON", 50), ("ON", 1)])
+@pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
 def test_reset_from_state(device, led, pwm):
     device.command(f"SET LED {led}")
     device.command(f"SET PWM {pwm}")
+    before = status(device)
+    assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
     device.command("RESET")
     s = status(device)
     assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
@@ -127,11 +129,16 @@ def test_no_response_times_out_in_bounded_time(device):
     assert time.monotonic() - t0 < device.ser.timeout + 0.5
 
 
-@pytest.mark.parametrize("timeout, expect_reply", [(1.0, False), (3.0, True)])
+PING_REPLY_TIMEOUT = 8.0  # above the slowest PING reply observed in Wokwi
+
+
+@pytest.mark.parametrize("timeout, expect_reply", [(1.0, False), (PING_REPLY_TIMEOUT, True)])
 def test_ping_vs_client_timeout(device, timeout, expect_reply):
     device.ser.timeout = timeout
     if expect_reply:
+        t0 = time.monotonic()
         r = device.command("PING")
+        device._w(f"-- PING latency {(time.monotonic() - t0) * 1000:.0f} ms")
         assert r.get("status") == "OK" and r.get("command") == "PING", r
     else:
         with pytest.raises(TimeoutError):
@@ -139,12 +146,22 @@ def test_ping_vs_client_timeout(device, timeout, expect_reply):
 
 
 def test_late_reply_after_timeout_is_not_taken_as_next_reply(device):
-    """Without draining, the late PING reply would be read as the STATUS reply."""
+    """After a client timeout, wait for the late PING reply itself before the next command."""
     normal = device.ser.timeout
     device.ser.timeout = 1.0
     with pytest.raises(TimeoutError):
         device.command("PING")
-    device.drain(idle=1.5, max_wait=3.0)
+    device.ser.timeout = 0.5
+    t0 = time.monotonic()
+    late = None
+    while time.monotonic() - t0 < PING_REPLY_TIMEOUT:
+        line = device.ser.readline().decode(errors="replace").strip()
+        if line:
+            device._w(f"<< {line}  (late)")
+            if '"PING"' in line:
+                late = line
+                break
     device.ser.timeout = normal
+    assert late, "late PING reply did not arrive"
     r = device.command("STATUS")
     assert r.get("status") == "OK" and "heap" in r, f"stale/foreign reply after timeout: {r}"

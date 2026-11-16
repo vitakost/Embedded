@@ -8,7 +8,7 @@
 
 ## pytest_cli
 Штатні тести курсу (`test_status.py`, `test_relay.py`, `test_sensor.py`, `test_boundaries.py`, `test_timeout.py`) і власні тести `test_firmware_cli.py` — 53 тест-кейси, разом 67.
-`conftest.py` робить RESET до і після кожного тесту й пише сирий UART-лог.
+`conftest.py` робить RESET до і після кожного тесту, перевіряє STATUS і, якщо виходи лишились увімкненими, вимикає їх явно (SET LED OFF + SET PWM 0); пише сирий UART-лог. `ping_latency.py` міряє час відповіді на PING у 4 ситуаціях.
 
 ```powershell
 cd automation\pytest_cli
@@ -18,7 +18,7 @@ python -m pip install -r requirements.txt
 # у VS Code: PlatformIO Build → Wokwi: Start Simulator (Serial Monitor закритий)
 $env:DEVICE_PORT="rfc2217://localhost:4000"
 python -m pytest -v
-.\run_all.bat        # probe + 1 baseline (timeout 1.0 s) + 5 регресій (3.0 s), результати в evidence\
+.\run_all.bat        # перевірка .venv + probe + ping_latency + 1 baseline (1.0 s) + 5 регресій (3.0 s), результати в evidence\
 ```
 `DEVICE_TIMEOUT` — таймаут клієнта в секундах (за замовчуванням 1.0), `SERIAL_LOG` — файл для сирого UART-логу.
 

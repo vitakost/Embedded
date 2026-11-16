@@ -1,0 +1,17 @@
+# pytest_run1.txt, 16.11.2026
+_________________________ test_reset_from_state[ON-0] _________________________
+
+device = <conftest.LoggedDevice object at 0x0000022501FDB890>, led = 'ON'
+pwm = 0
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        before = status(device)
+>       assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
+E       AssertionError: precondition: state must be unsafe before RESET, got {'status': 'OK', 'led': False, 'pwm': 0, 'heap': 349852}
+E       assert (False, 0) != (False, 0)
+
+tests\test_firmware_cli.py:104: AssertionError
+

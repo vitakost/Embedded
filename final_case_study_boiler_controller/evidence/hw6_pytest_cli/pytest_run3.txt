@@ -1,1 +1,721 @@
-The system cannot find the path specified.
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\Courses\Embedded\Завдання 6\webinar_6_python_automation\automation
+configfile: pytest.ini
+testpaths: tests
+collected 67 items
+
+tests\test_boundaries.py ....F...                                        [ 11%]
+tests\test_firmware_cli.py ........FF.FFFFFF...........FFF.........FFFFF [ 79%]
+FFFF....                                                                 [ 91%]
+tests\test_relay.py .F                                                   [ 94%]
+tests\test_sensor.py F                                                   [ 95%]
+tests\test_status.py ..                                                  [ 98%]
+tests\test_timeout.py .                                                  [100%]
+
+================================== FAILURES ===================================
+_______________________ test_pwm_valid_boundaries[100] ________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FECA56E0>, value = 100
+
+    @pytest.mark.parametrize("value", [0, 1, 50, 99, 100])
+    def test_pwm_valid_boundaries(device, value):
+        r = device.command(f"SET PWM {value}")
+>       assert r["status"] == "OK"
+E       AssertionError: assert 'ERROR' == 'OK'
+E         
+E         - OK
+E         + ERROR
+
+tests\test_boundaries.py:6: AssertionError
+___________________ test_pwm_boundary_values_accepted[100] ____________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEBE6A50>, value = 100
+
+    @pytest.mark.parametrize("value", [0, 1, 2, 49, 50, 51, 98, 99, 100])
+    def test_pwm_boundary_values_accepted(device, value):
+        r = device.command(f"SET PWM {value}")
+>       ok(r, f"SET PWM {value}")
+
+tests\test_firmware_cli.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = {'status': 'ERROR', 'code': 'INVALID_VALUE'}, cmd = 'SET PWM 100'
+
+    def ok(r, cmd):
+>       assert r.get("status") == "OK", f"{cmd}: expected status=OK, got {r}"
+E       AssertionError: SET PWM 100: expected status=OK, got {'status': 'ERROR', 'code': 'INVALID_VALUE'}
+E       assert 'ERROR' == 'OK'
+E         
+E         - OK
+E         + ERROR
+
+tests\test_firmware_cli.py:12: AssertionError
+_____________________ test_pwm_full_range_sweep_0_to_100 ______________________
+
+device = <conftest.LoggedDevice object at 0x00000166FECB3330>
+
+    def test_pwm_full_range_sweep_0_to_100(device):
+        rejected = []
+        for value in range(0, 101):
+            r = device.command(f"SET PWM {value}")
+            if r.get("status") != "OK" or r.get("pwm") != value:
+                rejected.append((value, r))
+>       assert not rejected, f"values in 0..100 not accepted: {rejected}"
+E       AssertionError: values in 0..100 not accepted: [(100, {'status': 'ERROR', 'code': 'INVALID_VALUE'})]
+E       assert not [(100, {'status': 'ERROR', 'code': 'INVALID_VALUE'})]
+
+tests\test_firmware_cli.py:35: AssertionError
+___________________ test_pwm_value_is_applied_in_status[1] ____________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED6D950>, value = 1
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 1: STATUS pwm=2
+E       assert 2 == 1
+E        +  where 2 = <built-in method get of dict object at 0x00000166FEDC1440>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDC1440> = {'status': 'OK', 'led': True, 'pwm': 2, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+___________________ test_pwm_value_is_applied_in_status[49] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000166FECE6170>, value = 49
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 49: STATUS pwm=124
+E       assert 124 == 49
+E        +  where 124 = <built-in method get of dict object at 0x00000166FED9BE80>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FED9BE80> = {'status': 'OK', 'led': True, 'pwm': 124, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+___________________ test_pwm_value_is_applied_in_status[50] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED1EE70>, value = 50
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 50: STATUS pwm=127
+E       assert 127 == 50
+E        +  where 127 = <built-in method get of dict object at 0x00000166FEDE1640>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDE1640> = {'status': 'OK', 'led': True, 'pwm': 127, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+___________________ test_pwm_value_is_applied_in_status[51] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED7A050>, value = 51
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 51: STATUS pwm=130
+E       assert 130 == 51
+E        +  where 130 = <built-in method get of dict object at 0x00000166FEDE2B00>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDE2B00> = {'status': 'OK', 'led': True, 'pwm': 130, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+___________________ test_pwm_value_is_applied_in_status[99] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED7AA50>, value = 99
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 99: STATUS pwm=252
+E       assert 252 == 99
+E        +  where 252 = <built-in method get of dict object at 0x00000166FEDF0840>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDF0840> = {'status': 'OK', 'led': True, 'pwm': 252, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+__________________ test_pwm_value_is_applied_in_status[100] ___________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED610F0>, value = 100
+
+    @pytest.mark.parametrize("value", [0, 1, 49, 50, 51, 99, 100])
+    def test_pwm_value_is_applied_in_status(device, value):
+        device.command(f"SET PWM {value}")
+        s = status(device)
+>       assert s.get("pwm") == value, f"after SET PWM {value}: STATUS pwm={s.get('pwm')}"
+E       AssertionError: after SET PWM 100: STATUS pwm=0
+E       assert 0 == 100
+E        +  where 0 = <built-in method get of dict object at 0x00000166FEDF1B40>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDF1B40> = {'status': 'OK', 'led': False, 'pwm': 0, 'heap': 349852}.get
+
+tests\test_firmware_cli.py:42: AssertionError
+_________________ test_rejected_pwm_does_not_change_state[-1] _________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDBA150>, bad = '-1'
+
+    @pytest.mark.parametrize("bad", ["-1", "101", "abc"])
+    def test_rejected_pwm_does_not_change_state(device, bad):
+        device.command("SET PWM 30")
+        device.command(f"SET PWM {bad}")
+>       assert status(device).get("pwm") == 30
+E       AssertionError: assert 76 == 30
+E        +  where 76 = <built-in method get of dict object at 0x00000166FEDF0AC0>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDF0AC0> = {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852}.get
+E        +      where {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852} = status(<conftest.LoggedDevice object at 0x00000166FEDBA150>)
+
+tests\test_firmware_cli.py:64: AssertionError
+________________ test_rejected_pwm_does_not_change_state[101] _________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDBB050>, bad = '101'
+
+    @pytest.mark.parametrize("bad", ["-1", "101", "abc"])
+    def test_rejected_pwm_does_not_change_state(device, bad):
+        device.command("SET PWM 30")
+        device.command(f"SET PWM {bad}")
+>       assert status(device).get("pwm") == 30
+E       AssertionError: assert 76 == 30
+E        +  where 76 = <built-in method get of dict object at 0x00000166FEDED500>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDED500> = {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852}.get
+E        +      where {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852} = status(<conftest.LoggedDevice object at 0x00000166FEDBB050>)
+
+tests\test_firmware_cli.py:64: AssertionError
+________________ test_rejected_pwm_does_not_change_state[abc] _________________
+
+device = <conftest.LoggedDevice object at 0x00000166FED33890>, bad = 'abc'
+
+    @pytest.mark.parametrize("bad", ["-1", "101", "abc"])
+    def test_rejected_pwm_does_not_change_state(device, bad):
+        device.command("SET PWM 30")
+        device.command(f"SET PWM {bad}")
+>       assert status(device).get("pwm") == 30
+E       AssertionError: assert 76 == 30
+E        +  where 76 = <built-in method get of dict object at 0x00000166FEDF01C0>('pwm')
+E        +    where <built-in method get of dict object at 0x00000166FEDF01C0> = {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852}.get
+E        +      where {'status': 'OK', 'led': True, 'pwm': 76, 'heap': 349852} = status(<conftest.LoggedDevice object at 0x00000166FED33890>)
+
+tests\test_firmware_cli.py:64: AssertionError
+________________________ test_reset_from_state[OFF-99] ________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDB8470>, led = 'OFF'
+pwm = 99
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        before = status(device)
+        assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
+        device.command("RESET")
+        s = status(device)
+>       assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
+E       AssertionError: after LED OFF/PWM 99 + RESET: {'status': 'OK', 'led': True, 'pwm': 252, 'heap': 349852}
+E       assert (True, 252) == (False, 0)
+E         
+E         At index 0 diff: True != False
+E         Use -v to get more diff
+
+tests\test_firmware_cli.py:107: AssertionError
+_________________________ test_reset_from_state[ON-0] _________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDBB890>, led = 'ON'
+pwm = 0
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        before = status(device)
+>       assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
+E       AssertionError: precondition: state must be unsafe before RESET, got {'status': 'OK', 'led': False, 'pwm': 0, 'heap': 349852}
+E       assert (False, 0) != (False, 0)
+
+tests\test_firmware_cli.py:104: AssertionError
+________________________ test_reset_from_state[ON-50] _________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDBBCB0>, led = 'ON'
+pwm = 50
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        before = status(device)
+        assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
+        device.command("RESET")
+        s = status(device)
+>       assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
+E       AssertionError: after LED ON/PWM 50 + RESET: {'status': 'OK', 'led': True, 'pwm': 127, 'heap': 349852}
+E       assert (True, 127) == (False, 0)
+E         
+E         At index 0 diff: True != False
+E         Use -v to get more diff
+
+tests\test_firmware_cli.py:107: AssertionError
+_________________________ test_reset_from_state[ON-1] _________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEDE9250>, led = 'ON'
+pwm = 1
+
+    @pytest.mark.parametrize("led, pwm", [("OFF", 99), ("ON", 0), ("ON", 50), ("ON", 1)])
+    def test_reset_from_state(device, led, pwm):
+        device.command(f"SET LED {led}")
+        device.command(f"SET PWM {pwm}")
+        before = status(device)
+        assert (before.get("led"), before.get("pwm")) != (False, 0), f"precondition: state must be unsafe before RESET, got {before}"
+        device.command("RESET")
+        s = status(device)
+>       assert (s.get("led"), s.get("pwm")) == (False, 0), f"after LED {led}/PWM {pwm} + RESET: {s}"
+E       AssertionError: after LED ON/PWM 1 + RESET: {'status': 'OK', 'led': True, 'pwm': 2, 'heap': 349852}
+E       assert (True, 2) == (False, 0)
+E         
+E         At index 0 diff: True != False
+E         Use -v to get more diff
+
+tests\test_firmware_cli.py:107: AssertionError
+__________________________ test_get_temp_repeated[0] __________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEDE99D0>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEDE99D0>, attempt = 0
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEDE99D0>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+__________________________ test_get_temp_repeated[1] __________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEDE9610>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEDE9610>, attempt = 1
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEDE9610>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+__________________________ test_get_temp_repeated[2] __________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4F110>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEE4F110>, attempt = 2
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4F110>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+__________________________ test_get_temp_repeated[3] __________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4FE30>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEE4FE30>, attempt = 3
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4FE30>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+__________________________ test_get_temp_repeated[4] __________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEDBBD70>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEDBBD70>, attempt = 4
+
+    @pytest.mark.parametrize("attempt", range(5))
+    def test_get_temp_repeated(device, attempt):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_firmware_cli.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEDBBD70>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+_______________________ test_reset_restores_safe_state ________________________
+
+device = <conftest.LoggedDevice object at 0x00000166FEE4ED50>
+
+    def test_reset_restores_safe_state(device):
+        device.command("SET LED ON")
+        device.command("RESET")
+        status = device.command("STATUS")
+>       assert status["pwm"] == 0
+E       assert 255 == 0
+
+tests\test_relay.py:9: AssertionError
+_______________________ test_temperature_is_valid_json ________________________
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4F830>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+>           return json.loads(raw)
+                   ^^^^^^^^^^^^^^^
+
+device.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py:352: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.decoder.JSONDecoder object at 0x00000166FC310050>
+s = '{"status":"OK","temperature":24.5', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+>           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 34 (char 33)
+
+C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: JSONDecodeError
+
+The above exception was the direct cause of the following exception:
+
+device = <conftest.LoggedDevice object at 0x00000166FEE4F830>
+
+    def test_temperature_is_valid_json(device):
+>       r = device.command("GET TEMP")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_sensor.py:2: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <conftest.LoggedDevice object at 0x00000166FEE4F830>
+command = 'GET TEMP'
+
+    def command(self, command):
+        raw = self.command_raw(command)
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError as e:
+>           raise AssertionError(f"Invalid JSON from device: {raw!r}") from e
+E           AssertionError: Invalid JSON from device: '{"status":"OK","temperature":24.5'
+
+device.py:31: AssertionError
+============================== warnings summary ===============================
+tests/test_boundaries.py: 8 warnings
+tests/test_firmware_cli.py: 53 warnings
+tests/test_relay.py: 2 warnings
+tests/test_sensor.py: 1 warning
+tests/test_status.py: 2 warnings
+tests/test_timeout.py: 1 warning
+  D:\Courses\Embedded\Завдання 6\webinar_6_python_automation\automation\.venv\Lib\site-packages\serial\rfc2217.py:465: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+    self._thread.setDaemon(True)
+
+tests/test_boundaries.py: 8 warnings
+tests/test_firmware_cli.py: 53 warnings
+tests/test_relay.py: 2 warnings
+tests/test_sensor.py: 1 warning
+tests/test_status.py: 2 warnings
+tests/test_timeout.py: 1 warning
+  D:\Courses\Embedded\Завдання 6\webinar_6_python_automation\automation\.venv\Lib\site-packages\serial\rfc2217.py:466: DeprecationWarning: setName() is deprecated, set the name attribute instead
+    self._thread.setName('pySerial RFC 2217 reader thread for {}'.format(self._port))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_boundaries.py::test_pwm_valid_boundaries[100] - AssertionEr...
+FAILED tests/test_firmware_cli.py::test_pwm_boundary_values_accepted[100] - A...
+FAILED tests/test_firmware_cli.py::test_pwm_full_range_sweep_0_to_100 - Asser...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[1] - A...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[49] - ...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[50] - ...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[51] - ...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[99] - ...
+FAILED tests/test_firmware_cli.py::test_pwm_value_is_applied_in_status[100]
+FAILED tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[-1]
+FAILED tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[101]
+FAILED tests/test_firmware_cli.py::test_rejected_pwm_does_not_change_state[abc]
+FAILED tests/test_firmware_cli.py::test_reset_from_state[OFF-99] - AssertionE...
+FAILED tests/test_firmware_cli.py::test_reset_from_state[ON-0] - AssertionErr...
+FAILED tests/test_firmware_cli.py::test_reset_from_state[ON-50] - AssertionEr...
+FAILED tests/test_firmware_cli.py::test_reset_from_state[ON-1] - AssertionErr...
+FAILED tests/test_firmware_cli.py::test_get_temp_repeated[0] - AssertionError...
+FAILED tests/test_firmware_cli.py::test_get_temp_repeated[1] - AssertionError...
+FAILED tests/test_firmware_cli.py::test_get_temp_repeated[2] - AssertionError...
+FAILED tests/test_firmware_cli.py::test_get_temp_repeated[3] - AssertionError...
+FAILED tests/test_firmware_cli.py::test_get_temp_repeated[4] - AssertionError...
+FAILED tests/test_relay.py::test_reset_restores_safe_state - assert 255 == 0
+FAILED tests/test_sensor.py::test_temperature_is_valid_json - AssertionError:...
+=========== 23 failed, 44 passed, 134 warnings in 766.97s (0:12:46) ===========

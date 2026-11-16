@@ -1,3 +1,4 @@
+import json
 import os
 import time
 from datetime import datetime
@@ -51,7 +52,7 @@ class LoggedDevice(Device):
         """RESET and wait for *its* reply, logging anything stale before it.
 
         Used as precondition and cleanup, so every test starts in sync
-        with the device and in the requested safe state.
+        with the device; the resulting state is then verified via STATUS.
         """
         self.ser.reset_input_buffer()
         self._w(">> RESET")
@@ -74,6 +75,38 @@ class LoggedDevice(Device):
         finally:
             self.ser.timeout = old
         self.drain(idle=0.2, max_wait=1.0)
+        self.ensure_safe_state()
+
+    def read_status(self):
+        try:
+            return json.loads(self.command_raw("STATUS"))
+        except (TimeoutError, json.JSONDecodeError):
+            return None
+
+    def ensure_safe_state(self):
+        """RESET is known to leave outputs on (BUG-03), so verify the state
+        with STATUS and switch outputs off explicitly when needed."""
+        old = self.ser.timeout
+        self.ser.timeout = max(old, 3.0)
+        try:
+            self._ensure_safe_state()
+        finally:
+            self.ser.timeout = old
+
+    def _ensure_safe_state(self):
+        s = self.read_status()
+        if s and s.get("led") is False and s.get("pwm") == 0:
+            return
+        self._w(f"-- unsafe state after RESET: {s}; fallback SET LED OFF + SET PWM 0")
+        for cmd in ("SET LED OFF", "SET PWM 0"):
+            try:
+                self.command_raw(cmd)
+            except TimeoutError:
+                pass
+        s = self.read_status()
+        if not (s and s.get("led") is False and s.get("pwm") == 0):
+            self._w(f"-- state still not safe after fallback: {s}")
+            raise RuntimeError(f"cannot bring device to safe state: {s}")
 
 
 @pytest.fixture(scope="session")

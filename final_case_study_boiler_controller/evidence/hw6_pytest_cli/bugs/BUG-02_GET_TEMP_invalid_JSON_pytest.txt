@@ -1,6 +1,7 @@
+# pytest_run1.txt, 16.11.2026
 _______________________ test_temperature_is_valid_json ________________________
 
-self = <conftest.LoggedDevice object at 0x00000260936581D0>
+self = <conftest.LoggedDevice object at 0x000002250206F830>
 command = 'GET TEMP'
 
     def command(self, command):
@@ -19,7 +20,7 @@ C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: i
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = <json.decoder.JSONDecoder object at 0x00000260907C0050>
+self = <json.decoder.JSONDecoder object at 0x000002257F550050>
 s = '{"status":"OK","temperature":24.5', idx = 0
 
     def raw_decode(self, s, idx=0):
@@ -40,7 +41,7 @@ C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: J
 
 The above exception was the direct cause of the following exception:
 
-device = <conftest.LoggedDevice object at 0x00000260936581D0>
+device = <conftest.LoggedDevice object at 0x000002250206F830>
 
     def test_temperature_is_valid_json(device):
 >       r = device.command("GET TEMP")
@@ -49,7 +50,7 @@ device = <conftest.LoggedDevice object at 0x00000260936581D0>
 tests\test_sensor.py:2: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = <conftest.LoggedDevice object at 0x00000260936581D0>
+self = <conftest.LoggedDevice object at 0x000002250206F830>
 command = 'GET TEMP'
 
     def command(self, command):
@@ -64,7 +65,7 @@ device.py:31: AssertionError
 
 __________________________ test_get_temp_repeated[0] __________________________
 
-self = <conftest.LoggedDevice object at 0x0000026093229D30>
+self = <conftest.LoggedDevice object at 0x00000225020099D0>
 command = 'GET TEMP'
 
     def command(self, command):
@@ -83,7 +84,7 @@ C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:345: i
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = <json.decoder.JSONDecoder object at 0x00000260907C0050>
+self = <json.decoder.JSONDecoder object at 0x000002257F550050>
 s = '{"status":"OK","temperature":24.5', idx = 0
 
     def raw_decode(self, s, idx=0):
@@ -104,17 +105,17 @@ C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py:361: J
 
 The above exception was the direct cause of the following exception:
 
-device = <conftest.LoggedDevice object at 0x0000026093229D30>, attempt = 0
+device = <conftest.LoggedDevice object at 0x00000225020099D0>, attempt = 0
 
     @pytest.mark.parametrize("attempt", range(5))
     def test_get_temp_repeated(device, attempt):
 >       r = device.command("GET TEMP")
             ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-tests\test_firmware_cli.py:112: 
+tests\test_firmware_cli.py:114: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = <conftest.LoggedDevice object at 0x0000026093229D30>
+self = <conftest.LoggedDevice object at 0x00000225020099D0>
 command = 'GET TEMP'
 
     def command(self, command):
